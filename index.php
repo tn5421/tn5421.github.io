@@ -6,11 +6,7 @@
 	</head>
 
 	<body>
-		<div id="navbar">
-			<ul>
-				<li><a href="index.html">tn5421's homepage</a></li>
-				<li><a href="review.html">Mafia Reviews</a></li>
-			</ul>
+		<?php include 'navbar.html' ?>
 		<div id="content">
 			<h1>tn5421's homepage</h1>
 			<p class="table">Currently there isn't anything here but there will be shortly, once I figure out how to do a good navbar.</p>
