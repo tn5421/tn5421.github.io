@@ -25,7 +25,3 @@ header, section, footer, aside, nav, main, article, figure {
     display: block;
 } 
 
-body.index a.index, 
-body.review a.review {
-   background-color: green;
-}
