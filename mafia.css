@@ -1,26 +1,19 @@
 /* Opening up with page info */
-body {
-background-color: #848484; 
-font-family: Georgia, Arial, Serif; 
-font-size: large;
-}
+body {background-color: #848484; font-family: Georgia, Arial, Serif; font-size: large;}
 
 /* Here is styling for Reviews, mainly for player alignment colors */
-.table,tr {
-text-align: center; 
-font-weight: bold;
-}
-.townpr {
-color: #0000FF;
-}
-.townie {
-color: #00BF00;
-}
-.scum {
-color: #FF0000;
-}
+.table,tr {text-align: center; font-weight: bold;}
+.townpr {color: #0000FF;}
+.townie {color: #00BF00;}
+.scum {color: #FF0000;}
 
-/* Older IE Compatibility with HTML5 */
-header, section, footer, aside, nav, main, article, figure {
-    display: block;
-} 
+/* Navigation Bar css */
+ul.navlist {list-style-type: none; margin: 0; padding: 0; width: 150px; background-color: #c5c5c5;}
+li a {display:block; color: #000000; padding: 8px 0 8px 16px; text-decoration: none;}
+li a:hover {background-color: #424242; color: #FFFFFF;}
+.active {background-color: #4CAF50; color: #FFFFFF;}
+
+body.index a.index, 
+body.review a.review {
+   background-color: green;
+}
