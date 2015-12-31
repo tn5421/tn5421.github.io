@@ -1,26 +1,27 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<title>tn5421's homepage</title>
-		<link rel="stylesheet" type="text/css" href="mafia.css">
-		<script src="jquery.js"></script>
-		<!--	<script>
-			$(function(){
-				$("#navbar").load("nav.html");
-			});
-		</script> -->
-	</head>
-
-	<body>
-		<div id="navbar">
-			<ul id="navlist">
-				<li><a href="index.html">tn5421's homepage</a></li>
-				<li><a href="review.html">Mafia Reviews</a></li>
-			</ul>
-		</div>
-		<div id="content">
-			<h1>tn5421's homepage</h1>
-			<p class="table">Currently there isn't anything here but there will be shortly, once I figure out how to do a good navbar.</p>
-		</div>
-	</body>
+<html lang="en">
+<head>
+	<title>tn5421's homepage</title>
+	<link rel="stylesheet" type="text/css" href="mafia.css">
+	<meta charset="UTF-8">
+	<script src="jquery.js"></script>
+	<!-- dynamically loads the content of the nav file into the ID navbar via jquery -->
+	<script>
+		$(function(){
+			$("#navbar").load("nav.html");
+		});
+	</script> 
+	<!-- The Shiv, as defined/borrowed by/from w3schools -->
+	<!--[if lt IE 9]>
+  		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<header id="content">
+		<h1>tn5421's homepage</h1>
+		<p class="table">Currently there isn't anything here but there will be shortly, once I figure out how to do a good navbar.</p>
+	</header>
+	<nav id="navbar">
+	</nav>
+</body>
 </html>
