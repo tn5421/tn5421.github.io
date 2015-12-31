@@ -12,8 +12,3 @@ ul.navlist {list-style-type: none; margin: 0; padding: 0; width: 150px; backgrou
 li a {display:block; color: #000000; padding: 8px 0 8px 16px; text-decoration: none;}
 li a:hover {background-color: #424242; color: #FFFFFF;}
 .active {background-color: #4CAF50; color: #FFFFFF;}
-
-body.index a.index, 
-body.review a.review {
-   background-color: green;
-}
