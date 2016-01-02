@@ -1,7 +1,7 @@
 /* Navigation Bar css */
-.navlist {margin: 0; padding: 0; width: 150px; background-color: #c5c5c5;}
-a {display:block; color: #000000; padding: 8px 0 8px 16px; text-decoration: none;}
-a:hover {background-color: #424242; color: #FFFFFF;}
+ul#navlist {list-style-type: none; margin: 0; padding: 0; width: 150px; background-color: #c5c5c5;}
+div a {display:block; color: #000000; padding: 8px 0 8px 16px; text-decoration: none;}
+div a:hover {background-color: #424242; color: #FFFFFF;}
 /* 
 .active {background-color: #4CAF50; color: #FFFFFF;}
 */
