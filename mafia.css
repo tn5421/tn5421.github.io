@@ -1,24 +1,20 @@
 /* Opening up with page info */
 body {
-background-color: #a4a4a4; 
+background-color: #848484; 
 font-family: Georgia, Arial, Serif; 
 font-size: large;
 }
 #navbar {
-	width: 225px;
+	width: 250px;
 	float: left;
 }
 #content {
-	margin-left: 235px;
+	margin-left: 275px;
 }
 /* Here is styling for Reviews, mainly for player alignment colors */
 .table,tr {
 text-align: center; 
 font-weight: bold;
-}
-table {
-	border-spacing: 5px;
-	border: 2px solid black;
 }
 .townpr {
 color: #0000FF;
