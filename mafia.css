@@ -5,11 +5,15 @@ font-family: Georgia, Arial, Serif;
 font-size: large;
 }
 #navbar {
-	width: 180px;
+	width: 175px;
 	float: left;
 }
 #content {
-	margin-left: 200px;
+	margin-left: 185px;
+	margin-right: 5%;
+}
+.content {
+	text-align: center;
 }
 /* Here is styling for Reviews, mainly for player alignment colors */
 .table,tr {
@@ -17,8 +21,14 @@ text-align: center;
 font-weight: bold;
 }
 table {
-	border-spacing: 5px;
-	border: 2px solid black;
+    border-collapse: collapse;
+}
+table,th,td {
+	border-spacing: 3px;
+	border: 1px solid black;
+}
+th {
+	height: 35px;
 }
 .townpr {
 color: #0000FF;
