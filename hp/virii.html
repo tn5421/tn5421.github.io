@@ -1,0 +1,108 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+	<head>
+		<script type="text/javascript">
+			
+			var asd = {Name: 'Adware Spam Daemon', CPU: 50, Mem: 5, Band: 3,Size: 0.1024, Income: 3};
+			var fsv = {Name: 'File Share Virus', CPU: 250, Mem: 10, Band: 50,Size: 3.2768, Income: 60};
+			var rbv = {Name: 'Robber Baron', CPU: 7500, Mem: 300, Band: 1500,Size: 98.304, Income: 1200};
+			
+			const CPU_COST = 150; //50MHz
+			const CPU_QUAN = 50;
+
+			const HDD_COST = 300; //1 GB
+			const HDD_QUAN = 1;
+
+			const MEM_COST = 150; //3 Mb
+			const MEM_QUAN = 3;
+
+			const BAND_COST = 300; //1 kbps			
+			const BAND_QUAN = 1;
+
+			function calc() {
+			
+			var type = document.getElementById('selVirii').value;
+			var quantity = document.getElementById('txtMany').value
+			var version = document.getElementById('txtVersion').value
+
+			var extCpu = document.getElementById('txtCpu').value;
+			var extHdd = document.getElementById('txtHdd').value
+			var extMem = document.getElementById('txtMem').value;
+			var extBnd = document.getElementById('txtBand').value
+
+
+			var virii = asd;
+			if(type == 2) { //FS
+				virii = fsv;
+			}
+			else if(type == 3) { //RB
+				virii = rbv;
+			}
+			
+			var virVerMulp = version * 10;
+
+			var singleCost = Math.ceil(((virii.CPU * virVerMulp) - extCpu) / CPU_QUAN) * CPU_COST;
+			singleCost += Math.ceil(((virii.Mem * virVerMulp) - extMem) / MEM_QUAN) * MEM_COST;
+			singleCost += Math.ceil(((virii.Band * virVerMulp) - extBnd) / BAND_QUAN) * BAND_COST;
+			singleCost += Math.ceil(((virii.Size * virVerMulp) - extHdd) / HDD_QUAN) * HDD_COST;
+
+			var out = document.getElementById('out');
+			out.innerHTML = 'A single V ' + version + ' ' + virii.Name + ' uses:<br>';
+			out.innerHTML += 'CPU: ' + (virii.CPU * virVerMulp) + ' MHz<br>';
+			out.innerHTML += 'Mem: ' + (virii.Mem * virVerMulp) + ' Mb<br>';
+			out.innerHTML += 'Band: ' + (virii.Band * virVerMulp) + ' Kbps<br>';
+			out.innerHTML += 'Size: ' + (virii.Size * virVerMulp) + ' Gb<br>';
+			out.innerHTML += 'Income: ' + (virii.Income * virVerMulp) + ' HPD/Hour<br>';
+			out.innerHTML += 'Income: ' + (virii.Income * virVerMulp) * 24 + ' HPD/Day<br>';
+			out.innerHTML += 'Hardware Cost: ' + singleCost + ' HPD<br>';
+			out.innerHTML += 'Earned in: ' + (singleCost / (virii.Income * virVerMulp)) + ' Hours<br>'
+			out.innerHTML += 'Earned in: ' + (singleCost / (virii.Income * virVerMulp) / 24) + ' Days<br><br><hr><br>'
+
+			var multipleCost = Math.ceil(((virii.CPU * virVerMulp * quantity) - extCpu) / CPU_QUAN) * CPU_COST;
+			multipleCost += Math.ceil(((virii.Mem * virVerMulp * quantity) - extMem) / MEM_QUAN) * MEM_COST;
+			multipleCost += Math.ceil(((virii.Band * virVerMulp * quantity) - extBnd) / BAND_QUAN) * BAND_COST;
+			multipleCost += Math.ceil(((virii.Size * virVerMulp * quantity) - extHdd) / HDD_QUAN) * HDD_COST;
+
+			out.innerHTML += quantity + ' v' + version + ' ' + virii.Name + ' uses:<br>';
+			out.innerHTML += 'CPU: ' + (virii.CPU * virVerMulp * quantity) + ' MHz (' + (Math.ceil(((virii.CPU * virVerMulp * quantity) - extCpu) / CPU_QUAN)) + ')<br>';
+			out.innerHTML += 'Mem: ' + (virii.Mem * virVerMulp * quantity) + ' Mb (' + (Math.ceil(((virii.Mem * virVerMulp * quantity) - extMem) / MEM_QUAN)) + ')<br>';
+			out.innerHTML += 'Band: ' + (virii.Band * virVerMulp * quantity) + ' Kbps (' + (Math.ceil(((virii.Band * virVerMulp * quantity) - extBnd) / BAND_QUAN)) + ')<br>';
+			out.innerHTML += 'Size: ' + (virii.Size * virVerMulp * quantity) + ' Gb (' + (Math.ceil(((virii.Size * virVerMulp * quantity) - extHdd) / HDD_QUAN)) + ')<br>';
+			out.innerHTML += 'Income: ' + (virii.Income * virVerMulp * quantity) + ' HPD/Hour<br>';
+			out.innerHTML += 'Income: ' + (virii.Income * virVerMulp * quantity) * 24 + ' HPD/Day<br>';
+			out.innerHTML += 'Hardware Cost: ' + multipleCost + ' HPD<br>';
+			out.innerHTML += 'Earned in: ' + (multipleCost / (virii.Income * virVerMulp * quantity)) + ' Hours<br>'
+			out.innerHTML += 'Earned in: ' + (multipleCost / (virii.Income * virVerMulp * quantity) / 24) + ' Days<br><br><hr><br>'
+
+			}
+		</script>
+	<title>Virii Estimator</title>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta name="author" content="sjums">
+	</head>
+	<body>
+	Virii Type: 
+		<select id="selVirii">
+			<option value="1" selected="selected">Adware Spam Daemon</option>
+			<option value="2">File Share Virus</option>
+			<option value="3">Robber Baron</option>
+		</select>
+		<br>
+		How Many: <input type="text" id="txtMany" value="1">
+		<br>
+		Version: <input type="text" id="txtVersion" value="0.1">
+		<br>
+		Owned server power:<br>
+		CPU: <input type="text" id="txtCpu" value="550"> 
+		HDD: <input type="text" id="txtHdd" value="2"> 
+		Mem: <input type="text" id="txtMem" value="32"> 
+		BW: <input type="text" id="txtBand" value="5">
+		<br>
+		<input type="button" value="Calculate" onclick="javascript:calc();">
+		<br>
+		<br>
+		<hr>
+		<br>
+		<span id="out"></span>
+	</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<script type="text/javascript">
+					
+function calc() {
+		
+	var numHours = document.getElementById('txtHours').value;
+	var numTasks = document.getElementById('txtTasks').value;
+	var extHc = document.getElementById('abp_rw').value;
+	var accGold = document.getElementById('selGold').value;
+		
+	var abp_rw = extHc / 100; // Reduces input to a %
+	var RESEARCH_COST = 100; // 100HPD per hour of research
+	var GOLD_RESEARCH_COST = 80; // Gold is 20% discount and is always calculated first
+			
+	if (accGold == "1") {  
+		var researchCost = Math.ceil((numHours * numTasks) * (RESEARCH_COST - (RESEARCH_COST * abp_rw)));
+	}
+			
+	else {
+		var researchCost = Math.ceil((numHours * numTasks) * (GOLD_RESEARCH_COST - (GOLD_RESEARCH_COST * abp_rw)));
+	}
+			
+	var out = document.getElementById('out'); // Controls where the data is displayed
+	
+	out.innerHTML = numHours + ' hour(s) of research with ' + numTasks + ' task(s) will cost ' + researchCost + 'HPD';
+} // If you can suggest a better way to dynamically print data on page without cheating like this, please do.  This got old before I even started working with javascript.
+</script>
+	<title>Research Estimator</title>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta name="author" content="tn5421">
+</head>
+<body>
+<div>
+Hours of Research : <input type="text" id="txtHours" value="1">
+<br>
+Number of Tasks: <input type="text" id="txtTasks" value="1">
+<br>
+Gold Account: <select id="selGold">
+	<option value="1" selected="selected">Non-Gold</option>
+	<option value="2">Gold</option>
+</select>
+<br>
+Research Wizard(% upgraded by): <input type="text" id="abp_rw" value="0">
+<br>
+<input type="button" value="Calculate" onclick="javascript:calc();">
+<br><br><hr><br>
+<span id="out"></span>
+</div>
+</body>
+</html>
