@@ -1,7 +1,22 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html>
+<!DOCTYPE html>
+<html lang="en">
 	<head>
-		<script type="text/javascript">
+	<title>Virii Estimator</title>
+	<link rel="stylesheet" type="text/css" href="http://tn5421.github.io/mafia.css">
+	<meta charset="UTF-8">
+	<script src="http://tn5421.github.io/jquery.js"></script>
+	<!-- dynamically loads the content of the nav file into the ID navbar via jquery -->
+	<script>
+		$(function(){
+			$("#navbar").load("nav.html");
+		});
+	</script> 
+	<!-- The Shiv, as defined/borrowed by/from w3schools -->
+	<!--[if lt IE 9]>
+  		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<meta name="author" content="sjums">
+	<script type="text/javascript">
 			
 			var asd = {Name: 'Adware Spam Daemon', CPU: 50, Mem: 5, Band: 3,Size: 0.1024, Income: 3};
 			var fsv = {Name: 'File Share Virus', CPU: 250, Mem: 10, Band: 50,Size: 3.2768, Income: 60};
@@ -76,11 +91,10 @@
 
 			}
 		</script>
-	<title>Virii Estimator</title>
-	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
-	<meta name="author" content="sjums">
 	</head>
-	<body>
+<body class="index">
+	<nav id="navbar"></nav>
+	<div id="content">
 	Virii Type: 
 		<select id="selVirii">
 			<option value="1" selected="selected">Adware Spam Daemon</option>
@@ -104,5 +118,6 @@
 		<hr>
 		<br>
 		<span id="out"></span>
+	</div>
 	</body>
 </html>

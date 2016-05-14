@@ -6,7 +6,8 @@ li a:hover {background-color: #424242; color: #FFFFFF;}
 .active {background-color: green;}
 */
 body.index a.index, 
-body.review a.review {
+body.review a.review,
+body.hptools a.hptools {
    background-color: #4CAF50; 
    color: #FFFFFF;
 } 
