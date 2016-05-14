@@ -7,7 +7,14 @@ li a:hover {background-color: #424242; color: #FFFFFF;}
 */
 body.index a.index, 
 body.review a.review,
-body.hptools a.hptools {
+body.hp-hardware a.hp-hardware,
+body.hp-index a.hp-index,
+body.hp-research a.hp-research,
+body.hp-software a.hp-software,
+body.hp-virii a.hp-virii,
+body.hp-viriibreaker a.hp-viriibreaker,
+body.hp-ability a.hp-ability,
+{
    background-color: #4CAF50; 
    color: #FFFFFF;
 } 
