@@ -1,9 +1,4 @@
 var softwareItems = [
-	{Name: 'Mail relay expertise', CPU: 0, Mem: 0, Band: 0, Size: 0, Income: 0, abpBase: 5, abpGrow: 10, abpMax: 50},
-	{Name: 'Share relay expertise', CPU: 0, Mem: 0, Band: 0, Size: 0, Income: 0, abpBase: 5, abpGrow: 10, abpMax: 50},
-	{Name: 'Software dealer connections', CPU: 0, Mem: 0, Band: 0, Size: 0, Income: 0, abpBase: 5, abpGrow: 15, abpMax: 50},
-	{Name: 'Hardware dealer connections', CPU: 0, Mem: 0, Band: 0, Size: 0, Income: 0, abpBase: 10, abpGrow: 20, abpMax: 50},
-	{Name: 'Research Wizard', CPU: 0, Mem: 0, Band: 0, Size: 0, Income: 0, abpBase: 10, abpGrow: 15, abpMax: 50},
 	{Name: 'Firewall Protect', CPU: 50, Mem: 3, Band: 0, Size: 0.00768, Income: 0, abpBase: 3, abpGrow: 3, abpMax: 75},
 	{Name: 'Firewall Bypass', CPU: 80, Mem: 7, Band: 0, Size: 0.0384, Income: 0, abpBase: 1, abpGrow: 1, abpMax: 75},
 	{Name: 'Password Protect', CPU: 100, Mem: 5, Band: 0, Size: 0.0087, Income: 0, abpBase: 3, abpGrow: 3, abpMax: 75},
@@ -35,7 +30,7 @@ var softwareItems = [
 	{Name: 'Virus Identifier', CPU: 30, Mem: 1.15, Band: 0, Size: 0.1784, Income: 0, abpBase: 1, abpGrow: 1, abpMax: 75}, // might be incorrect
 	{Name: 'Process Tracer', CPU: 2400, Mem: 92, Band: 0, Size: 0.1784, Income: 0, abpBase: 1, abpGrow: 1, abpMax: 75},
 	{Name: '/root/OS/os.sock', CPU: 15000, Mem: 5, Band: 0, Size: 1.024, Income: 0, abpBase: 0, abpGrow: 0, abpMax: 0},
-	{Name: 'Robber Baron', CPU: 7500, Mem: 300, Band: 1500,Size: 98.304, Income: 1200, abpBase: 35, abpGrow: 35, abpMax: 75},
+	{Name: 'Robber Baron', CPU: 7500, Mem: 300, Band: 1500, Size: 98.304, Income: 1200, abpBase: 35, abpGrow: 35, abpMax: 75},
 	{Name: 'Robber Baron Anti-Virus', CPU: 15000, Mem: 600, Band: 0, Size: 30.72, Income: 0, abpBase: 0, abpGrow: 0, abpMax: 0}, // seems unfair to me
 	{Name: 'Remote Attack Disruptor', CPU: 2400, Mem: 92, Band: 0, Size: 0.1784, Income: 0, abpBase: 0, abpGrow: 0, abpMax: 0},
 	{Name: 'IP Leech', CPU: 450, Mem: 1.35, Band: 0, Size: 0.0768, Income: 0, abpBase: 2, abpGrow: 2, abpMax: 75},
@@ -47,7 +42,12 @@ var softwareItems = [
 	{Name: 'MutantR Accelerator', CPU: 2400, Mem: 92, Band: 100, Size: 0.1784, Income: 0, abpBase: 0, abpGrow: 0, abpMax: 0},
 	{Name: 'MutantR Decelerator', CPU: 9600, Mem: 278, Band: 0, Size: 0.1784, Income: 0, abpBase: 0, abpGrow: 0, abpMax: 0},
 	{Name: 'MutantR Acc Stopper', CPU: 1200, Mem: 46, Band: 0, Size: 0.1784, Income: 0, abpBase: 0, abpGrow: 0, abpMax: 0},
-	{Name: 'MutantR Dec Stopper', CPU: 1200, Mem: 46, Band: 0, Size: 0.1784, Income: 0, abpBase: 0, abpGrow: 0, abpMax: 0}
+	{Name: 'MutantR Dec Stopper', CPU: 1200, Mem: 46, Band: 0, Size: 0.1784, Income: 0, abpBase: 0, abpGrow: 0, abpMax: 0},
+	{Name: 'Mail relay expertise', CPU: 0, Mem: 0, Band: 0, Size: 0, Income: 0, abpBase: 5, abpGrow: 10, abpMax: 50},
+	{Name: 'Share relay expertise', CPU: 0, Mem: 0, Band: 0, Size: 0, Income: 0, abpBase: 5, abpGrow: 10, abpMax: 50},
+	{Name: 'Software dealer connections', CPU: 0, Mem: 0, Band: 0, Size: 0, Income: 0, abpBase: 5, abpGrow: 15, abpMax: 50},
+	{Name: 'Hardware dealer connections', CPU: 0, Mem: 0, Band: 0, Size: 0, Income: 0, abpBase: 10, abpGrow: 20, abpMax: 50},
+	{Name: 'Research Wizard', CPU: 0, Mem: 0, Band: 0, Size: 0, Income: 0, abpBase: 10, abpGrow: 15, abpMax: 50}
 ]; // the incorrect items mentioned above are due to potentially faulty information provided by the game itself
 
 // virii.html legacy items
@@ -71,6 +71,5 @@ var BAND_COST = 300; //1 kbps
 var GOLD_BAND_COST = 240;
 var BAND_QUAN = 1;
 
-var abp_rw = extHc / 100; // Reduces input to a %
 var RESEARCH_COST = 100; // 100HPD per hour of research
 var GOLD_RESEARCH_COST = 80; // Gold is 20% discount and is always calculated first
