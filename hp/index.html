@@ -5,13 +5,6 @@
 	<link rel="stylesheet" type="text/css" href="https://tn5421.github.io/mafia.css">
 	<meta charset="UTF-8">
 	<meta name="author" content="tn5421">
-	<script src="https://tn5421.github.io/jquery.js"></script>
-	<!-- dynamically loads the content of the nav file into the ID navbar via jquery -->
-	<script>
-		$(function(){
-			$("#navbar").load("https://tn5421.github.io/nav.html");
-		});
-	</script> 
 	<!-- The Shiv, as defined/borrowed by/from w3schools -->
 	<!--[if lt IE 9]>
   		<script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -28,5 +21,16 @@
 			<p>This is where my actual content will be once I have written it.  Still deciding on how to lay out the pages.</p>
 		</article>
 	</div>
+		<!-- dynamically loads the content of the nav file into the ID navbar -->
+	<script type="text/javascript">
+		(function(){
+    			var request = new XMLHttpRequest();    
+    			request.open("GET", "https://tn5421.github.io/nav.html");
+    			request.addEventListener("load", function() {
+        			document.querySelector("navbar").innerHTML += request.responseText;
+    			})
+    			request.send();
+		})(); // doesn't check response code or ready state because I'm lazy
+	</script> 
 </body>
 </html>

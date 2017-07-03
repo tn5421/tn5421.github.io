@@ -4,13 +4,6 @@
 	<title>tn5421's Mafia Reviews</title>
 	<link rel="stylesheet" type="text/css" href="https://tn5421.github.io/mafia.css">
 	<meta charset="UTF-8">
-	<script src="https://tn5421.github.io/jquery.js"></script>
-	<!-- dynamically loads the content of the nav file into the ID navbar via jquery -->
-	<script>
-		$(function(){
-			$("#navbar").load("https://tn5421.github.io/nav.html");
-		});
-	</script>
 </head>
 <body class="review">
 	<nav id="navbar"></nav>
@@ -62,5 +55,16 @@
 				<p>This was my first game of mafia on mafiascum as well as my first game of mafia ever.  I replaced in on page 8 of 38.  Misread Charlie and helped to lynch day one.  Floundered around for a bit on day 2 before	 attempting to push an Android/imkingdavid lynch, and eating a lynch because of it.  Town won somehow.</p>
 			</article>
 		</section>
+				<!-- dynamically loads the content of the nav file into the ID navbar -->
+	<script type="text/javascript">
+		(function(){
+    			var request = new XMLHttpRequest();    
+    			request.open("GET", "https://tn5421.github.io/nav.html");
+    			request.addEventListener("load", function() {
+        			document.querySelector("navbar").innerHTML += request.responseText;
+    			})
+    			request.send();
+		})(); // doesn't check response code or ready state because I'm lazy
+	</script> 
 	</body>
 </html>
