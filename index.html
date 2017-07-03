@@ -5,43 +5,6 @@
 	<link rel="stylesheet" type="text/css" href="https://tn5421.github.io/mafia.css">
 	<meta charset="UTF-8">
 	<meta name="author" content="tn5421">
-	<!-- dynamically loads the content of the nav file into the ID navbar via jquery -->
-	<!-- The Shiv, as defined/borrowed by/from w3schools -->
-	<!--[if lt IE 9]>
-  		<script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-	<![endif]-->
-</head>
-<body class="index">
-	<nav id="navbar"></nav>
-	<div id="content">
-		<header>
-			<h1 class="content">tn5421's homepage</h1>
-			<p class="table">Currently there isn't much going on here but there will be shortly, once I figure out what exactly I want to do with this page.<br><br></p>
-		</header>
-		<article class="content">
-			<p>This is where my actual content will be once I have written it.  Still deciding on how to lay out the pages.</p>
-		</article>
-		
-	</div>
-	<script>
-		(function(){
-    			var request = new XMLHttpRequest();    
-    			request.open("GET", "https://tn5421.github.io/nav.html");
-    			request.addEventListener("load", function() {
-        			document.querySelector("#navbar").innerHTML += request.responseText;
-    			})
-    			request.send();
-		})(); // doesn't check response code or ready state because I'm lazy
-	</script> 
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<title>tn5421's homepage</title>
-	<link rel="stylesheet" type="text/css" href="https://tn5421.github.io/mafia.css">
-	<meta charset="UTF-8">
-	<meta name="author" content="tn5421">
 	<!-- The Shiv, as defined/borrowed by/from w3schools -->
 	<!--[if lt IE 9]>
   		<script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
