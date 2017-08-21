@@ -10,7 +10,7 @@
   		<script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
 </head>
-<body class="lyr-index">
+<body class="hp-index">
 	<nav id="navbar"></nav>
 	<div id="content">
 		<header>
@@ -27,7 +27,7 @@
     			var request = new XMLHttpRequest();    
     			request.open("GET", "https://tn5421.github.io/nav.html");
     			request.addEventListener("load", function() {
-        			document.querySelector("navbar").innerHTML += request.responseText;
+        			document.querySelector("#navbar").innerHTML += request.responseText;
     			})
     			request.send();
 		})(); // doesn't check response code or ready state because I'm lazy
