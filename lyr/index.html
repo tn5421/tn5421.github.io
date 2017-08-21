@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>LyrTools Homepage</title>
+	<link rel="stylesheet" type="text/css" href="https://tn5421.github.io/mafia.css">
+	<meta charset="UTF-8">
+	<meta name="author" content="tn5421">
+	<!-- The Shiv, as defined/borrowed by/from w3schools -->
+	<!--[if lt IE 9]>
+  		<script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</head>
+<body class="lyr-index">
+	<nav id="navbar"></nav>
+	<div id="content">
+		<header>
+			<h1 class="content">LyrTools Homepage</h1>
+			<p class="table">Currently there isn't much going on here but there will be shortly, once I work out the math involved.  This is certainly a bit more difficult than my HPTools project.<br><br></p>
+		</header>
+		<article class="content">
+			<p>This is where my disclaimers and other things will go when I decide what to put.</p>
+		</article>
+	</div>
+		<!-- dynamically loads the content of the nav file into the ID navbar -->
+	<script type="text/javascript">
+		(function(){
+    			var request = new XMLHttpRequest();    
+    			request.open("GET", "https://tn5421.github.io/nav.html");
+    			request.addEventListener("load", function() {
+        			document.querySelector("navbar").innerHTML += request.responseText;
+    			})
+    			request.send();
+		})(); // doesn't check response code or ready state because I'm lazy
+	</script> 
+</body>
+</html>
