@@ -2,11 +2,12 @@
 ul#navlist, ul#subnavlist {list-style-type: none; margin: 0; padding: 0; width: 175px; border-right: 3px solid #000; }
 li a {display:block; color: #000000; padding: 4px 0 4px 4px; text-decoration: none;}
 li a:hover {background-color: #424242; color: #FFFFFF;}
-/* 
+/*
 .active {background-color: green;}
 */
-body.index a.index, 
+body.index a.index,
 body.review a.review,
+body.lyr-index a.lyr-index,
 body.hp-hardware a.hp-hardware,
 body.hp-index a.hp-index,
 body.hp-research a.hp-research,
@@ -15,6 +16,6 @@ body.hp-virii a.hp-virii,
 body.hp-viriibreaker a.hp-viriibreaker,
 body.hp-ability a.hp-ability,
 {
-   background-color: #4CAF50; 
+   background-color: #4CAF50;
    color: #FFFFFF;
-} 
+}

@@ -8,7 +8,7 @@
 	<!--[if lt IE 9]>
   		<script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
-		<title>Ability Point Cost Estimator</title>		
+		<title>Ability Point Cost Estimator</title>
 		<script>
 		// a script to calculate Ability Point upgrade costs.  Based off of virii.html by sjums
 			var softwareItems = [
@@ -62,14 +62,14 @@
 				{Name: 'MutantR Acc Stopper', CPU: 1200, Mem: 46, Band: 0, Size: 0.1784, Income: 0, abpBase: 0, abpGrow: 0, abpMax: 0},
 				{Name: 'MutantR Dec Stopper', CPU: 1200, Mem: 46, Band: 0, Size: 0.1784, Income: 0, abpBase: 0, abpGrow: 0, abpMax: 0}
 			]; // the incorrect items mentioned above are due to potentially faulty information provided by the game itself
-				
+
 			function calc() {
-			
+
 				var type = document.getElementById('selSoft').value;
 				var quantity = document.getElementById('txtMany').value;
-			
+
 				var software = softwareItems[type];
-				
+
 				var abp_base = software.abpBase;
 				var abp_grow = software.abpGrow;
 
@@ -82,7 +82,7 @@
 					out.innerHTML = 'Upgrading '+ software.Name + ' ability to ' + quantity + '%  from 0% requires:<br>';
 					out.innerHTML += 'AbP: ' + abp_base;
 				}
-				else { 
+				else {
 					var out = document.getElementById('out');
 					out.innerHTML = 'Error: Your choice does not have an Ability Power associated with it, or you have entered more upgrades than are possible for a selected ability.';
 				}
@@ -101,7 +101,7 @@
 						option.text = softwareItems[i].Name;
 						selectList.appendChild(option);
 					}
-			</script>			
+			</script>
 		</select>
 		<br>
 		Ability Upgrades?: <input type="text" id="txtMany" value="1">
@@ -116,13 +116,13 @@
 			<!-- dynamically loads the content of the nav file into the ID navbar -->
 	<script type="text/javascript">
 		(function(){
-    			var request = new XMLHttpRequest();    
-    			request.open("GET", "https://tn5421.github.io/nav.html");
-    			request.addEventListener("load", function() {
-        			document.querySelector("#navbar").innerHTML += request.responseText;
-    			})
-    			request.send();
+    	var request = new XMLHttpRequest();
+    	request.open("GET", "https://tn5421.github.io/nav.html");
+    	request.addEventListener("load", function() {
+        	document.querySelector("#navbar").innerHTML += request.responseText;
+    	})
+    	request.send();
 		})(); // doesn't check response code or ready state because I'm lazy
-	</script> 
+	</script>
 	</body>
 </html>

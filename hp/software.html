@@ -57,9 +57,9 @@
 				{Name: 'MutantR Acc Stopper', CPU: 1200, Mem: 46, Band: 0, Size: 0.1784, Income: 0},
 				{Name: 'MutantR Dec Stopper', CPU: 1200, Mem: 46, Band: 0, Size: 0.1784, Income: 0}
 			];
-				
+
 			function calc() {
-			
+
 			var type = document.getElementById('selSoft').value;
 			var quantity = document.getElementById('txtMany').value;
 			var version = document.getElementById('txtVersion').value;
@@ -70,13 +70,13 @@
 			var extBnd = document.getElementById('txtBand').value;
 			var extHc = document.getElementById('abp_hc').value;
 			var accGold = document.getElementById('selGold').value;
-			
+
 			var software = softwareItems[type];
-			
+
 			var softVerMulp = version * 10; // inflates the results to what they should be.  otherwise result would be 1/10 of expected values
-			
+
 			var abp_hc = extHc / 100; // Reduces input to a %
-			
+
 			var CPU_COST = 150; //50MHz
 			var GOLD_CPU_COST = 120;
 			var CPU_QUAN = 50;
@@ -92,32 +92,32 @@
 			var BAND_COST = 300; //1 kbps
 			var GOLD_BAND_COST = 240;
 			var BAND_QUAN = 1;
-			
+
 			if (accGold == "1") {  // first part figures out how many upgrades are needed.  second part calculates cost
 				var singleCost = Math.ceil(((software.CPU * softVerMulp) - extCpu) / CPU_QUAN) * (CPU_COST - (CPU_COST * abp_hc));
 				singleCost += Math.ceil(((software.Mem * softVerMulp) - extMem) / MEM_QUAN) * (MEM_COST - (MEM_COST * abp_hc));
 				singleCost += Math.ceil(((software.Band * softVerMulp) - extBnd) / BAND_QUAN) * (BAND_COST - (BAND_COST * abp_hc));
 				singleCost += Math.ceil(((software.Size * softVerMulp) - extHdd) / HDD_QUAN) * (HDD_COST - (HDD_COST * abp_hc));
-				
+
 				var multipleCost = Math.ceil(((software.CPU * softVerMulp * quantity) - extCpu) / CPU_QUAN) * (CPU_COST - (CPU_COST * abp_hc));
 				multipleCost += Math.ceil(((software.Mem * softVerMulp * quantity) - extMem) / MEM_QUAN) * (MEM_COST - (MEM_COST * abp_hc));
 				multipleCost += Math.ceil(((software.Band * softVerMulp * quantity) - extBnd) / BAND_QUAN) * (BAND_COST - (BAND_COST * abp_hc));
 				multipleCost += Math.ceil(((software.Size * softVerMulp * quantity) - extHdd) / HDD_QUAN) * (HDD_COST - (HDD_COST * abp_hc));
-		
+
 			}
-			
-			else { // same thing as above, except calculates gold discount first and then Hardware Connections discount.  
+
+			else { // same thing as above, except calculates gold discount first and then Hardware Connections discount.
 				var singleCost = Math.ceil(((software.CPU * softVerMulp) - extCpu) / CPU_QUAN) * (GOLD_CPU_COST - (GOLD_CPU_COST * abp_hc));
 				singleCost += Math.ceil(((software.Mem * softVerMulp) - extMem) / MEM_QUAN) * (GOLD_MEM_COST - (GOLD_MEM_COST * abp_hc));
 				singleCost += Math.ceil(((software.Band * softVerMulp) - extBnd) / BAND_QUAN) * (GOLD_BAND_COST - (GOLD_BAND_COST * abp_hc));
 				singleCost += Math.ceil(((software.Size * softVerMulp) - extHdd) / HDD_QUAN) * (GOLD_HDD_COST - (GOLD_HDD_COST * abp_hc));
-				
+
 				var multipleCost = Math.ceil(((software.CPU * softVerMulp * quantity) - extCpu) / CPU_QUAN) * (GOLD_CPU_COST - (GOLD_CPU_COST * abp_hc));
 				multipleCost += Math.ceil(((software.Mem * softVerMulp * quantity) - extMem) / MEM_QUAN) * (GOLD_MEM_COST - (GOLD_MEM_COST * abp_hc));
 				multipleCost += Math.ceil(((software.Band * softVerMulp * quantity) - extBnd) / BAND_QUAN) * (GOLD_BAND_COST - (GOLD_BAND_COST * abp_hc));
 				multipleCost += Math.ceil(((software.Size * softVerMulp * quantity) - extHdd) / HDD_QUAN) * (GOLD_HDD_COST - (GOLD_HDD_COST * abp_hc));
 			}
-			
+
 			var out = document.getElementById('out'); // Controls the display data
 			out.innerHTML = 'A single v' + version + ' ' + software.Name + ' uses:<br>';
 			out.innerHTML += 'CPU: ' + (software.CPU * softVerMulp) + ' MHz<br>';
@@ -156,7 +156,7 @@
 					option.text = softwareItems[i].Name;
 					selectList.appendChild(option);
 				}
-			</script>	
+			</script>
 		</select>
 		<br>
 		How Many: <input type="text" id="txtMany" value="1">
@@ -171,9 +171,9 @@
 		Hardware Connections (% upgraded by): <input type="text" id="abp_hc" value="0">
 		<br>
 		Owned server power:<br>
-		CPU: <input type="text" id="txtCpu" value="550"> 
-		HDD: <input type="text" id="txtHdd" value="2"> 
-		Mem: <input type="text" id="txtMem" value="32"> 
+		CPU: <input type="text" id="txtCpu" value="550">
+		HDD: <input type="text" id="txtHdd" value="2">
+		Mem: <input type="text" id="txtMem" value="32">
 		BW: <input type="text" id="txtBand" value="5">
 		<br>
 		<input type="button" value="Calculate" onclick="javascript:calc();">
@@ -186,13 +186,13 @@
 			<!-- dynamically loads the content of the nav file into the ID navbar -->
 	<script type="text/javascript">
 		(function(){
-    			var request = new XMLHttpRequest();    
-    			request.open("GET", "https://tn5421.github.io/nav.html");
-    			request.addEventListener("load", function() {
-        			document.querySelector("#navbar").innerHTML += request.responseText;
-    			})
-    			request.send();
+    	var request = new XMLHttpRequest();
+    	request.open("GET", "https://tn5421.github.io/nav.html");
+    	request.addEventListener("load", function() {
+        	document.querySelector("#navbar").innerHTML += request.responseText;
+    	})
+    	request.send();
 		})(); // doesn't check response code or ready state because I'm lazy
-	</script> 
+	</script>
 	</body>
 </html>

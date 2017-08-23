@@ -24,13 +24,13 @@
 		<!-- dynamically loads the content of the nav file into the ID navbar -->
 	<script type="text/javascript">
 		(function(){
-    			var request = new XMLHttpRequest();    
-    			request.open("GET", "https://tn5421.github.io/nav.html");
-    			request.addEventListener("load", function() {
-        			document.querySelector("#navbar").innerHTML += request.responseText;
-    			})
-    			request.send();
+    	var request = new XMLHttpRequest();
+    	request.open("GET", "https://tn5421.github.io/nav.html");
+    	request.addEventListener("load", function() {
+        	document.querySelector("#navbar").innerHTML += request.responseText;
+    	})
+    	request.send();
 		})(); // doesn't check response code or ready state because I'm lazy
-	</script> 
+	</script>
 </body>
 </html>

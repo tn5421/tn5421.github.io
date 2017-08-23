@@ -10,11 +10,11 @@
 	<![endif]-->
 	<meta name="author" content="sjums">
 	<script type="text/javascript">
-			
+
 			var asd = {Name: 'Adware Spam Daemon', CPU: 50, Mem: 5, Band: 3,Size: 0.1024, Income: 3};
 			var fsv = {Name: 'File Share Virus', CPU: 250, Mem: 10, Band: 50,Size: 3.2768, Income: 60};
 			var rbv = {Name: 'Robber Baron', CPU: 7500, Mem: 300, Band: 1500,Size: 98.304, Income: 1200};
-			
+
 			const CPU_COST = 150; //50MHz
 			const CPU_QUAN = 50;
 
@@ -24,11 +24,11 @@
 			const MEM_COST = 150; //3 Mb
 			const MEM_QUAN = 3;
 
-			const BAND_COST = 300; //1 kbps			
+			const BAND_COST = 300; //1 kbps
 			const BAND_QUAN = 1;
 
 			function calc() {
-			
+
 			var type = document.getElementById('selVirii').value;
 			var quantity = document.getElementById('txtMany').value
 			var version = document.getElementById('txtVersion').value
@@ -46,7 +46,7 @@
 			else if(type == 3) { //RB
 				virii = rbv;
 			}
-			
+
 			var virVerMulp = version * 10;
 
 			var singleCost = Math.ceil(((virii.CPU * virVerMulp) - extCpu) / CPU_QUAN) * CPU_COST;
@@ -88,7 +88,7 @@
 <body class="hp-virii">
 	<nav id="navbar"></nav>
 	<div id="content">
-	Virii Type: 
+	Virii Type:
 		<select id="selVirii">
 			<option value="1" selected="selected">Adware Spam Daemon</option>
 			<option value="2">File Share Virus</option>
@@ -100,9 +100,9 @@
 		Version: <input type="text" id="txtVersion" value="0.1">
 		<br>
 		Owned server power:<br>
-		CPU: <input type="text" id="txtCpu" value="550"> 
-		HDD: <input type="text" id="txtHdd" value="2"> 
-		Mem: <input type="text" id="txtMem" value="32"> 
+		CPU: <input type="text" id="txtCpu" value="550">
+		HDD: <input type="text" id="txtHdd" value="2">
+		Mem: <input type="text" id="txtMem" value="32">
 		BW: <input type="text" id="txtBand" value="5">
 		<br>
 		<input type="button" value="Calculate" onclick="javascript:calc();">
@@ -115,13 +115,13 @@
 			<!-- dynamically loads the content of the nav file into the ID navbar -->
 	<script type="text/javascript">
 		(function(){
-    			var request = new XMLHttpRequest();    
-    			request.open("GET", "https://tn5421.github.io/nav.html");
-    			request.addEventListener("load", function() {
-        			document.querySelector("#navbar").innerHTML += request.responseText;
-    			})
-    			request.send();
+    	var request = new XMLHttpRequest();
+    	request.open("GET", "https://tn5421.github.io/nav.html");
+    	request.addEventListener("load", function() {
+        	document.querySelector("#navbar").innerHTML += request.responseText;
+    	})
+    	request.send();
 		})(); // doesn't check response code or ready state because I'm lazy
-	</script> 
+	</script>
 	</body>
 </html>
