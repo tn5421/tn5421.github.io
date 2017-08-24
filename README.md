@@ -1,6 +1,6 @@
 # tn5421.github.io
 
-This is my homepage.  Welcome and
+This is my homepage.  Welcome!
 
 ## Usage
 
