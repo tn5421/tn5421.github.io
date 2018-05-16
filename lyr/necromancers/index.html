@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Necromancers</title>
+	<title>Necromancers Homepage</title>
 	<link rel="stylesheet" type="text/css" href="https://tn5421.github.io/mafia.css">
 	<link rel="stylesheet" type="text/css" href="https://tn5421.github.io/lyr/necromancers/necro1.css">
 	<meta charset="UTF-8">
@@ -16,9 +16,10 @@
 <body class="misc">
 	<nav id="navbar"></nav>
 	<div id="content">
-		<h1>Necromancers of Lyrania</h1>
-
-		<div class="container">
+		<header class="content">
+			<h1 class="content">Necromancers of Lyrania</h1>
+		</header>
+		<section class="container">
 			<div id="content-slider">
 				<div id="slider">  <!-- Slider container -->
 					<div id="mask">  <!-- Mask -->
@@ -47,20 +48,21 @@
 					<div class="progress-bar"></div>  <!-- Progress Bar -->
 				</div>  <!-- End Slider Container -->
 			</div>
-		</div>
-
-		<h2><b>Site ran by tn5421, <a href="https://necromancers.000webhostapp.com/" target="_blank">forked from the original site</a>.  Any questions or comments may be directed to me <a href="https://github.com/tn5421/tn5421.github.io/issues" target="_blank">via github issues</a>.</h2>
-	</div>
+		</section>
+		<article class="content">
+			<h2><b>Site ran by tn5421, <a href="https://necromancers.000webhostapp.com/" target="_blank">forked from the original site</a>.  Any questions or comments may be directed to me <a href="https://github.com/tn5421/tn5421.github.io/issues" target="_blank">via github issues</a>.</h2>
+		</article>
 			<!-- dynamically loads the content of the nav file into the ID navbar -->
-	<script type="text/javascript">
-		(function(){
-    	var request = new XMLHttpRequest();
-    	request.open("GET", "https://tn5421.github.io/nav.html");
-    	request.addEventListener("load", function() {
-        	document.querySelector("#navbar").innerHTML += request.responseText;
-    	})
-    	request.send();
-		})(); // doesn't check response code or ready state because I'm lazy
-	</script>
+		<script type="text/javascript">
+			(function(){
+			var request = new XMLHttpRequest();
+			request.open("GET", "https://tn5421.github.io/nav.html");
+			request.addEventListener("load", function() {
+				document.querySelector("#navbar").innerHTML += request.responseText;
+			})
+			request.send();
+			})(); // doesn't check response code or ready state because I'm lazy
+		</script>
+	</div>
 </body>
 </html>
