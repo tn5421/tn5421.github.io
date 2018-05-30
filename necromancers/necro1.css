@@ -3,7 +3,7 @@ background-color: gray;
 margin-top:25px;
 }
 
-.center {
+.center, .content {
   text-align: center;
 }
 
