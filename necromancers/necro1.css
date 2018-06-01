@@ -7,6 +7,15 @@ margin-top:25px;
   text-align: center;
 }
 
+#navbar {
+	width: 200px;
+	float: left;
+}
+#content {
+	margin-left: 210px;
+	margin-right: 5%;
+}
+
 h1 {
   color: white;
   font-size: 47px;
