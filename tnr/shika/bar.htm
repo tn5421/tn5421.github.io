@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+
+<html lang="en-us">
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+	<title>Shika's Ultimate NinjaBar</title>
+	<link href="./files/style.css" rel="stylesheet" type="text/css">
+	<link href="http://shikatools.com/ultimateninjabar/favicon.ico" rel="shortcut icon" type="image/x-icon">
+</head>
+<body onkeydown="doAction(event)" onload="loadSettings()">
+	<div id="toolbar">
+		<input id="actionText" type="text">
+		<div id="controls">
+			<h2>Controls</h2>
+		</div>
+		<div id="autoFocus">
+			<h3 id="switchColor">AutoFocus:<br>
+			<span id="switch" style="color: rgb(0, 0, 0);">Off</span></h3>
+		</div>
+		<div id="title"></div>
+	</div>
+	<div id="sideContainer" style="display: block;">
+		<div id="sideBar">
+			<h2 class="headings invisible" onclick="showStuff(&#39;banker&#39;)">Bank</h2>
+			<div class="pleaseHide invisible" id="banker">
+				<form action="http://www.theninja-rpg.com/index.php?id=20" enctype="application/x-www-form-urlencoded" id="bankForm" method="post" name="bankForm" target="tnr">
+					<label for="bAmount" style="font-weight: bold">Amount:</label><br>
+					<input id="bAmount" name="amount" type="text"><br>
+					<input id="deposit" name="action" type="radio" value="deposit"><label for="deposit">Deposit</label> <input id="withdraw" name="action" type="radio" value="withdraw"><label for="withdraw">Withdraw</label><br>
+					<div class="btn">
+						<input name="Submit" type="submit" value="Execute">
+					</div>
+				</form>
+				<form action="http://www.theninja-rpg.com/index.php?id=20" id="sendForm" method="post" name="sendForm" target="tnr">
+					<label for="target_username">Username:</label><input id="target_username" name="target_username" type="text"><br>
+					<label for="sAmount">Amount:</label><br>
+					<input id="sAmount" name="amount" type="text"><br>
+					<input id="action" name="action" type="hidden" value="send">
+					<div class="btn">
+						<input name="Submit" type="submit" value="Submit">
+					</div>
+				</form>
+			</div>
+			<h2 class="headings invisible" onclick="showStuff(&#39;trainForm&#39;)">Train</h2>
+			<form action="http://www.theninja-rpg.com/index.php?id=39" class="pleaseHide invisible" id="trainForm" method="post" name="trainForm" target="tnr">
+				<select name="train">
+					<option value="strength">
+						Strength Training
+					</option>
+					<option value="intelligence">
+						Intelligence Training
+					</option>
+					<option value="willpower">
+						Willpower Training
+					</option>
+					<option value="speed">
+						Speed Training
+					</option>
+					<option value="nin">
+						Ninjutsu Training
+					</option>
+					<option value="gen">
+						Genjutsu Training
+					</option>
+					<option value="tai">
+						Taijutsu Training
+					</option>
+					<option value="weap">
+						Weapon Training
+					</option>
+				</select><select name="train_type">
+					<option value="">
+					</option>
+					<option value="Offensive">
+						Offensive Training
+					</option>
+					<option value="Defensive">
+						Defensive Training
+					</option>
+				</select><label for="train_amount">Amount:</label><br>
+				<input id="train_amount" name="train_amount" type="text"><br>
+				<div class="btn">
+					<input name="Submit" type="submit" value="Submit">
+				</div>
+			</form>
+			<h2 class="headings invisible" onclick="showStuff(&#39;errandsForm&#39;)">Errands</h2>
+			<form action="http://www.theninja-rpg.com/index.php?id=21&page=do_errand" class="pleaseHide invisible" id="errandsForm" method="post" name="errandsForm" target="tnr">
+				<select id="chooseJob">
+					<option id="job1" value="http://www.theninja-rpg.com/index.php?id=21&amp;page=do_errand">
+						Errands
+					</option>
+					<option id="job2" value="http://www.theninja-rpg.com/index.php?id=22&amp;page=do_errand">
+						Small Crimes
+					</option>
+					<option id="job3" value="http://www.theninja-rpg.com/index.php?id=31&amp;page=do_diplomacy">
+						Diplomacy
+					</option>
+				</select><label for="eTimes">Amount:</label><br>
+				<input id="eTimes" name="times" type="text"><br>
+				<div class="btn">
+					<input name="Submit" onclick="changeJob()" type="button" value="Submit">
+				</div>
+			</form>
+			<h2 class="headings invisible" onclick="showStuff(&#39;travelling&#39;)">Travel</h2>
+			<div class="pleaseHide invisible" id="travelling">
+				<img src="./files/arrowsSmall.png"><input class="move" id="north" onclick="changePage(&#39;http://www.theninja-rpg.com/index.php?id=8&amp;move=north&#39;)" type="button"><input class="move" id="south" onclick="changePage(&#39;http://www.theninja-rpg.com/index.php?id=8&amp;move=south&#39;)" type="button"><input class="move" id="east" onclick="changePage(&#39;http://www.theninja-rpg.com/index.php?id=8&amp;move=west&#39;)" type="button"><input class="move" id="west" onclick="changePage(&#39;http://www.theninja-rpg.com/index.php?id=8&amp;move=east&#39;)" type="button">
+			</div>
+			<h2 class="headings invisible" onclick="showStuff(&#39;buttons&#39;)">Helpful Links</h2>
+			<div class="pleaseHide invisible" id="buttons">
+				<div id="sleeping">
+					<div id="sleepLeft">
+						<input onclick="changePage(&#39;http://www.theninja-rpg.com/index.php?id=23&amp;act=wake&#39;)" type="button" value="Wake"><input onclick="changePage(&#39;http://www.theninja-rpg.com/index.php?id=19&amp;act=wake&#39;)" type="button" value="Wake">
+					</div>
+					<div id="sleepRight">
+						<input onclick="changePage(&#39;http://www.theninja-rpg.com/index.php?id=23&amp;act=sleep&#39;)" type="button" value="Sleep"><input onclick="changePage(&#39;http://www.theninja-rpg.com/index.php?id=19&amp;act=sleep&#39;)" type="button" value="Camp">
+					</div>
+				</div>
+				<div id="otherButtons">
+					<div id="otherLeft">
+						<input onclick="changePage(&#39;http://www.theninja-rpg.com/index.php?id=50&#39;)" type="button" value="Combat"><br>
+						<input onclick="changePage(&#39;http://www.theninja-rpg.com/index.php?id=30&#39;)" type="button" value="Scout"><br>
+						<input onclick="changePage(&#39;http://www.theninja-rpg.com/index.php?id=27&#39;)" type="button" value="Item Shop"><br>
+					</div>
+					<div id="otherRight">
+						<input onclick="changePage(&#39;http://www.theninja-rpg.com/index.php?id=35&#39;)" type="button" value="Arena"><br>
+						<input onclick="changePage(&#39;http://www.theninja-rpg.com/index.php?id=36&#39;)" type="button" value="Occupation"><br>
+						<input onclick="changePage(&#39;http://www.theninja-rpg.com/index.php?id=68&#39;)" type="button" value="Trade"><br>
+					</div>
+				</div>
+				<div id="ramen">
+					<label>Ramen Locations:</label><br>
+					<select id="shops">
+						<option selected value="Village">
+							Village
+						</option>
+						<option value="Shroud">
+							Shroud (8,14)
+						</option>
+						<option value="Samui">
+							Samui (18,17)
+						</option>
+						<option value="Shine">
+							Shine (21,8)
+						</option>
+						<option value="Silence">
+							Silence (16,5)
+						</option>
+						<option value="Konoki">
+							Konoki (6,7)
+						</option>
+					</select><br>
+					<input onclick="ramen()" type="button" value="Full Ramen">
+				</div>
+				<div id="missions">
+					<p>Missions:</p>
+					<div id="misLeft">
+						<input onclick="changePage(&#39;http://www.theninja-rpg.com/index.php?id=32&#39;)" type="button" value="D"><input onclick="changePage(&#39;http://www.theninja-rpg.com/index.php?id=40&#39;)" type="button" value="C">
+					</div>
+					<div id="misRight">
+						<input onclick="changePage(&#39;http://www.theninja-rpg.com/index.php?id=54&#39;)" type="button" value="B"><input onclick="changePage(&#39;http://www.theninja-rpg.com/index.php?id=62&#39;)" type="button" value="A">
+					</div>
+				</div>
+			</div>
+			<h2 class="headings invisible" onclick="showStuff(&#39;userForm&#39;)">Search User</h2>
+			<form action="http://www.theninja-rpg.com/index.php?id=13&page=profile" class="pleaseHide invisible" enctype="application/x-www-form-urlencoded" id="userForm" method="post" name="userForm" target="tnr">
+				<input id="userField" name="name" type="text"><input name="page" type="hidden" value="userprofile">
+				<div class="btn">
+					<input type="submit" value="Find User">
+				</div>
+			</form>
+			<h2 class="headings invisible" onclick="showStuff(&#39;settings&#39;)">Settings</h2>
+			<div class="pleaseHide invisible" id="settings">
+				<div id="setAlign">
+					<label>Alignment:</label><br>
+					<input id="alignLeft" type="button" value="Left"><input id="alignRight" type="button" value="Right">
+				</div>
+				<div id="setHide">
+					<label for="hideKeyCheck">When hidden, only show sidebar with key command:</label><input id="hideKeyCheck" type="checkbox"><input id="hideQuestion" type="button" value="?">
+				</div>
+				<div id="setDrops">
+					<label>Check which menus you would like opened by default:</label><br>
+					<input id="bankCheck" type="checkbox"><label for="bankCheck">Bank</label><br>
+					<input id="trainCheck" type="checkbox"><label for="trainCheck">Train</label><br>
+					<input id="errandsCheck" type="checkbox"><label for="errandsCheck">Errands</label><br>
+					<input id="travelCheck" type="checkbox"><label for="travelCheck">Travel</label><br>
+					<input id="linksCheck" type="checkbox"><label for="linksCheck">Links</label><br>
+					<input id="searchCheck" type="checkbox"><label for="searchCheck">Search</label><br>
+					<input id="settingsCheck" type="checkbox"><label for="settingsCheck">Settings</label><br>
+				</div>
+				<div id="setOpen">
+					<label for="collapseSet">Leave sidebar collapsed when page loads:</label><input id="collapseSet" type="checkbox">
+				</div>
+				<div id="setNote">
+					<p>Note: To save sidebar settings, click on the "controls" link on the ragebar and then click the save button.</p>
+				</div>
+			</div>
+			<div id="admin">
+				<div id="hideBtn"><img id="showHide" src="./files/show_hide.png"></div>
+				<p class="invisible">Toolbar Created by:<br>
+				<strong>Shikayaru</strong><br>
+				<br>
+				Original Ragebar<br>
+				Created by:<br>
+				<strong>TM</strong></p>
+			</div>
+		</div>
+	</div>
+	<div id="container" style="overflow: hidden; left: 200px; right: 0px;">
+		<iframe id="tnr" name="tnr" src="./files/index.htm" style="display: block;"></iframe>
+		<div id="content" style="display: none;">
+			<div id="panel">
+				<h3>Settings:</h3><input class="setBtns" onclick="restoreDefaults()" type="button" value="Reset Defaults">
+				<p>Would you like the Auto Focus feature to be turned on or off by default?</p><label for="focusOn">On</label><input id="focusOn" name="focusSet" type="radio"><label for="focusOff">Off</label><input checked id="focusOff" name="focusSet" type="radio">
+				<p>Save current settings or load previously saved settings:</p><input class="setBtns" id="saveBtn" type="button" value="Save"><input class="setBtns" id="loadBtn" type="button" value="Load">
+				<p id="notes"><strong>Notes:</strong><br>
+				1) You must have cookies enable to use the save and load features.<br>
+				2) This feature will save both ragebar and sidebar settings.<br>
+				3) Saved settings load automatically when you load this page, so unless<br>
+				you've changed the key configuration since then, you will not need to load<br>
+				your settings manually.</p>
+			</div>
+			<div class="columns">
+				<div class="module" id="toolbarlinks">
+					<h2>Toolbar Commands</h2><input id="1" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="1">Show/Hide Sidebar</label><br>
+					<input id="2" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="2">Deactivate AutoFocus</label><br>
+				</div>
+				<div class="module" id="character">
+					<h2>Character</h2><input id="3" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value="P"><label for="3">Profile</label><br>
+					<input id="4" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="4">Inventory</label><br>
+					<input id="5" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="5">My Jutsu</label><br>
+					<input id="6" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="6">Home</label><br>
+					<input class="sub1" id="7" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value="E"><label class="sub1" for="7">Sleep</label><br>
+					<input class="sub1" id="8" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value="Q"><label class="sub1" for="8">Wake</label><br>
+					<input class="sub1" id="9" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label class="sub1" for="9">Sell Home</label><br>
+					<input class="sub1" id="10" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label class="sub1" for="10">Home List</label><br>
+					<input id="11" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="11">Logbook</label><br>
+					<input class="sub1" id="12" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label class="sub1" for="12">Orders</label><br>
+					<input class="sub1" id="13" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label class="sub1" for="13">Active</label><br>
+					<input class="sub1" id="14" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label class="sub1" for="14">Completed</label><br>
+					<input class="sub1" id="15" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label class="sub1" for="15">Quests</label><br>
+					<input class="sub1" id="16" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label class="sub1" for="16">Special</label><br>
+				</div>
+				<div class="module" id="quests">
+					<h2>EM Quests</h2><input id="17" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="17">Chuunin Fire</label><br>
+					<input id="18" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="18">Primary Fire</label><br>
+					<input id="19" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="19">Secondary Fire</label><br>
+					<input id="20" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="20">Chuunin Wind</label><br>
+					<input id="21" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="21">Primary Wind</label><br>
+					<input id="22" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="22">Secondary Wind</label><br>
+					<input id="23" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="23">Chuunin Lightning</label><br>
+					<input id="24" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="24">Primary Lightning</label><br>
+					<input id="25" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="25">Secondary Lightning</label><br>
+					<input id="26" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="26">Chuunin Earth</label><br>
+					<input id="27" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="27">Primary Earth</label><br>
+					<input id="28" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="28">Secondary Earth</label><br>
+					<input id="29" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="29">Chuunin Water</label><br>
+					<input id="30" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="30">Primary Water</label><br>
+					<input id="31" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="31">Secondary Water</label><br>
+				</div>
+				<div class="module" id="communication">
+					<h2>Communication</h2><input id="445" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value="I"><label for="445">Inbox</label><br>
+					<input class="sub1" id="32" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label class="sub1" for="32">New Message</label><br>
+					<input class="sub1" id="33" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label class="sub1" for="33">Mark all as read</label><br>
+					<input class="sub1" id="34" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label class="sub1" for="34">Clear inbox</label><br>
+					<input id="35" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="35">Marriage</label><br>
+					<input class="sub1" id="36" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label class="sub1" for="36">Divorce</label><br>
+					<input id="37" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value="T"><label for="37">Tavern</label><br>
+					<input id="38" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="38">Rumors</label><br>
+					<input id="39" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value="K"><label for="39">Clan Chat</label><br>
+					<input id="40" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value="N"><label for="40">ANBU Chat</label><br>
+					<input id="41" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="41">Facebook Group</label><br>
+					<input id="42" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="42">Twitter TNR</label><br>
+				</div>
+				<div class="module" id="map">
+					<h2>Map</h2><input id="43" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="43">Travel</label><br>
+					<input class="sub1" id="44" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value="W"><label class="sub1" for="44">North</label><br>
+					<input class="sub1" id="45" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value="D"><label class="sub1" for="45">East</label><br>
+					<input class="sub1" id="46" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value="A"><label class="sub1" for="46">West</label><br>
+					<input class="sub1" id="47" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value="S"><label class="sub1" for="47">South</label><br>
+					<input id="48" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="48">Camp</label><br>
+					<input class="sub1" id="49" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value="C"><label class="sub1" for="49">Sleep</label><br>
+					<input class="sub1" id="50" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value="V"><label class="sub1" for="50">Wake</label><br>
+					<input id="51" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="51">Travelling Merchant</label><br>
+					<input class="sub1" id="52" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label class="sub1" for="52">Weapon</label><br>
+					<input class="sub1" id="53" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label class="sub1" for="53">Armor</label><br>
+					<input class="sub1" id="54" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label class="sub1" for="54">Item</label><br>
+					<input class="sub1" id="55" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label class="sub1" for="55">Special</label><br>
+					<input class="sub1" id="56" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label class="sub1" for="56">Material</label><br>
+					<input class="sub1" id="57" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label class="sub1" for="57">Tool</label><br>
+					<input id="58" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="58">Ramen Shop (Shroud)</label><br>
+					<input class="sub1" id="59" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value="5"><label class="sub1" for="59">Full Ramen</label><br>
+					<input id="60" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="60">Ramen Shop (Samui)</label><br>
+					<input class="sub1" id="61" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value="6"><label class="sub1" for="61">Full Ramen</label><br>
+					<input id="62" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="62">Ramen Shop (Shine)</label><br>
+					<input class="sub1" id="63" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value="7"><label class="sub1" for="63">Full Ramen</label><br>
+					<input id="64" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="64">Ramen Shop (Silence)</label><br>
+					<input class="sub1" id="65" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value="8"><label class="sub1" for="65">Full Ramen</label><br>
+					<input id="66" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="66">Ramen Shop (Konoki)</label><br>
+					<input class="sub1" id="67" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value="9"><label class="sub1" for="67">Full Ramen</label><br>
+					<input id="68" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="68">Scavenge Food</label><br>
+					<input class="sub1" id="69" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label class="sub1" for="69">Look for Food</label><br>
+					<input id="70" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="70">Travel History</label><br>
+				</div>
+				<div class="module" id="Armor Shop">
+					<h2>Armor Shop</h2><input id="283" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="283">Simple Belt</label><br>
+					<input id="284" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="284">Simple Cap</label><br>
+					<input id="285" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="285">Simple Gloves</label><br>
+					<input id="286" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="286">Simple Boots</label><br>
+					<input id="287" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="287">Simple Jeans</label><br>
+					<input id="288" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="288">Simple Vest</label><br>
+					<input id="289" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="289">Leather Belt</label><br>
+					<input id="290" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="290">Leather Gloves</label><br>
+					<input id="291" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="291">Leather Cap</label><br>
+					<input id="292" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="292">Leather Boots</label><br>
+					<input id="293" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="293">Leather Enforced Vest</label><br>
+					<input id="294" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="294">Leather Enforced Pants</label><br>
+					<input id="295" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="295">Studded Leather Belt</label><br>
+					<input id="296" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="296">Studded Leather Gloves</label><br>
+					<input id="297" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="297">Studded Leather Boots</label><br>
+					<input id="298" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="298">Studded Leather Cap</label><br>
+					<input id="299" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="299">Studded Leather Vest</label><br>
+					<input id="300" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="300">Studded Leather Pants</label><br>
+					<input id="301" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="301">Steel Enforced Belt</label><br>
+					<input id="302" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="302">Steel Enforced Gloves</label><br>
+					<input id="303" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="303">Steel Enforced Boots</label><br>
+					<input id="304" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="304">Steel Enforced Cap</label><br>
+					<input id="305" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="305">Steel Enforced Pants</label><br>
+					<input id="306" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="306">Steel Enforced Vest</label><br>
+					<input id="307" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="307">Flame Amulet</label><br>
+					<input id="308" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="308">Wind Amulet</label><br>
+					<input id="309" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="309">Lightning Amulet</label><br>
+					<input id="310" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="310">Earth Amulet</label><br>
+					<input id="311" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="311">Water Amulet</label><br>
+					<h2>Travelling Armor</h2><input id="312" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="312">Simple Belt</label><br>
+					<input id="313" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="313">Simple Cap</label><br>
+					<input id="314" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="314">Simple Gloves</label><br>
+					<input id="315" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="315">Simple Boots</label><br>
+					<input id="316" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="316">Simple Jeans</label><br>
+					<input id="317" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="317">Simple Vest</label><br>
+					<input id="318" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="318">Flame Amulet</label><br>
+					<input id="319" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="319">Wind Amulet</label><br>
+					<input id="320" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="320">Lightning Amulet</label><br>
+					<input id="321" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="321">Earth Amulet</label><br>
+					<input id="322" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="322">Water Amulet</label><br>
+				</div>
+				<div class="module" id="Item Shop">
+					<h2>Item Shop</h2><input id="323" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="323">Senbon</label><br>
+					<input class="sub1" id="324" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label class="sub1" for="324">Stock 50</label><br>
+					<input id="325" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="325">Shuriken</label><br>
+					<input class="sub1" id="326" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label class="sub1" for="326">Stock 50</label><br>
+					<input id="327" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="327">Kunai</label><br>
+					<input class="sub1" id="328" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label class="sub1" for="328">Stock 50</label><br>
+					<input id="329" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="329">Striking Dart</label><br>
+					<input class="sub1" id="330" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label class="sub1" for="330">Stock 25</label><br>
+					<input id="331" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="331">Blunt Dart</label><br>
+					<input class="sub1" id="332" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label class="sub1" for="332">Stock 10</label><br>
+					<input id="333" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="333">Bo-Shuriken</label><br>
+					<input class="sub1" id="334" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label class="sub1" for="334">Stock 25</label><br>
+					<input id="335" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="335">Fuuma Shuriken</label><br>
+					<input class="sub1" id="336" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label class="sub1" for="336">Stock 25</label><br>
+					<input id="337" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="337">Smoke Pellets</label><br>
+					<input class="sub1" id="338" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label class="sub1" for="338">Stock 50</label><br>
+					<input id="339" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="339">Eyebite Powder</label><br>
+					<input class="sub1" id="340" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label class="sub1" for="340">Stock 5</label><br>
+					<h2>Travelling Items</h2><input id="341" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="341">Senbon</label><br>
+					<input class="sub1" id="342" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label class="sub1" for="342">Stock 50</label><br>
+					<input id="343" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="343">Shuriken</label><br>
+					<input class="sub1" id="344" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label class="sub1" for="344">Stock 50</label><br>
+					<input id="345" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="345">Kunai</label><br>
+					<input class="sub1" id="346" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label class="sub1" for="346">Stock 25</label><br>
+					<input id="347" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="347">Striking Dart</label><br>
+					<input class="sub1" id="348" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label class="sub1" for="348">Stock 50</label><br>
+					<input id="349" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="349">Blunt Dart</label><br>
+					<input class="sub1" id="350" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label class="sub1" for="350">stock 10</label><br>
+					<input id="351" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="351">Bo-Shuriken</label><br>
+					<input class="sub1" id="352" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label class="sub1" for="352">Stock 25</label><br>
+					<input id="353" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="353">Smoke Pellets</label><br>
+					<input class="sub1" id="354" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label class="sub1" for="354">Stock 50</label><br>
+					<input id="355" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="355">Eyebite Powder</label><br>
+					<input class="sub1" id="356" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label class="sub1" for="356">Stock 5</label><br>
+				</div>
+			</div>
+			<div class="columns">
+				<div class="module" id="village">
+					<h2>Village</h2><input id="71" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="71">Reputation</label><br>
+					<input id="72" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="72">Town Hall</label><br>
+					<input class="sub1" id="73" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label class="sub1" for="73">ANBU Squads</label><br>
+					<input class="sub1" id="74" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label class="sub1" for="74">Bingo Book</label><br>
+					<input class="sub1" id="75" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label class="sub1" for="75">Bloodline Clinic</label><br>
+					<input class="sub1" id="76" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label class="sub1" for="76">Check Kage</label><br>
+					<input class="sub1" id="77" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label class="sub1" for="77">Global Messages</label><br>
+					<input class="sub1" id="78" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label class="sub1" for="78">Kage Orders</label><br>
+					<input class="sub1" id="79" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label class="sub1" for="79">Respect Bonuses</label><br>
+					<input class="sub1" id="80" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label class="sub1" for="80">Territories</label><br>
+					<input class="sub1" id="81" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label class="sub1" for="81">Village Status</label><br>
+					<input class="sub1" id="82" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label class="sub1" for="82">Villagers</label><br>
+					<input class="sub1" id="83" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label class="sub1" for="83">War Status</label><br>
+					<input id="84" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="84">Alliances</label><br>
+					<input id="85" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="85">The Ground</label><br>
+					<input id="86" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="86">Clan</label><br>
+					<input class="sub1" id="87" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label class="sub1" for="87">Clan Agenda</label><br>
+					<input class="sub1" id="88" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label class="sub1" for="88">Clan Status</label><br>
+					<input class="sub1" id="89" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label class="sub1" for="89">Clan Jutsu</label><br>
+					<input class="sub1" id="90" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label class="sub1" for="90">Other Clans</label><br>
+					<input class="sub1" id="91" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label class="sub1" for="91">Resign</label><br>
+					<input class="sub1" id="92" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label class="sub1" for="92">Edit Agenda</label><br>
+					<input class="sub1" id="93" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label class="sub1" for="93">Spend Points</label><br>
+					<input class="sub1" id="94" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label class="sub1" for="94">Edit Signature</label><br>
+					<input class="sub1" id="95" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label class="sub1" for="95">Applications</label><br>
+					<input class="sub1" id="96" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label class="sub1" for="96">Kick User</label><br>
+					<input class="sub1" id="97" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label class="sub1" for="97">Manage Coleaders</label><br>
+					<input class="sub1" id="98" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label class="sub1" for="98">Kage Support</label><br>
+					<input id="99" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value="B"><label for="99">Bank</label><br>
+					<input id="100" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="100">Errands</label><br>
+					<input class="sub1" id="101" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label class="sub1" for="101">Run Errands</label><br>
+					<input id="102" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value="J"><label for="102">Small Crimes</label><br>
+					<input class="sub1" id="103" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label class="sub1" for="103">Do Small Crimes</label><br>
+					<input id="104" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="104">Ramen Shop</label><br>
+					<input class="sub1" id="105" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value="R"><label class="sub1" for="105">Full Ramen</label><br>
+					<input id="106" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="106">Lottery</label><br>
+					<input id="107" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value="Y"><label for="107">Item Shop</label><br>
+					<input class="sub1" id="108" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label class="sub1" for="108">Weapon</label><br>
+					<input class="sub1" id="109" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label class="sub1" for="109">Armor</label><br>
+					<input class="sub1" id="110" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label class="sub1" for="110">Item</label><br>
+					<input class="sub1" id="111" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label class="sub1" for="111">Special</label><br>
+					<input class="sub1" id="112" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label class="sub1" for="112">Material</label><br>
+					<input class="sub1" id="113" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label class="sub1" for="113">Tool</label><br>
+					<input id="114" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="114">Diplomacy</label><br>
+					<input class="sub1" id="115" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label class="sub1" for="115">Do Diplomacy</label><br>
+					<input id="116" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="116">Black Market</label><br>
+					<input id="117" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value="M"><label for="117">ANBU HQ</label><br>
+					<input class="sub1" id="118" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label class="sub1" for="118">Invite Member</label><br>
+					<input class="sub1" id="119" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label class="sub1" for="119">Squad Orders</label><br>
+					<input class="sub1" id="120" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label class="sub1" for="120">Kick Member</label><br>
+					<input class="sub1" id="121" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label class="sub1" for="121">Resign</label><br>
+					<input class="sub1" id="122" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label class="sub1" for="122">ANBU Shop</label><br>
+					<input class="sub1" id="123" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label class="sub1" for="123">Weapon</label><br>
+					<input class="sub1" id="124" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label class="sub1" for="124">Armor</label><br>
+					<input class="sub1" id="125" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label class="sub1" for="125">Item</label><br>
+					<input class="sub1" id="126" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label class="sub1" for="126">Soldier Pills</label><br>
+					<input class="sub1" id="127" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label class="sub1" for="127">Stock 2</label><br>
+					<input id="128" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value="H"><label for="128">Trade</label><br>
+					<input class="sub1" id="129" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label class="sub1" for="129">Search Trades</label><br>
+					<input class="sub1" id="130" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label class="sub1" for="130">New Trade</label><br>
+					<input class="sub1" id="131" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label class="sub1" for="131">Your Offers</label><br>
+					<input class="sub1" id="132" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label class="sub1" for="132">Browse Trades</label><br>
+					<input class="sub1" id="133" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label class="sub1" for="133">Your Trades</label><br>
+					<input class="sub1" id="134" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label class="sub1" for="134">Trading History</label><br>
+					<input id="135" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="135">The Syndicate</label><br>
+					<input class="sub1" id="136" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label class="sub1" for="136">Bloodline Clinic</label><br>
+					<input class="sub1" id="137" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label class="sub1" for="137">Check Leader</label><br>
+					<input class="sub1" id="138" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label class="sub1" for="138">Global Messages</label><br>
+					<input class="sub1" id="139" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label class="sub1" for="139">Leader Orders</label><br>
+					<input class="sub1" id="140" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label class="sub1" for="140">Mercenary Work</label><br>
+					<input class="sub1" id="141" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label class="sub1" for="141">Outlaws</label><br>
+					<input class="sub1" id="142" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label class="sub1" for="142">Respect Bonuses</label><br>
+					<input class="sub1" id="143" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label class="sub1" for="143">Syndicate Status</label><br>
+					<input class="sub1" id="144" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label class="sub1" for="144">Territories</label><br>
+					<input id="145" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="145">Profession</label><br>
+					<input class="sub1" id="146" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label class="sub1" for="146">Pre-Process Materials</label><br>
+					<input class="sub1" id="147" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label class="sub1" for="147">Materials</label><br>
+					<input class="sub1" id="148" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label class="sub1" for="148">Crafting Recipes</label><br>
+					<input class="sub1" id="446" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label class="sub1" for="446">Ramen Supplies</label><br>
+					<input class="sub1" id="447" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label class="sub1" for="447">Hospital Supplies</label><br>
+					<input id="149" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="149">Item Repair</label><br>
+					<input class="sub1" id="150" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label class="sub1" for="150">Submission List</label><br>
+					<input class="sub1" id="151" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label class="sub1" for="151">Weapon Repair Jobs</label><br>
+					<input class="sub1" id="152" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label class="sub1" for="152">Armor Repair Jobs</label><br>
+					<input id="153" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="153">Grand Market</label><br>
+					<input class="sub1" id="154" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label class="sub1" for="154">Search Trades</label><br>
+					<input class="sub1" id="155" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label class="sub1" for="155">New Trade</label><br>
+					<input class="sub1" id="156" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label class="sub1" for="156">Your Offers</label><br>
+					<input class="sub1" id="157" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label class="sub1" for="157">Browse Trades</label><br>
+					<input class="sub1" id="158" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label class="sub1" for="158">Your Trades</label><br>
+					<input class="sub1" id="159" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label class="sub1" for="159">Trading History</label><br>
+					<input id="160" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="160">Hospital</label><br>
+					<input class="sub1" id="161" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label class="sub1" for="161">Pay</label><br>
+					<input class="sub1" id="162" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label class="sub1" for="162">Sign Out</label><br>
+				</div>
+				<div class="module" id="Weapon Shop">
+					<h2>Weapon Shop</h2><input id="255" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="255">Pointy Stick</label><br>
+					<input id="256" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="256">War Staff</label><br>
+					<input id="257" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="257">Hand Axe</label><br>
+					<input id="258" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="258">Brass Knuckles</label><br>
+					<input id="259" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="259">Kama</label><br>
+					<input id="260" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="260">Sai</label><br>
+					<input id="261" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="261">Sabre</label><br>
+					<input id="262" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="262">Yari</label><br>
+					<input id="263" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="263">Manriki</label><br>
+					<input id="264" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="264">War Axe</label><br>
+					<input id="265" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="265">Small Metal Fan</label><br>
+					<input id="266" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="266">Three Headed Flail</label><br>
+					<input id="267" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="267">Tanto</label><br>
+					<input id="268" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="268">Trench Knife</label><br>
+					<input id="269" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="269">Wakizashi</label><br>
+					<input id="270" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="270">Double headed Axe</label><br>
+					<input id="271" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="271">Meteor Dart</label><br>
+					<input id="272" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="272">Kusarigama</label><br>
+					<input id="273" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="273">Tekko-Kagi</label><br>
+					<h2>Travelling Weapons</h2><input id="274" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="274">Pointy Stick</label><br>
+					<input id="275" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="275">War Staff</label><br>
+					<input id="276" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="276">Hand Axe</label><br>
+					<input id="277" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="277">Brass Knuckles</label><br>
+					<input id="278" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="278">Kama</label><br>
+					<input id="279" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="279">Sai</label><br>
+					<input id="280" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="280">Sabre</label><br>
+					<input id="281" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="281">Yari</label><br>
+					<input id="282" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="282">Manriki</label><br>
+				</div>
+				<div class="module" id="Tool Shop">
+					<h2>Tool Shop</h2><input id="423" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="423">Hunters Toolkit</label><br>
+					<input id="424" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="424">Miners Toolkit</label><br>
+					<input id="425" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="425">Herbalist Pouch</label><br>
+					<input id="426" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="426">Cooking Gear</label><br>
+					<input id="427" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="427">Smithy</label><br>
+					<input id="428" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="428">Workshop</label><br>
+					<h2>Travelling Tools</h2><input id="429" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="429">Hunters Toolkit</label><br>
+					<input id="430" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="430">Miners Toolkit</label><br>
+					<input id="431" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="431">Herbalist Pouch</label><br>
+					<input id="432" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="432">Cooking Gear</label><br>
+					<input id="433" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="433">Smithy</label><br>
+					<input id="434" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="434">Workshop</label><br>
+				</div>
+				<div class="module" id="main">
+					<h2>Main Menu</h2><input id="435" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="435">News</label><br>
+					<input id="436" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="436">Contact</label><br>
+					<input id="437" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="437">Forum</label><br>
+					<input id="438" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="438">Manual</label><br>
+					<input id="439" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="439">Rules</label><br>
+					<input id="440" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="440">Terms of Service</label><br>
+					<input id="441" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="441">Players Online</label><br>
+					<input id="442" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="442">About TNR</label><br>
+					<input id="443" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="443">Event History</label><br>
+					<input id="444" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="444">Changelog</label><br>
+				</div>
+			</div>
+			<div class="columns" style="margin: 0">
+				<div class="module" id="training">
+					<h2>Training &amp;<br>
+					Missions</h2><input id="163" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value="O"><label for="163">Occupation</label><br>
+					<input class="sub1" id="164" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label class="sub1" for="164">Get Promoted</label><br>
+					<input class="sub1" id="165" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label class="sub1" for="165">Claim Gains</label><br>
+					<input class="sub1" id="166" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label class="sub1" for="166">Quit Job</label><br>
+					<input id="448" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="448">Academy</label><br>
+					<input id="167" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="167">Sensei</label><br>
+					<input id="168" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value="ENTER"><label for="168">Train</label><br>
+					<input id="169" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="169">Specialization</label><br>
+					<input id="170" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="170">Mission: D</label><br>
+					<input class="sub1" id="171" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value="1"><label class="sub1" for="171">Start Mission</label><br>
+					<input id="172" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="172">Mission: C</label><br>
+					<input class="sub1" id="173" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value="2"><label class="sub1" for="173">Start Mission</label><br>
+					<input id="174" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="174">Mission: B</label><br>
+					<input class="sub1" id="175" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value="3"><label class="sub1" for="175">Start Mission</label><br>
+					<input id="176" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="176">Mission: A</label><br>
+					<input class="sub1" id="177" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value="4"><label class="sub1" for="177">Start Mission</label><br>
+					<input id="178" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="178">Crime: C</label><br>
+					<input class="sub1" id="179" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label class="sub1" for="179">Start Crime</label><br>
+					<input id="180" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="180">Crime: B</label><br>
+					<input class="sub1" id="181" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label class="sub1" for="181">Start Crime</label><br>
+					<input id="182" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="182">Crime: A</label><br>
+					<input class="sub1" id="183" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label class="sub1" for="183">Start Crime</label><br>
+					<input id="184" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="184">History</label><br>
+				</div>
+				<div class="module" id="combat">
+					<h2>Combat</h2><input id="185" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value="Z"><label for="185">Scout Area</label><br>
+					<input class="sub1" id="186" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label class="sub1" for="186">Gather Resource</label><br>
+					<input id="187" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value="L"><label for="187">Battle Arena</label><br>
+					<input id="188" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="188">Spar</label><br>
+					<input id="189" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="189">Rob Users</label><br>
+					<input id="190" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value="F"><label for="190">Combat</label><br>
+					<input class="sub1" id="191" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value="G"><label class="sub1" for="191">Refresh Combat</label><br>
+					<input id="192" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="192">Territory Challenges</label><br>
+					<input id="193" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="193">Battle History</label><br>
+				</div>
+				<div class="module" id="support">
+					<h2>Support TNR</h2><input id="194" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="194">Buy Reputation Points</label><br>
+					<input id="195" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="195">Earn Popularity Points</label><br>
+					<input id="196" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="196">Bonus Chakra &amp; Stamina</label><br>
+					<input id="197" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="197">Facebook</label><br>
+					<input id="198" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="198">Monthly Mission</label><br>
+				</div>
+				<div class="module" id="general">
+					<h2>General</h2><input id="199" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="199">User Preferences</label><br>
+					<input class="sub1" id="200" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label class="sub1" for="200">Change Avatar</label><br>
+					<input class="sub1" id="201" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label class="sub1" for="201">Get Signature</label><br>
+					<input class="sub1" id="202" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label class="sub1" for="202">Preferences</label><br>
+					<input class="sub1" id="203" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label class="sub1" for="203">Password Change</label><br>
+					<input class="sub1" id="204" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label class="sub1" for="204">Black/Whitelist</label><br>
+					<input class="sub1" id="205" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label class="sub1" for="205">Nindo</label><br>
+					<input class="sub1" id="206" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label class="sub1" for="206">Change Layout</label><br>
+					<input class="sub1" id="207" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label class="sub1" for="207">core2</label><br>
+					<input class="sub1" id="208" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label class="sub1" for="208">default</label><br>
+					<input class="sub1" id="209" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label class="sub1" for="209">light</label><br>
+					<input class="sub1" id="210" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label class="sub1" for="210">mobile</label><br>
+					<input class="sub1" id="211" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label class="sub1" for="211">Change Username</label><br>
+					<input class="sub1" id="212" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label class="sub1" for="212">Leave Village</label><br>
+					<input class="sub1" id="213" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label class="sub1" for="213">Reset Account</label><br>
+					<input class="sub1" id="214" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label class="sub1" for="214">Delete Account</label><br>
+					<input class="sub1" id="215" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label class="sub1" for="215">Sensei Settings</label><br>
+					<input id="216" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="216">Game Help</label><br>
+					<input class="sub1" id="217" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label class="sub1" for="217">Crew List</label><br>
+					<input id="218" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="218">Members</label><br>
+					<input id="219" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="219">Log Out</label><br>
+				</div>
+				<div class="module" id="Material Shop">
+					<h2>Materials Shop</h2><input id="357" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="357">Cabbage</label><br>
+					<input class="sub1" id="358" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label class="sub1" for="358">Stock 25</label><br>
+					<input id="359" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="359">Bottled Water</label><br>
+					<input class="sub1" id="360" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label class="sub1" for="360">Stock 25</label><br>
+					<input id="361" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="361">Milk</label><br>
+					<input class="sub1" id="362" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label class="sub1" for="362">Stock 25</label><br>
+					<input id="363" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="363">Wheat Flour</label><br>
+					<input class="sub1" id="364" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label class="sub1" for="364">Stock 25</label><br>
+					<input id="365" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="365">Rice</label><br>
+					<input class="sub1" id="366" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label class="sub1" for="366">Stock 25</label><br>
+					<input id="367" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="367">Salt</label><br>
+					<input class="sub1" id="368" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label class="sub1" for="368">Stock 25</label><br>
+					<input id="369" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="369">Bamboo Supplies</label><br>
+					<input class="sub1" id="370" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label class="sub1" for="370">Stock 10</label><br>
+					<input id="371" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="371">Wood</label><br>
+					<input class="sub1" id="372" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label class="sub1" for="372">Stock 10</label><br>
+					<input id="373" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="373">Rope</label><br>
+					<input class="sub1" id="374" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label class="sub1" for="374">Stock 5</label><br>
+					<input id="375" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="375">Whitefish</label><br>
+					<input class="sub1" id="376" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label class="sub1" for="376">Stock 20</label><br>
+					<input id="377" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="377">Lake Tuna</label><br>
+					<input class="sub1" id="378" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label class="sub1" for="378">Stock 5</label><br>
+					<input id="379" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="379">Koi Fillet</label><br>
+					<input class="sub1" id="380" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label class="sub1" for="380">Stock 5</label><br>
+					<input id="381" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="381">Rabbit</label><br>
+					<input class="sub1" id="382" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label class="sub1" for="382">Stock 20</label><br>
+					<input id="383" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="383">(Konoki Item Lvl 2)</label><br>
+					<input class="sub1" id="384" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label class="sub1" for="384">Stock 5</label><br>
+					<input id="385" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="385">(Konoki Item Lvl 3)</label><br>
+					<input class="sub1" id="386" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label class="sub1" for="386">Stock 5</label><br>
+					<input id="387" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="387">Armadillo</label><br>
+					<input class="sub1" id="388" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label class="sub1" for="388">Stock 20</label><br>
+					<input id="389" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="389">(Samui Item Lvl 2)</label><br>
+					<input class="sub1" id="390" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label class="sub1" for="390">Stock 5</label><br>
+					<input id="391" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="391">(Samui Item Lvl 3)</label><br>
+					<input class="sub1" id="392" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label class="sub1" for="392">Stock 5</label><br>
+					<input id="393" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="393">Fresh Lizard</label><br>
+					<input class="sub1" id="394" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label class="sub1" for="394">Stock 20</label><br>
+					<input id="395" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="395">Meercat</label><br>
+					<input class="sub1" id="396" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label class="sub1" for="396">Stock 5</label><br>
+					<input id="397" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="397">(Shine Item Lvl 3)</label><br>
+					<input class="sub1" id="398" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label class="sub1" for="398">Stock 5</label><br>
+					<input id="399" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="399">Goat Flank</label><br>
+					<input class="sub1" id="400" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label class="sub1" for="400">Stock 20</label><br>
+					<input id="401" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="401">Wild Hare</label><br>
+					<input class="sub1" id="402" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label class="sub1" for="402">Stock 5</label><br>
+					<input id="403" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="403">(Silence Item Lvl 3)</label><br>
+					<input class="sub1" id="404" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label class="sub1" for="404">Stock 5</label><br>
+					<h2>Travelling Materials</h2><input id="405" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="405">Cabbage</label><br>
+					<input class="sub1" id="406" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label class="sub1" for="406">Stock 25</label><br>
+					<input id="407" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="407">Bottled Water</label><br>
+					<input class="sub1" id="408" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label class="sub1" for="408">Stock 25</label><br>
+					<input id="409" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="409">Milk</label><br>
+					<input class="sub1" id="410" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label class="sub1" for="410">Stock 25</label><br>
+					<input id="411" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="411">Wheat Flour</label><br>
+					<input class="sub1" id="412" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label class="sub1" for="412">Stock 25</label><br>
+					<input id="413" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="413">Rice</label><br>
+					<input class="sub1" id="414" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label class="sub1" for="414">Stock 25</label><br>
+					<input id="415" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="415">Salt</label><br>
+					<input class="sub1" id="416" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label class="sub1" for="416">Stock 25</label><br>
+					<input id="417" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="417">Bamboo Supplies</label><br>
+					<input class="sub1" id="418" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label class="sub1" for="418">Stock 10</label><br>
+					<input id="419" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="419">Wood</label><br>
+					<input class="sub1" id="420" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label class="sub1" for="420">Stock 10</label><br>
+					<input id="421" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="421">Rope</label><br>
+					<input class="sub1" id="422" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label class="sub1" for="422">Stock 5</label><br>
+				</div>
+				<div class="module" id="memberlists">
+					<h2>Members Filters</h2><input id="220" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="220">Level - All</label><br>
+					<input id="221" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="221">Level - AS</label><br>
+					<input id="222" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="222">Level - Genin</label><br>
+					<input id="223" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="223">Level - Chuunin</label><br>
+					<input id="224" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="224">Level - Jounin</label><br>
+					<input id="225" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="225">Level - SJ</label><br>
+					<input id="226" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="226">Reputation - All</label><br>
+					<input id="227" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="227">Reputation - AS</label><br>
+					<input id="228" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="228">Reputation - Genin</label><br>
+					<input id="229" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="229">Reputation - Chuunin</label><br>
+					<input id="230" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="230">Reputation - Jounin</label><br>
+					<input id="231" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="231">Reputation - SJ</label><br>
+					<input id="232" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="232">Popularity - All</label><br>
+					<input id="233" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="233">Popularity - AS</label><br>
+					<input id="234" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="234">Popularity - Genin</label><br>
+					<input id="235" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="235">Popularity - Chuunin</label><br>
+					<input id="236" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="236">Popularity - Jounin</label><br>
+					<input id="237" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="237">Popularity - SJ</label><br>
+					<input id="238" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="238">Aggression - All</label><br>
+					<input id="239" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="239">Aggression - AS</label><br>
+					<input id="240" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="240">Aggression - Genin</label><br>
+					<input id="241" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="241">Aggression - Chuunin</label><br>
+					<input id="242" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="242">Aggression - Jounin</label><br>
+					<input id="243" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="243">Aggression - SJ</label><br>
+					<input id="244" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="244">PvP - All</label><br>
+					<input id="245" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="245">PvP - AS</label><br>
+					<input id="246" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="246">Pvp - Genin</label><br>
+					<input id="247" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="247">PvP - Chuunin</label><br>
+					<input id="248" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="248">PvP - Jounin</label><br>
+					<input id="249" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="249">PvP - SJ</label><br>
+					<input id="250" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="250">Konoki Clans</label><br>
+					<input id="251" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="251">Silence Clans</label><br>
+					<input id="252" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="252">Shroud Clans</label><br>
+					<input id="253" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="253">Samui Clans</label><br>
+					<input id="254" maxlength="1" onblur="updateValues(this)" onkeydown="setChars(this,event)" type="text" value=""><label for="254">Shine Clans</label><br>
+				</div>
+			</div>
+			<div class="clear"></div>
+		</div>
+	</div>
+	<form action="http://www.theninja-rpg.com/index.php?id=55" class="hiddenForms" id="CcrimeForm" method="post" name="CcrimeForm" target="tnr">
+		<input name="Submit" type="text" value="I&#39;m ready for it!">
+	</form>
+	<form action="http://shikatools.com/ultimateninjabar/" class="hiddenForms" id="BcrimeForm" method="post" name="BcrimeForm" target="tnr">
+		<input name="Submit" type="text" value="I&#39;m ready for it!">
+	</form>
+	<form action="http://shikatools.com/ultimateninjabar/" class="hiddenForms" id="AcrimeForm" method="post" name="AcrimeForm" target="tnr">
+		<input name="Submit" type="text" value="I&#39;m ready for it!">
+	</form>
+	<form action="http://www.theninja-rpg.com/index.php?id=32" class="hiddenForms" id="DmissionForm" method="post" name="DmissionForm" target="tnr">
+		<input name="Submit" type="text" value="I&#39;m ready for it!">
+	</form>
+	<form action="http://www.theninja-rpg.com/index.php?id=40" class="hiddenForms" id="CmissionForm" method="post" name="CmissionForm" target="tnr">
+		<input name="Submit" type="text" value="I&#39;m ready for it!">
+	</form>
+	<form action="http://www.theninja-rpg.com/index.php?id=54" class="hiddenForms" id="BmissionForm" method="post" name="BmissionForm" target="tnr">
+		<input name="Submit" type="text" value="I&#39;m ready for it!">
+	</form>
+	<form action="http://www.theninja-rpg.com/index.php?id=62" class="hiddenForms" id="AmissionForm" method="post" name="AmissionForm" target="tnr">
+		<input name="Submit" type="text" value="I&#39;m ready for it!">
+	</form>
+	<form action="http://www.theninja-rpg.com/index.php?id=97" class="hiddenForms" id="findFood" method="post" name="findFood" target="tnr">
+		<input name="Submit" type="text" value="Look for food">
+	</form>
+	<form action="http://www.theninja-rpg.com/index.php?id=4&act=layout" class="hiddenForms" id="layoutForm" method="post" name="layoutForm" target="tnr">
+		<input id="layout" name="layout" type="text" value="default"><input name="Submit" type="text" value="Change layout">
+	</form>
+	<script src="./files/jquery.min.js.download">
+	</script>
+	<script src="./files/script.js.download">
+	</script>
+</body>
+</html>
