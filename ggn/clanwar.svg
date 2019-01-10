@@ -320,22 +320,25 @@
 <g fill="none" color="black" stroke="currentColor" stroke-width="2.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<path stroke='rgb(255,  10,  10)'  d='M440.0,150.6 L445.6,150.6 L459.3,150.6 L584.3,157.5 L625.6,156.6 L634.4,156.6 L638.7,155.8 L644.4,155.8
 		L651.9,155.8 L658.1,155.8 L668.1,155.8 L674.4,155.8 L690.6,154.0 L706.2,154.0 L726.2,151.5 L728.7,151.5
-		L731.2,151.5 L732.5,151.5  '/></g>
+		L731.2,151.5 L732.5,151.5 L757.5,148.9 L763.1,148.9  '/></g>
 	</g>
 	<g id="gnuplot_plot_2a" ><title>Earth Clan Seedtime</title>
 <g fill="none" color="black" stroke="currentColor" stroke-width="2.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<path stroke='rgb(145,  93,  29)'  d='M440.0,191.6 L445.6,191.6 L459.3,193.3 L584.3,200.1 L625.6,200.1 L634.4,200.1 L638.7,201.0 L644.4,201.0
-		L651.9,201.0 L658.1,201.0 L668.1,201.0 L674.4,201.0 L690.6,201.9 L706.2,201.9 L732.5,202.7  '/></g>
+		L651.9,201.0 L658.1,201.0 L668.1,201.0 L674.4,201.0 L690.6,201.9 L706.2,201.9 L732.5,202.7 L757.5,201.9
+		L763.1,201.9  '/></g>
 	</g>
 	<g id="gnuplot_plot_3a" ><title>Wind Clan Seedtime</title>
 <g fill="none" color="black" stroke="currentColor" stroke-width="2.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<path stroke='rgb(142, 142, 142)'  d='M440.0,708.9 L445.6,708.9 L459.3,709.8 L584.3,712.3 L625.6,711.5 L634.4,711.5 L638.7,711.5 L644.4,711.5
-		L651.9,711.5 L658.1,712.3 L668.1,712.3 L674.4,712.3 L690.6,712.3 L706.2,712.3 L732.5,712.3  '/></g>
+		L651.9,711.5 L658.1,712.3 L668.1,712.3 L674.4,712.3 L690.6,712.3 L706.2,712.3 L732.5,712.3 L757.5,712.3
+		L763.1,712.3  '/></g>
 	</g>
 	<g id="gnuplot_plot_4a" ><title>Water Clan Seedtime</title>
 <g fill="none" color="black" stroke="currentColor" stroke-width="2.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<path stroke='rgb( 44, 177, 221)'  d='M440.0,271.8 L445.6,271.8 L459.3,272.7 L584.3,271.8 L625.6,271.8 L634.4,271.8 L638.7,271.0 L644.4,271.0
-		L651.9,271.0 L658.1,271.0 L668.1,271.0 L674.4,271.0 L690.6,269.3 L706.2,269.3 L732.5,271.0  '/></g>
+		L651.9,271.0 L658.1,271.0 L668.1,271.0 L674.4,271.0 L690.6,269.3 L706.2,269.3 L732.5,271.0 L757.5,271.0
+		L763.1,271.0  '/></g>
 	</g>
 	<g stroke='none' shape-rendering='crispEdges'>
 		<polygon fill = 'white' points = '33.2,153.1 249.7,153.1 249.7,81.1 33.2,81.1 '/>
@@ -677,22 +680,25 @@
 <g fill="none" color="black" stroke="currentColor" stroke-width="2.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<path stroke='rgb(255,  10,  10)'  d='M1240.0,519.8 L1245.6,519.8 L1259.3,519.8 L1384.3,519.8 L1425.6,519.8 L1434.4,519.8 L1438.7,519.8 L1444.4,519.8
 		L1451.9,519.8 L1458.1,519.8 L1468.1,519.8 L1474.4,519.8 L1490.6,519.8 L1506.2,519.8 L1526.2,519.8 L1528.7,519.8
-		L1531.2,519.8 L1532.5,519.8  '/></g>
+		L1531.2,519.8 L1532.5,519.8 L1557.5,519.8 L1563.1,519.8  '/></g>
 	</g>
 	<g id="gnuplot_plot_2b" ><title>Earth Clan Uploads</title>
 <g fill="none" color="black" stroke="currentColor" stroke-width="2.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<path stroke='rgb(145,  93,  29)'  d='M1240.0,151.0 L1245.6,151.0 L1259.3,152.5 L1384.3,149.5 L1425.6,129.8 L1434.4,129.8 L1438.7,129.8 L1444.4,129.8
-		L1451.9,129.8 L1458.1,129.8 L1468.1,129.8 L1474.4,129.8 L1490.6,129.8 L1506.2,129.8 L1532.5,125.2  '/></g>
+		L1451.9,129.8 L1458.1,129.8 L1468.1,129.8 L1474.4,129.8 L1490.6,129.8 L1506.2,129.8 L1532.5,125.2 L1557.5,126.7
+		L1563.1,126.7  '/></g>
 	</g>
 	<g id="gnuplot_plot_3b" ><title>Wind Clan Uploads</title>
 <g fill="none" color="black" stroke="currentColor" stroke-width="2.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<path stroke='rgb(142, 142, 142)'  d='M1240.0,152.5 L1245.6,152.5 L1259.3,152.5 L1384.3,152.5 L1425.6,152.5 L1434.4,152.5 L1438.7,152.5 L1444.4,152.5
-		L1451.9,152.5 L1458.1,152.5 L1468.1,152.5 L1474.4,152.5 L1490.6,152.5 L1506.2,152.5 L1532.5,151.0  '/></g>
+		L1451.9,152.5 L1458.1,152.5 L1468.1,152.5 L1474.4,152.5 L1490.6,152.5 L1506.2,152.5 L1532.5,151.0 L1557.5,151.0
+		L1563.1,151.0  '/></g>
 	</g>
 	<g id="gnuplot_plot_4b" ><title>Water Clan Uploads</title>
 <g fill="none" color="black" stroke="currentColor" stroke-width="2.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<path stroke='rgb( 44, 177, 221)'  d='M1240.0,703.4 L1245.6,703.4 L1259.3,703.4 L1384.3,703.4 L1425.6,712.5 L1434.4,712.5 L1438.7,712.5 L1444.4,712.5
-		L1451.9,712.5 L1458.1,712.5 L1468.1,712.5 L1474.4,712.5 L1490.6,712.5 L1506.2,712.5 L1532.5,712.5  '/></g>
+		L1451.9,712.5 L1458.1,712.5 L1468.1,712.5 L1474.4,712.5 L1490.6,712.5 L1506.2,712.5 L1532.5,712.5 L1557.5,712.5
+		L1563.1,712.5  '/></g>
 	</g>
 	<g stroke='none' shape-rendering='crispEdges'>
 		<polygon fill = 'white' points = '833.2,153.1 1041.4,153.1 1041.4,81.1 833.2,81.1 '/>
@@ -975,22 +981,25 @@
 <g fill="none" color="black" stroke="currentColor" stroke-width="2.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<path stroke='rgb(255,  10,  10)'  d='M440.0,928.8 L445.6,928.8 L459.3,928.4 L584.3,927.0 L625.6,926.2 L634.4,926.2 L638.7,926.0 L644.4,926.0
 		L651.9,926.0 L658.1,925.8 L668.1,925.8 L674.4,925.8 L690.6,925.4 L706.2,925.4 L726.2,923.5 L728.7,923.5
-		L731.2,923.5 L732.5,923.5  '/></g>
+		L731.2,923.5 L732.5,923.5 L757.5,922.3 L763.1,922.3  '/></g>
 	</g>
 	<g id="gnuplot_plot_2c" ><title>Earth Clan TB Uploaded</title>
 <g fill="none" color="black" stroke="currentColor" stroke-width="2.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<path stroke='rgb(145,  93,  29)'  d='M440.0,1069.7 L445.6,1069.7 L459.3,1069.3 L584.3,1057.6 L625.6,1056.0 L634.4,1056.0 L638.7,1055.8 L644.4,1055.8
-		L651.9,1055.8 L658.1,1055.0 L668.1,1055.0 L674.4,1055.0 L690.6,1054.6 L706.2,1054.6 L732.5,1541.1  '/></g>
+		L651.9,1055.8 L658.1,1055.0 L668.1,1055.0 L674.4,1055.0 L690.6,1054.6 L706.2,1054.6 L732.5,1541.1 L757.5,1539.2
+		L763.1,1539.2  '/></g>
 	</g>
 	<g id="gnuplot_plot_3c" ><title>Wind Clan TB Uploaded</title>
 <g fill="none" color="black" stroke="currentColor" stroke-width="2.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<path stroke='rgb(142, 142, 142)'  d='M440.0,989.3 L445.6,989.3 L459.3,988.7 L584.3,985.5 L625.6,984.4 L634.4,984.4 L638.7,983.8 L644.4,983.8
-		L651.9,983.8 L658.1,983.4 L668.1,983.4 L674.4,983.4 L690.6,982.8 L706.2,982.8 L732.5,980.3  '/></g>
+		L651.9,983.8 L658.1,983.4 L668.1,983.4 L674.4,983.4 L690.6,982.8 L706.2,982.8 L732.5,980.3 L757.5,978.5
+		L763.1,978.5  '/></g>
 	</g>
 	<g id="gnuplot_plot_4c" ><title>Water Clan TB Uploaded</title>
 <g fill="none" color="black" stroke="currentColor" stroke-width="2.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<path stroke='rgb( 44, 177, 221)'  d='M440.0,1244.9 L445.6,1244.9 L459.3,1244.7 L584.3,1242.7 L625.6,1242.2 L634.4,1242.2 L638.7,1242.2 L644.4,1242.2
-		L651.9,1242.2 L658.1,1242.0 L668.1,1242.0 L674.4,1242.0 L690.6,1241.8 L706.2,1241.8 L732.5,1241.0  '/></g>
+		L651.9,1242.2 L658.1,1242.0 L668.1,1242.0 L674.4,1242.0 L690.6,1241.8 L706.2,1241.8 L732.5,1241.0 L757.5,1240.2
+		L763.1,1240.2  '/></g>
 	</g>
 	<g stroke='none' shape-rendering='crispEdges'>
 		<polygon fill = 'white' points = '33.2,944.0 274.6,944.0 274.6,872.0 33.2,872.0 '/>
@@ -1286,22 +1295,25 @@
 <g fill="none" color="black" stroke="currentColor" stroke-width="2.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<path stroke='rgb(255,  10,  10)'  d='M1240.0,1288.0 L1245.6,1288.0 L1259.3,1286.0 L1384.3,1279.1 L1425.6,1275.6 L1434.4,1275.6 L1438.7,1274.6 L1444.4,1274.6
 		L1451.9,1274.6 L1458.1,1271.0 L1468.1,1271.0 L1474.4,1271.0 L1490.6,1267.2 L1506.2,1267.2 L1526.2,1258.8 L1528.7,1258.8
-		L1531.2,1258.8 L1532.5,1258.8  '/></g>
+		L1531.2,1258.8 L1532.5,1258.8 L1557.5,1252.2 L1563.1,1252.2  '/></g>
 	</g>
 	<g id="gnuplot_plot_2d" ><title>Earth Clan IRC/Forum</title>
 <g fill="none" color="black" stroke="currentColor" stroke-width="2.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<path stroke='rgb(145,  93,  29)'  d='M1240.0,974.3 L1245.6,974.3 L1259.3,971.7 L1384.3,961.4 L1425.6,949.9 L1434.4,949.9 L1438.7,947.2 L1444.4,947.2
-		L1451.9,947.2 L1458.1,945.7 L1468.1,945.7 L1474.4,945.7 L1490.6,925.8 L1506.2,925.8 L1532.5,911.6  '/></g>
+		L1451.9,947.2 L1458.1,945.7 L1468.1,945.7 L1474.4,945.7 L1490.6,925.8 L1506.2,925.8 L1532.5,911.6 L1557.5,906.0
+		L1563.1,906.0  '/></g>
 	</g>
 	<g id="gnuplot_plot_3d" ><title>Wind Clan IRC/Forum</title>
 <g fill="none" color="black" stroke="currentColor" stroke-width="2.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<path stroke='rgb(142, 142, 142)'  d='M1240.0,1540.6 L1245.6,1540.6 L1259.3,1539.8 L1384.3,1526.3 L1425.6,1513.9 L1434.4,1513.9 L1438.7,1509.7 L1444.4,1509.7
-		L1451.9,1509.7 L1458.1,1507.1 L1468.1,1507.1 L1474.4,1507.1 L1490.6,1503.4 L1506.2,1503.4 L1532.5,1497.5  '/></g>
+		L1451.9,1509.7 L1458.1,1507.1 L1468.1,1507.1 L1474.4,1507.1 L1490.6,1503.4 L1506.2,1503.4 L1532.5,1497.5 L1557.5,1494.9
+		L1563.1,1494.9  '/></g>
 	</g>
 	<g id="gnuplot_plot_4d" ><title>Water Clan IRC/Forum</title>
 <g fill="none" color="black" stroke="currentColor" stroke-width="2.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<path stroke='rgb( 44, 177, 221)'  d='M1240.0,1410.7 L1245.6,1410.7 L1259.3,1410.6 L1384.3,1409.5 L1425.6,1408.8 L1434.4,1408.8 L1438.7,1408.6 L1444.4,1408.6
-		L1451.9,1408.6 L1458.1,1408.3 L1468.1,1408.3 L1474.4,1408.3 L1490.6,1406.6 L1506.2,1406.6 L1532.5,1403.4  '/></g>
+		L1451.9,1408.6 L1458.1,1408.3 L1468.1,1408.3 L1474.4,1408.3 L1490.6,1406.6 L1506.2,1406.6 L1532.5,1403.4 L1557.5,1401.2
+		L1563.1,1401.2  '/></g>
 	</g>
 	<g stroke='none' shape-rendering='crispEdges'>
 		<polygon fill = 'white' points = '833.2,944.0 1058.0,944.0 1058.0,872.0 833.2,872.0 '/>
