@@ -1,0 +1,16 @@
+/* TEAM */
+Operator: Tyler "tn5421" Nelson
+Discord: tn5421#0271
+Twitter: tn5421
+Location: Fort Walton Beach, FL, USA
+
+/* THANKS */
+sjums: Allowed me to copy the original virii estimator tool, with the promise that I'd make something nice from it.
+OllieReynolds: Helped me reduce and refactor my javascript.
+Sweets aka SnuggleNet: Helped me drop our jquery dependency for loading a 'remote' navigation list.
+Github: Thanks for hosting my homepage all these years!
+
+/* SITE */
+Last update: https://github.com/tn5421/tn5421.github.io/commits/master
+Standards: HTML5, CSS3, Javascript
+Software: Notepad++, Atom

@@ -4,7 +4,7 @@
 	<title>Ability Point Cost Estimator</title>
 	<link rel="stylesheet" type="text/css" href="http://tn5421.github.io/mafia.css">
 	<meta charset="UTF-8">
-	<meta name="author" content="tn5421">
+	<meta name="author" href="https://tn5421.github.io/humans.txt">
 	<!-- The Shiv, as defined/borrowed by/from w3schools -->
 	<!--[if lt IE 9]>
   		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -57,16 +57,16 @@
 				{Name: 'MutantR Acc Stopper', CPU: 1200, Mem: 46, Band: 0, Size: 0.1784, Income: 0, abpBase: 0, abpGrow: 0, abpMax: 0},
 				{Name: 'MutantR Dec Stopper', CPU: 1200, Mem: 46, Band: 0, Size: 0.1784, Income: 0, abpBase: 0, abpGrow: 0, abpMax: 0}
 			];
-				// Capture Calculator - 
+				// Capture Calculator -
 				// Minimum time for capture is 75 seconds per 1 Megabyte. If virus version is higher then Virus Breaker version, capture modifier comes into play: captureModifier = 1 + virusVersion - breakerVersion; Modifier is then multiplied by the default time to determine the new time.
 				// Time for capture can not go below default time (75 sec for each 1 Mb) (uncertain how this interacts with runtimes). What this means is if the Breaker version is equal or more then the virus version you get the best time (75 for 1 Mb), if the virus is higher you get increasingly worse time.
 			function calc() {
-			
+
 				var type = document.getElementById('selSoft').value;
 				var quantity = document.getElementById('txtMany').value;
-			
+
 				var software = softwareItems[type - 1];
-				
+
 				var abp_base = software.abpBase;
 
 				if  (software.abpMax > 0 && quantity <= software.abpMax) {
@@ -78,7 +78,7 @@
 					out.innerHTML = 'Upgrading '+ software.Name + ' ability by ' + quantity + ' upgrades requires:<br>';
 					out.innerHTML += 'AbP: ' + abp_base;
 				}
-				else { 
+				else {
 					var out = document.getElementById('out');
 					out.innerHTML = 'Error: Your choice does not have an Ability Power associated with it, or you have entered more upgrades than are possible for a selected ability.';
 				}
@@ -133,7 +133,7 @@
 			<option value="42">MurantR Decelerator</option>
 			<option value="43">MutantR Acc Stopper</option>
 			<option value="44">MutantR Dec Stopper</option>
-			
+
 		</select>
 		<br>
 		Ability Upgrades?: <input type="text" id="txtMany" value="1">
@@ -148,13 +148,13 @@
 				<!-- dynamically loads the content of the nav file into the ID navbar -->
 	<script type="text/javascript">
 		(function(){
-    			var request = new XMLHttpRequest();    
+    			var request = new XMLHttpRequest();
     			request.open("GET", "https://tn5421.github.io/nav.html");
     			request.addEventListener("load", function() {
         			document.querySelector("#navbar").innerHTML += request.responseText;
     			})
     			request.send();
 		})(); // doesn't check response code or ready state because I'm lazy
-	</script> 
+	</script>
 	</body>
 </html>
