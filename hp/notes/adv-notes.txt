@@ -1,0 +1,67 @@
+v1 baron = v20 FS = v400 Adware in income (That is to say, 12,000 HPD per Hour) (AP costs may vary)
+v0.1 baron = v2 FS = v40 Adware (1,200HPD/hour)
+
+Baron (x3)
+CPU: 75,000 MHz | Mem: 3,000 Mb | Band: 15,000 Kbps | Size: 983.04 Gb
+Hardware Cost: 5,164,950 HPD
+
+FS (x10/x20) [shared w/ adware]
+CPU: 50,000 MHz | Mem: 2,000 Mb | Band: 10,000 Kbps | Size: 655.36 Gb
+Hardware Cost: 3,441,450 HPD
+
+Adware (x10/x20) [shared w/ FS]
+CPU: 200,000 MHz | Mem: 20,000 Mb | Band: 12,000 Kbps | Size: 409.6 Gb
+Hardware Cost: 5,317,650 HPD
+
+It is now possible to create HPD virii farms on an owned server.
+You can install Adware, File Share on your own server, and when collecting, it will draw HPD from the target faction in the "Software" virii settings. This will in turn cause some negative reputation.
+
+There is a maximum amount of HPD virii you can install on an owned server. 10x for non-Gold accounts, and 20x virii for Gold accounts. The vir version can be anything, the higher the version, the more effective the virii farm will be.
+When installing HPD making virii on a different players server, you will still draw from their HPD account.
+
+This 10x, 20x counter is only for Adware / File Share type virii owned by self on self server.
+There is no total limit on how many farms of Adware / FS you can have.
+
+Robber Baron limit is 3x per / server, with a max of 15x for non-Gold and 30x for Gold accounts. RB is not affected by the Adware / FS counter. (no overall max fs/adware)
+
+
+Other virii stuff:
+
+v0.3082 Baron
+CPU: 23115 MHz
+Mem: 925 Mb
+Band: 4623 Kbps
+Size: 303 Gb
+Income: 3,698.4 HPD/Hour
+Income: 88,761.6 HPD/Day
+Hardware Cost: 1,588,200 HPD
+Earned in: 429.43 Hours
+Earned in: 17.89 Days
+AP Cost: 2,980 AP
+
+v0.5165 Baron
+CPU: 38,740.5 MHz
+Mem: 1,549.62 Mb
+Band: 7,748.1 Kbps
+Size: 507.78 Gb
+Income: 6,198 HPD/Hour
+Income: 148,752 HPD/Day
+Hardware Cost: 2,665,200 HPD
+Earned in: 430.01 Hours
+Earned in: 17.92 Days
+AP Cost: 4,987 AP (Or 4986)
+
+v1.70769 Baron
+CPU: 128,076.75 MHz
+Mem: 5,123.07 Mb
+Band: 25,615.35 Kbps
+Size: 1,678.73 Gb
+Income: 20,492.28 HPD/Hour  
+Income: 491,814.72 HPD/Day  
+Hardware Cost: 8,823,750 HPD
+Earned in: 430.59 Hours
+Earned in: 17.94 Days
+AP Cost: 16,457 AP
+
+activate virii file #43013 Improved File Share Virus V 0.2 [Owned][localhost], 35m 15s   CPU 500   RAM 20000   BANDWIDTH 100  AP COST 82
+
