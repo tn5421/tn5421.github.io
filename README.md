@@ -1,14 +1,14 @@
-# tn5421.github.io
+# tml1965.github.io
 
-This is my homepage.  Welcome!
+This is the Necromancers homepage.  Welcome!
 
 ## Usage
 
-Open [My Homepage](https://tn5421.github.io/index.html) in your web browser.  Make sure javascript is enabled.
+Open [My Homepage](https://tml1965.github.io/index.html) in your web browser.  Make sure javascript is enabled.
 
 ## Contributing
 
-1. Fork it ( https://github.com/tn5421/tn5421.github.io/fork )
+1. Fork it ( https://github.com/tml1965/tml1965.github.io/fork )
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
@@ -16,6 +16,6 @@ Open [My Homepage](https://tn5421.github.io/index.html) in your web browser.  Ma
 
 ## Contributors
 
-- [tn5421](https://github.com/tn5421) - Creator, Maintainer
-- [OllieReynolds](https://github.com/OllieReynolds) - Helped with HPTools
-- Sjums - Contributor (virii.html, HPTools)
+- [tml1965](https://github.com/tml1965) - repo creator
+- [tn5421](https://github.com/tn5421) - changed up navigation
+
