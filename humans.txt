@@ -1,8 +1,10 @@
 /* TEAM */
-Operator: Tyler "tn5421" Nelson
+Operator: tn5421
+Xmpp: tn5421@chatserver.space
+Fediverse: @tn5421@niu.moe
 Discord: tn5421#0271
 Twitter: tn5421
-Location: Fort Walton Beach, FL, USA
+Location: Northwest Florida, USA
 
 /* THANKS */
 sjums: Allowed me to copy the original virii estimator tool, with the promise that I'd make something nice from it.
