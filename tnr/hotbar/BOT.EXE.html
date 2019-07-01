@@ -1,0 +1,445 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- saved from url=(0041)http://yaseen16.com/tnrtools/ragebar.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>RPH33 BOT V6.9</title>
+	
+	<link href="./tnr/css" rel="stylesheet" type="text/css">
+	<link href="./tnr/css(1)" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="./tnr/style.css">
+	<link rel="shortcut icon" href="http://yaseen16.com/tnrtools/icon.jpg">
+	<link rel="stylesheet" href="./tnr/font-awesome.min.css">
+	<script src="./tnr/gamealerts.js"></script>
+	<script src="./tnr/check.js"></script>
+	<script src="./tnr/script.js"></script>
+	<script src="./tnr/mousetrap.min.js"></script>
+	<script src="./tnr/jquery-1.7.2.min.js"></script>	
+
+	<script>
+		$(function(){
+			$('ul#menu2 li').hover(function(){
+				 $(this).children('ul').stop(true, true).slideDown(200);
+			}, function(){
+				 $(this).children('ul').stop(true, true).slideUp(200);
+			});
+		});
+	</script>
+	<script>
+
+		var keyWake=String(thWake);
+		var keySleep=String(thSleep);
+		var keyOut=String(thCWake);
+		var keyIn=String(thCSleep);
+		
+		var keyNorth=String(thNorth);
+		var keyWest=String(thWest);
+		var keyEast=String(thEast);
+		var keySouth=String(thSouth);
+		
+		var keyCombat=String(thCombat);
+		var keyScout=String(thScout);
+		var keyRefresh=String(thRefresh);
+		
+		var keyRamen=String(thRamen);
+		var keyHospital=String(thHospital);
+		var keyTavern=String(thTavern);
+		var keyOccupation=String(thOccupation);
+		var keyProfession=String(thProfession);
+		
+		var keyDMission=String(thDMission);
+		var keyCMission=String(thCMission);
+		var keyBMission=String(thBMission);
+		var keyAMission=String(thAMission);
+		
+		var keyRob=String(thRob);
+		var keyErrands=String(thErrands);
+		var keyCrimes=String(thCrimes);
+		
+		var keyRamen1=String(thRamen1);
+		var keyRamen2=String(thRamen2);
+		var keyRamen3=String(thRamen3);
+		var keyRamen4=String(thRamen4);
+		var keyRamen5=String(thRamen5);
+		
+		var keyCCrime=String(thCCrime);
+		var keyBCrime=String(thBCrime);
+		var keyACrime=String(thACrime);
+		
+		var keyRumors=String(thRumors);
+		var keyFindUser=String(thFindUser);
+		var keyFindItem=String(thFindItem);
+		var keyBingo=String(thBingo);		
+		
+		if (keyWake == 'undefined'){keyWake = 't'; }
+		if (keySleep == 'undefined'){keySleep = 'r'; }
+		if (keyOut == 'undefined'){keyOut = 'g'; }
+		if (keyIn == 'undefined'){keyIn = 'f'; }
+		
+		if (keyNorth == 'undefined'){keyNorth = 'w'; }
+		if (keyWest == 'undefined'){keyWest = 'a'; }
+		if (keyEast == 'undefined'){keyEast = 'd'; }
+		if (keySouth == 'undefined'){keySouth = 's'; }
+		
+		if (keyCombat == 'undefined'){keyCombat = 'v'; }
+		if (keyScout == 'undefined'){keyScout = 'z'; }
+		if (keyRefresh == 'undefined'){keyRefresh = 'b'; }
+		
+		if (keyRamen == 'undefined'){keyRamen = 'N/A'; }
+		if (keyHospital == 'undefined'){keyHospital = 'h'; }
+		if (keyTavern == 'undefined'){keyTavern = 'q'; }
+		if (keyOccupation == 'undefined'){keyOccupation = 'o'; }
+		if (keyProfession == 'undefined'){keyProfession = 'p'; }
+		
+		if (keyDMission == 'undefined'){keyDMission = '1'; }
+		if (keyCMission == 'undefined'){keyCMission = '2'; }
+		if (keyBMission == 'undefined'){keyBMission = '3'; }
+		if (keyAMission == 'undefined'){keyAMission = '4'; }
+		
+		if (keyRob == 'undefined'){keyRob = 'N/A'; }
+		if (keyErrands == 'undefined'){keyErrands = 'N/A'; }
+		if (keyCrimes == 'undefined'){keyCrimes = 'N/A'; }
+		
+		if (keyRamen1 == 'undefined'){keyRamen1 = 'N/A'; }
+		if (keyRamen2 == 'undefined'){keyRamen2 = 'N/A'; }
+		if (keyRamen3 == 'undefined'){keyRamen3 = 'N/A'; }
+		if (keyRamen4 == 'undefined'){keyRamen4 = 'N/A'; }
+		if (keyRamen5 == 'undefined'){keyRamen5 = 'N/A'; } 
+		
+		if (keyCCrime == 'undefined'){keyCCrime = '5'; }
+		if (keyBCrime == 'undefined'){keyBCrime = '6'; }
+		if (keyACrime == 'undefined'){keyACrime = '7'; }
+		
+		if (keyRumors == 'undefined'){keyRumors = 'N/A'; }
+		if (keyFindUser == 'undefined'){keyFindUser = 'N/A'; }
+		if (keyFindItem == 'undefined'){keyFindItem = 'N/A'; }
+		if (keyBingo == 'undefined'){keyBingo = 'N/A'; }	
+	
+		Mousetrap.bind(keyWake, function() { 
+		document.getElementById("frame").src ='http://www.theninja-rpg.com/?id=23&act=wake';
+		document.getElementById("actiondisplay").value = "Your action: Wake Up";
+		});
+
+		Mousetrap.bind(keySleep, function() { 
+		document.getElementById("frame").src ='http://www.theninja-rpg.com/?id=23&act=sleep';
+		document.getElementById("actiondisplay").value = "Your action: Sleep";
+		});
+		
+		Mousetrap.bind(keyOut, function() { 
+		document.getElementById("frame").src ='http://www.theninja-rpg.com/?id=19&act=wake';
+		document.getElementById("actiondisplay").value = "Your action: Wake Up (Camp)";
+		});
+
+		Mousetrap.bind(keyIn, function() { 
+		document.getElementById("frame").src ='http://www.theninja-rpg.com/?id=19&act=sleep';
+		document.getElementById("actiondisplay").value = "Your action: Sleep (Camp)";
+		});
+		
+		Mousetrap.bind(keyNorth, function() { 
+		document.getElementById("frame").src ='http://www.theninja-rpg.com/?id=8&move=north';
+		document.getElementById("actiondisplay").value = "Your action: Travel North";
+		});
+
+		Mousetrap.bind(keyWest, function() { 
+		document.getElementById("frame").src ='http://www.theninja-rpg.com/?id=8&move=west';
+		document.getElementById("actiondisplay").value = "Your action: Travel West";
+		});
+
+		Mousetrap.bind(keySouth, function() { 
+		document.getElementById("frame").src ='http://www.theninja-rpg.com/?id=8&move=south';
+		document.getElementById("actiondisplay").value = "Your action: Travel South";
+		});
+
+		Mousetrap.bind(keyEast, function() { 
+		document.getElementById("frame").src ='http://www.theninja-rpg.com/?id=8&move=east';
+		document.getElementById("actiondisplay").value = "Your action: Travel East";
+		});
+		
+		Mousetrap.bind(keyCombat, function() { 
+		document.getElementById("frame").src ='http://www.theninja-rpg.com/?id=50';
+		document.getElementById("actiondisplay").value = "Your action: Combat";
+		});
+		
+		Mousetrap.bind(keyScout, function() { 
+		document.getElementById("frame").src ='http://www.theninja-rpg.com/?id=30';
+		document.getElementById("actiondisplay").value = "Your action: Scout Area";
+		});
+
+		Mousetrap.bind(keyRefresh, function() { 
+		document.getElementById("frame").src =' http://www.theninja-rpg.com/?id=41';
+		document.getElementById("actiondisplay").value = "Your action: Combat: Refresh";
+		});
+		
+		Mousetrap.bind(keyRamen, function() { 
+		document.getElementById("frame").src ='http://www.theninja-rpg.com/?id=25&act=order&orderID=8';
+		document.getElementById("actiondisplay").value = "Your action: Ramen";
+		});
+
+		Mousetrap.bind(keyHospital, function() { 
+		document.getElementById("frame").src ='http://www.theninja-rpg.com/?id=35';
+		document.getElementById("actiondisplay").value = "Your action: Hospital";
+		}); 
+
+		Mousetrap.bind(keyTavern, function() { 
+		document.getElementById("frame").src ='http://www.theninja-rpg.com/?id=24';
+		document.getElementById("actiondisplay").value = "Your action: Tavern";
+		}); 
+		
+		Mousetrap.bind(keyOccupation, function() { 
+		document.getElementById("frame").src ='http://www.theninja-rpg.com/?id=36';
+		document.getElementById("actiondisplay").value = "Your action: Occupation";
+		});
+		
+		Mousetrap.bind(keyProfession, function() { 
+		document.getElementById("frame").src ='http://www.theninja-rpg.com/?id=86';
+		document.getElementById("actiondisplay").value = "Your action: Profession";
+		});
+		
+		Mousetrap.bind(keyDMission, function() { 
+		document.getElementById("frame").src ='http://www.theninja-rpg.com/?id=32';
+		document.getElementById("actiondisplay").value = "Your action: D-Mission";
+		});
+
+		Mousetrap.bind(keyCMission, function() { 
+		document.getElementById("frame").src ='http://www.theninja-rpg.com/?id=40';
+		document.getElementById("actiondisplay").value = "Your action: C-Mission";
+		});
+
+		Mousetrap.bind(keyBMission, function() { 
+		document.getElementById("frame").src ='http://www.theninja-rpg.com/?id=54';
+		document.getElementById("actiondisplay").value = "Your action: B-Mission";
+		});
+
+		Mousetrap.bind(keyAMission, function() { 
+		document.getElementById("frame").src ='http://www.theninja-rpg.com/?id=62';
+		document.getElementById("actiondisplay").value = "Your action: A-Mission";
+		});
+		
+		Mousetrap.bind(keyRob, function() { 
+		document.getElementById("frame").src ='http://www.theninja-rpg.com/?id=49';
+		document.getElementById("actiondisplay").value = "Your action: Rob";
+		});
+		
+		Mousetrap.bind(keyErrands, function() { 
+		document.getElementById("frame").src ='http://www.theninja-rpg.com/?id=21&page=do_errand';
+		document.getElementById("actiondisplay").value = "Your action: Errands";
+		});
+		
+		Mousetrap.bind(keyCrimes, function() { 
+		document.getElementById("frame").src ='http://www.theninja-rpg.com/?id=22&page=do_errand';
+		document.getElementById("actiondisplay").value = "Your action: Small Crimes";
+		});
+
+		Mousetrap.bind(keyRamen1, function() { 
+		document.getElementById("frame").src ='http://www.theninja-rpg.com/?id=14&act2=clanStatus';
+		document.getElementById("actiondisplay").value = "Your action: Ramen (6.7)";
+		});
+		
+		Mousetrap.bind(keyRamen2, function() { 
+		document.getElementById("frame").src ='http://www.theninja-rpg.com/index.php?id=90&act=order&orderID=8';
+		document.getElementById("actiondisplay").value = "Your action: Ramen (8.14)";
+		});
+		
+		Mousetrap.bind(keyRamen3, function() { 
+		document.getElementById("frame").src ='http://www.theninja-rpg.com/index.php?id=79&act=order&orderID=8';
+		document.getElementById("actiondisplay").value = "Your action: Ramen (16.5)";
+		});
+		
+		Mousetrap.bind(keyRamen4, function() { 
+		document.getElementById("frame").src ='http://www.theninja-rpg.com/index.php?id=89&act=order&orderID=8';
+		document.getElementById("actiondisplay").value = "Your action: Ramen (18.17)";
+		});
+		
+		Mousetrap.bind(keyRamen5, function() { 
+		document.getElementById("frame").src ='http://www.theninja-rpg.com/index.php?id=80&act=order&orderID=8';
+		document.getElementById("actiondisplay").value = "Your action: Ramen (21.8)";
+		});
+		
+		Mousetrap.bind(keyCCrime, function() { 
+		document.getElementById("frame").src ='http://www.theninja-rpg.com/?id=9&act=http://www.theninja-rpg.com/?id=9&act=checkKage';
+		document.getElementById("actiondisplay").value = "Your action: C-Crime";
+		});
+		
+		Mousetrap.bind(keyBCrime, function() { 
+		document.getElementById("frame").src ='http://www.theninja-rpg.com/?id=11';
+		document.getElementById("actiondisplay").value = "Pack";
+		});
+		
+		Mousetrap.bind(keyACrime, function() { 
+		document.getElementById("frame").src ='http://www.theninja-rpg.com/?id=23&act=inventory';
+		document.getElementById("actiondisplay").value = "Home Inventory";
+		});
+		
+		Mousetrap.bind(keyRumors, function() { 
+		document.getElementById("frame").src ='http://www.theninja-rpg.com/?id=46';
+		document.getElementById("actiondisplay").value = "Your action: Rumors";
+		});
+		
+		Mousetrap.bind(keyFindUser, function() { 
+		var find1 = prompt ("Emter the username of the member you wish to find","");
+		document.getElementById("theUser").value = find1;
+			if (find1 != ""){
+				document.forms.finduserform.submit();
+				document.getElementById("actiondisplay").value = "Searching User: " + document.getElementById("theUser").value;
+			}
+		});
+		
+		Mousetrap.bind(keyFindItem, function() { 
+		var find2 = prompt ("Emter the name of the item you wish to find","");
+		document.getElementById("theItem").value = find2;
+			if (find2 != ""){
+				document.forms.finditemform.submit();
+				document.getElementById("actiondisplay").value = "Searching Item: " + document.getElementById("theItem").value;
+			}
+		});
+
+		Mousetrap.bind(keyBingo, function() { 
+		var find3 = prompt ("Enter Player's ID","");
+		document.getElementById("addbountyform").action = "http://www.theninja-rpg.com/?id=9&act=bBook&act2=increase&profile=" + find3;
+			if (find3 != ""){
+				document.forms.addbountyform.submit();
+				document.getElementById("actiondisplay").value = "Adding a bounty";
+			}
+		});		
+		
+		function SubmitLayout(){
+			var selectBox = document.getElementById("layoutoptions");
+			var selectedValue = selectBox.options[selectBox.selectedIndex].value;
+			document.forms.layoutform.submit();
+			document.getElementById("layoutoptions").blur();
+		}
+		
+		function loadKeys(){
+		document.getElementById("frame").src ="keys.html";
+		}
+		
+		function Hide(){
+
+		}
+		
+		function message(){
+			alert("Ragebar has been updated. Delete your browser cookies and cache if you are having any issues. If you are still having issues, contact me at yaseenkocher@gmail.com or add me on Skype (Yas33n16) for assistance.");
+		}
+
+	</script>
+	<script src="./tnr/jquery-1.10.1.min.js"></script>
+	<script>
+		$(function() {
+			$( "#expand" ).click(function() {
+				$( "#wrap" ).slideToggle(100);
+				document.getElementById("bottom").style.top = "41px";
+				document.getElementById("expand").style.display = 'none';
+				document.getElementById("compress").style.display = 'block';
+			});
+		});
+
+		$(function() {
+			$( "#compress" ).click(function() {
+				$( "#wrap" ).slideToggle(100);
+				document.getElementById("bottom").style.top = "0px";
+				document.getElementById("expand").style.display = 'block';
+				document.getElementById("compress").style.display = 'none';
+			});
+		});
+	</script>
+	</head>
+	<body>
+	<div id="dialogoverlay"></div>
+<div id="dialogbox">
+  <div>
+    <div id="dialogboxbody"></div>
+    <div id="dialogboxfoot"></div>
+  </div>
+</div>
+
+
+		<div id="expand"><i class="fa fa-expand"></i></div>
+		<div id="compress"><i class="fa fa-compress"></i></div>
+		<div id="wrap">
+			<center>
+				<div id="ragebar"><a href="http://yaseen16.com/tnrtools/ragebar.html" target="_top">TNR RAGEBAR</a> <i>v2.1</i></div>
+				<input name="display" id="actiondisplay" placeholder="Welcome!" type="text" size="35" readonly="">
+				<div id="dropdown">		
+					<ul id="menu2">
+						<li id="fmenu"><a href="http://yaseen16.com/tnrtools/ragebar.html#Menu">Menu</a>
+							<ul class="drop" style="display: none;">
+								<li><a onclick="turnOff(); clearIt(); loadKeys();">KEYS</a></li>
+								<li>
+									<a href="http://yaseen16.com/tnrtools/ragebar.html#">+ Layout</a>
+									<ul>
+										<li><a onclick="defaul.submit();">Default</a></li>
+										<li><a onclick="core2.submit();">Core 2</a></li>
+										<li><a onclick="light.submit();">Light</a></li>
+										<li><a onclick="mobile.submit();">Mobile</a></li>
+									</ul>
+								</li>
+								<li><a onclick="turnOff(); clearIt();" href="http://yaseen16.com/tnrtools/form.php" target="frame">Purchase Bots</a></li>			
+								<li>
+									<a href="http://yaseen16.com/tnrtools/ragebar.html#">+ Tools</a>
+									<ul>
+										<li><a href="http://yaseen16.com/tnrtools/ragebar.html" target="_top">Ragebar</a></li>
+										<li><a href="http://yaseen16.com/tnrtools/left-menu.html" target="_top">Menu Tool</a></li>
+										<li><a href="http://projectavalon.web44.net/tools/jutsucalc/" target="frame">Jutsu Costs</a></li>
+										<li><a href="http://projectavalon.web44.net/tools/jutsuuse/" target="frame">Jutsu Uses</a></li>
+									</ul>
+								</li>
+								<li><a href="http://www.theninja-forum.com/" target="frame">Forums</a></li>
+								<li><a href="http://www.theninja-forum.com/index.php?/page/index.html" target="frame">Manual</a></li>
+								<li><a href="http://yaseen16.com/jutsus/" target="frame">Jutsu List</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>								
+				<div id="status"> 
+					<font id="ontext" style="color: grey;">On</font> <input id="on" type="radio" checked="" onclick="turnOn(); setIt();"> 
+					<font id="offtext" style="color: red;">Off</font>  <input id="off" type="radio" onclick="turnOff(); clearIt();">
+				</div>					
+			</center> 		
+		</div>
+		<div id="bottom">
+			<iframe id="frame" name="frame" frameborder="0" src="./tnr/keys.html">
+			</iframe>
+		</div>		
+			<form id="layoutform" name="defaul" class="hide" method="post" action="http://www.theninja-rpg.com/?id=4&amp;act=layout" enctype="application/x-www-form-urlencoded" target="frame">
+				<select name="layout" id="layoutoptions" onchange="SubmitLayout();">
+					<option value="default">default</option>
+				</select>
+				<input type="hidden" name="Submit" value="Change layout">
+			</form> 
+			
+			<form id="layoutform" name="core2" class="hide" method="post" action="http://www.theninja-rpg.com/?id=4&amp;act=layout" enctype="application/x-www-form-urlencoded" target="frame">
+				<select name="layout" id="layoutoptions" onchange="SubmitLayout();">
+					<option value="core2">core2</option>
+				</select>
+				<input type="hidden" name="Submit" value="Change layout">
+			</form> 
+			
+			<form id="layoutform" name="light" class="hide" method="post" action="http://www.theninja-rpg.com/?id=4&amp;act=layout" enctype="application/x-www-form-urlencoded" target="frame">
+				<select name="layout" id="layoutoptions" onchange="SubmitLayout();">
+					<option value="light">light</option>
+				</select>
+				<input type="hidden" name="Submit" value="Change layout">
+			</form> 
+			
+			<form id="layoutform" name="mobile" class="hide" method="post" action="http://www.theninja-rpg.com/?id=4&amp;act=layout" enctype="application/x-www-form-urlencoded" target="frame">
+				<select name="layout" id="layoutoptions" onchange="SubmitLayout();">
+					<option value="mobile">mobile</option>
+				</select>
+				<input type="hidden" name="Submit" value="Change layout">
+			</form> 				
+			<form id="finduserform" class="hide" method="post" action="http://www.theninja-rpg.com/?id=13&amp;page=profile" enctype="application/x-www-form-urlencoded" target="frame">
+				<input name="name" type="text" id="theUser" value="">
+				<input name="page" value="userprofile" type="hidden"><input value="Search" type="hidden">
+			</form>
+
+		  <form id="addbountyform" class="hide" action="http://yaseen16.com/tnrtools/ragebar.html#" method="post" target="frame">
+				<input id="theAmount" name="bounty_increase_amount" type="text" size="15" value="1">
+		   </form>			
+			<form id="finditemform" class="hide" method="POST" action="http://www.theninja-rpg.com/?id=88&amp;act=search" enctype="application/x-www-form-urlencoded" target="frame">
+				<input id="theItem" value="" name="itemName" type="text">
+				<input name="page" value="userprofile" type="hidden">
+				<input value="Search" name="Submit" type="hidden">
+			</form>		
+	
+
+
+
+</body></html>

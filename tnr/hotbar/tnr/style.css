@@ -1,0 +1,300 @@
+body{
+padding:0px;
+margin:0px;
+color:#fff;
+
+}
+
+#wrap{
+text-align:center;
+vertical-align:middle;
+height:41px;
+background-image:url('bg.png');
+background-repeat:repeat-x;
+padding-top:5px;
+z-index:2;
+-moz-user-select: none; 
+-khtml-user-select: none; 
+-webkit-user-select: none; 
+-o-user-select: none; 
+}
+
+#expand{
+position: absolute;
+right:10px;
+top: 5px;
+z-index:9999;
+display:none;
+font-size:28px;
+cursor:pointer;
+width:40px;
+text-shadow: 0px 0px 4px #000;
+}
+
+#compress{
+position: absolute;
+right:20px;
+top: 5px;
+z-index:9999;
+font-size:22px;
+text-shadow:2px 2px 0px #000;
+cursor:pointer;
+width:40px;
+text-align:center;
+}
+
+#compress:hover{
+text-shadow:2px 2px 0px #000, 0px 0px 12px #fff;
+}
+
+
+a:link{
+font-family:'Oswald', sans-serif;
+font-size:17px;
+text-shadow:2px 2px 0px #000;
+text-transform:uppercase;
+color:#fff;
+text-decoration:none;
+}
+
+a:visited{
+font-family:'Oswald', sans-serif;
+font-size:17px;
+text-shadow:2px 2px 0px #000;
+text-transform:uppercase;
+color:#fff;
+text-decoration:none;
+}
+
+a:hover{
+cursor:pointer;
+text-shadow:2px 2px 0px #000, 0px 0px 12px #fff;
+}
+
+a:active{
+cursor:pointer;
+text-shadow:2px 2px 0px #000, 0px 0px 12px #fff;
+}
+
+#dropdown{
+float:right;
+margin-top:-1px;
+width:150px;
+margin-right:20px;
+z-index:-9999;
+-moz-user-select: none; 
+-khtml-user-select: none; 
+-webkit-user-select: none; 
+-o-user-select: none; 
+}
+
+#keys:hover, #keys.a:hover{
+cursor:pointer;
+text-shadow:2px 2px 0px #000, 0px 0px 12px #fff;
+}
+
+#ragebar{
+float:left;
+margin-left:40px;
+width:140px;
+-moz-user-select: none; 
+-khtml-user-select: none; 
+-webkit-user-select: none; 
+-o-user-select: none; 
+}
+
+#status{
+float:right;
+cursor:default;
+margin-top:-1px;
+margin-right:-35px;
+font-family:'Oswald', sans-serif;
+font-size:17px;
+text-shadow:2px 2px 0px #000;
+text-transform:uppercase;
+z-index:9999;
+position: relative; 
+-moz-user-select: none; 
+-khtml-user-select: none; 
+-webkit-user-select: none; 
+-o-user-select: none; 
+}
+
+#actiondisplay{
+pointer-events:none;
+border-radius:10px;
+color:black;
+font-family: 'Aldrich', sans-serif;
+padding:4px 10px 3px 10px;
+text-decoration:none;
+text-align:center; 
+box-shadow:inset 0px 1px 6px 0 #707070;
+border:1px;
+-moz-user-select: none; 
+-khtml-user-select: none; 
+-webkit-user-select: none; 
+-o-user-select: none; 
+}
+
+#ontext{
+color:#32CD32;
+}
+
+#offtext{
+color:grey;
+}
+
+.hide{
+display:none;
+}
+
+#bottom{
+position: absolute;
+z-index:-1;
+top: 41px;
+left: 0;
+right: 0;
+bottom: 0;
+overflow: hidden;
+-moz-user-select: none; 
+-khtml-user-select: none; 
+-webkit-user-select: none; 
+-o-user-select: none; 
+
+}
+
+#frame{
+width:100%;height:100%;
+z-index:-1;
+}
+
+ul#menu2{
+margin:0;
+padding:0;
+
+}
+ul#menu2 > li{
+list-style:none;
+float:left;
+margin:0;
+padding:0;
+position:relative;  
+}
+
+ul#menu2 a{
+text-decoration:none; 
+display:block;  
+}
+
+#menu2 > li > ul > li a{
+padding:6px;
+}
+
+ul#menu2 > li ul.drop{
+margin:0;
+padding:0;
+width:150px;
+position:absolute;
+display:none;
+}
+
+ul#menu2 > li ul.drop ul{
+margin:0;
+padding:0;
+width:150px;
+position:absolute;
+display:none;
+right:150px;
+top:0;
+}
+
+ul#menu2 > li ul li{
+margin:0;
+padding:0;
+list-style:none;
+position:relative;
+}
+
+ul#menu2 > li  ul  li:hover{
+background-color:#94574e;
+background-image: none;
+}
+
+#dropdown ul > li  > ul >  li:hover > a{
+color:#fff;
+}
+
+
+#dropdown ul li ul li{
+background-image: url('index.jpg');
+background-repeat: repeat !important;
+margin-top:2px;
+box-shadow:0px 0px 0px 1px black inset;
+}
+
+#dropdown ul > li > ul > li:first-child{
+border-top:0px solid #000;
+}
+
+#dropdown ul li ul li ul li:first-child{
+margin-top:0px;
+}
+
+#dropdown ul li ul li ul li{
+margin-right:3px;
+color:#fff;
+}
+#dropdown ul li ul li:first-child{
+margin-top:11px;
+}
+
+#fmenu{
+width:150px;
+}
+
+#dropdown ul li ul li a{
+font-family: 'Aldrich', sans-serif;
+text-shadow:none;
+color:#000;
+font-size:12px;
+}
+
+#dialogoverlay{
+	display: none;
+	opacity: 0.85;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	background: #000;
+	width: 100%;
+	z-index: 999999999;
+}
+#dialogbox{
+	display: none;
+	position: fixed;
+	border-radius:7px; 
+	width:853px;
+	z-index: 999999999999;
+}
+
+#gamebutton{
+background-color:#000;
+	color:#fff;
+	font-family: 'Aldrich', sans-serif;
+	font-size:15px;
+	opacity: .8;
+	line-height:32px;
+	border-radius:20px;
+	-webkit-border-radius:20px;
+	-moz-border-radius:20px;
+	border:0;
+	text-shadow:#C17C3A 0 -1px 0;
+	width:110px;
+	height:32px
+}
+
+#gamebutton:hover{
+cursor:pointer;text-shadow:0px 0px 12px #fff;
+}
+
+#dialogbox > div > #dialogboxfoot{  padding:10px; text-align:right; }
