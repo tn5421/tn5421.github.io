@@ -1,0 +1,91 @@
+The following boosts all follow the same price rules, and will henceforth be simply referred to as Premium: 
+Combat EXP boost, Gathering EXP boost, Crafting EXP boost, Gold Boost, Attribute Boost, Mastery Boost
+This one is a special snowflake: Drop Boost
+
+Premium boosts start at 10 credits per single %, and grow at a rate of 1 extra credit per 10%, 
+for a total upgrade cost of 2,550 credits per boost.  
+From 10-19 credits, it costs 11 to upgrade a single %, from 20-29, it costs 12 to upgrade a single %, and so forth.
+
+Premium:
+0 -> 10: 100 | 10 per, +1 per tier
+10 -> 20: 110
+20 -> 30: 120
+30 -> 40: 130
+40 -> 50: 140
+50 -> 60: 150
+60 -> 70: 160
+70 -> 80: 170
+80 -> 90: 180
+90 -> 100: 190
+100 -> 110: 200
+110 -> 120: 210
+120 -> 130: 220
+130 -> 140: 230
+140 -> 150: 240
+
+Drop Boost:
+0 -> 10: 150 | 15 per, +5 per tier
+10 -> 20: 200
+20 -> 30: 250
+30 -> 40: 300
+40 -> 50: 350
+50 -> 60: 400
+60 -> 70: 450
+70 -> 75: 250 
+
+Clan Totems
+
+Clan totems provide 4% Premium / 2% Drop Boost per level, and cost accordingly
+
+0 -> 1: 
+60,000 gold
+50 credits
+20,000 each res
+
+1 -> 2: 
+138,000 gold
+61 credits
+45,000 each res
+
+2 -> 3: 
+237,000 gold
+72 credits
+75,000 each res
+
+3 -> 4: 
+363,000 gold
+84 credits
+111,000 each res
+
+4 -> 5: 
+521,000 gold
+96 credits
+155,000 each res
+
+5 -> 6: 
+718,000 gold
+109 credits
+208,000 each res
+
+6 -> 7: 
+916,000 gold
+122 credits
+270,000 each res
+
+7 -> 8
+
+
+8 -> 9
+
+
+9 -> 10
+
+
+10 -> 11
+
+
+11 -> 12
+
+
+12 -> 13
+
