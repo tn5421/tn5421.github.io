@@ -1,7 +1,7 @@
 /* TEAM */
 Operator: tn5421
-Xmpp: tn5421@chatserver.space
-Fediverse: @tn5421@niu.moe
+Xmpp: tn5421@z.nom.pl
+Fediverse: @tn5421@fedi.absturztau.be
 Discord: tn5421#0271
 Twitter: tn5421
 Location: Northwest Florida, USA
@@ -15,4 +15,4 @@ Github: Thanks for hosting my homepage all these years!
 /* SITE */
 Last update: https://github.com/tn5421/tn5421.github.io/commits/master
 Standards: HTML5, CSS3, Javascript
-Software: Notepad++, Atom
+Software: Mousepad

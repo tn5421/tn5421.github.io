@@ -2,12 +2,24 @@
 <html lang="en">
 <head>
 	<title>tn5421's Mafia Reviews</title>
-	<link rel="stylesheet" type="text/css" href="https://tn5421.github.io/index.css">
+	<link rel="stylesheet" type="text/css" href="../index.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta charset="UTF-8">
 </head>
 <body class="review">
-	<nav id="navbar"></nav>
+	<nav id="nav">
+		<ul id="navlist">
+			<li><a href="../index.html" class="index">tn5421's homepage</a></li><hr>
+			<li><a href="../mafia/index.html" class="index">Mafia Index</a></li><br>
+			<ul class="subnavlist">
+				<li><a href="../mafia/review.html" class="review">This Page</a></li>
+			</ul><hr>
+			<li><a href="../lyr/index.html" class="lyr-index">TN's Lyrania Tools</a></li><hr>
+			<li><a href="../hp/index.html" class="hp-index">TN's Hacker-Project Tools</a></li><hr>
+			<li><a href="../bvs/index.html" class="misc">BvS Home</a></li><hr>
+			<li><a href="../tnr/index.html" class="misc">TheNinja-RPG Home</a></li><hr>
+		</ul>
+	</nav>
 	<section id="content">
 		<h1 class="content">tn5421's Mafia Reviews</h1>
 		<article id="Newbie_1486">
@@ -104,16 +116,5 @@
 			</table>
 			<p>This game is ongoing so I cannot comment at this time.</p>
 	</section>
-			<!-- dynamically loads the content of the nav file into the ID navbar -->
-	<script type="text/javascript">
-		(function(){
-			var request = new XMLHttpRequest();
-    	request.open("GET", "https://tn5421.github.io/mafia/nav.html");
-    	request.addEventListener("load", function() {
-      	document.querySelector("#navbar").innerHTML += request.responseText;
-    		})
-    	request.send();
-		})(); // doesn't check response code or ready state because I'm lazy
-	</script>
 	</body>
 </html>

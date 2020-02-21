@@ -2,16 +2,29 @@
 <html lang="en">
 <head>
 	<title>TNR Homepage</title>
-	<link rel="stylesheet" type="text/css" href="https://tn5421.github.io/index.css">
+	<link rel="stylesheet" type="text/css" href="../../index.css">
 	<meta charset="UTF-8">
-	<meta name="author" href="https://tn5421.github.io/humans.txt">
+	<meta name="author" href="../../humans.txt">
 	<!-- The Shiv, as defined/borrowed by/from w3schools -->
 	<!--[if lt IE 9]>
   		<script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
 </head>
 <body class="misc">
-	<nav id="navbar"></nav>
+	<nav id="navbar">
+		<ul id="navlist">
+			<li><a href="../../index.html" class="index">tn5421's homepage</a></li><hr>
+			<li><a href="../../mafia/index.html" class="index">Mafia Index</a></li><hr>
+			<li><a href="../../lyr/index.html" class="index">TN's Lyrania Tools</a></li><hr>
+			<li><a href="../../hp/index.html" class="index">TN's Hacker-Project Tools</a></li><hr>
+			<li><a href="../../bvs/index.html" class="index">BvS Home</a></li><hr>
+			<li><a href="../tnr/index.html" class="index">TheNinja-RPG Home</a></li><hr>
+			<ul class="subnavlist"><br>
+				<li><a href="../tnr/shika/bar.htm" target="_blank" class="index">Shika RageBar</a></li>
+				<li><a href="../tnr/hotbar/BOT.EXE.html" target="_blank" class="index">RPH33 BOT V6.9</a></li>
+			</ul><hr>
+		</ul>
+	</nav>
 	<div id="content">
 		<header class="content">
 			<h1 class="content">TNR Homepage</h1>
@@ -21,18 +34,5 @@
 		<article class="content">
 			<p>This is where my disclaimers and other things will go when I decide what to put.</p>
 		</article>
-
-		<!-- dynamically loads the content of the nav file into the ID navbar -->
-		<script type="text/javascript">
-			(function(){
-			var request = new XMLHttpRequest();
-			request.open("GET", "https://tn5421.github.io/tnr/nav.html");
-			request.addEventListener("load", function() {
-				document.querySelector("#navbar").innerHTML += request.responseText;
-			})
-			request.send();
-			})(); // doesn't check response code or ready state because I'm lazy
-		</script>
-	</div>
 </body>
 </html>
