@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	<title>Software Estimator</title>
+	<link rel="stylesheet" type="text/css" href="https://tn5421.github.io/index.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8">
+	<meta name="author" href="https://tn5421.github.io/humans.txt">
+	<!-- The Shiv, as defined/borrowed by/from w3schools -->
+	<!--[if lt IE 9]>
+  		<script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<script type="text/javascript">
+		var clanCost = [
+			{Name: 'Totem 0 to 1', id: 1, Gold: 60000, Cred: 50, Res: 60000}, 
+			{Name: 'Totem 1 to 2', id: 2, Gold: 138000, Cred: 61, Res: 135000},
+			{Name: 'Totem 2 to 3', id: 3, Gold: 237000, Cred: 72, Res: 225000},
+			{Name: 'Totem 3 to 4', id: 4, Gold: 363000, Cred: 84, Res: 333000},
+			{Name: 'Totem 4 to 5', id: 5, Gold: 521000, Cred: 96, Res: 465000}, 
+			{Name: 'Totem 5 to 6', id: 6, Gold: 718000, Cred: 109, Res: 624000},
+			{Name: 'Totem 6 to 7', id: 7, Gold: 916000, Cred: 122, Res: 810000}
+		];
+		
+		var whichBoost = [
+			{Name: 'Premium Boost', Clan: 4, Self: 1, Limit: 150},
+			{Name: 'Drop Boost', Clan: 2, Self: 1, Limit: 75}
+		];
+
+		function calc() {
+			
+			var type = document.getElementById('subBoost').value;
+			var quantity = document.getElementById('txtMany').value; // % upgrade
+			
+			var credits = document.getElementById('gCred').value;
+			
+			var metal = document.getElementById('gMetal').value;
+			var wood = document.getElementById('gWood').value;
+			var stone = document.getElementById('gStone').value;
+			
+			var resCost = Math.ceil((metal+wood+stone)/3);
+
+			var boost = subBoost[type];
+
+			var out = document.getElementById('out'); // Controls the display data
+			out.innerHTML = 'Each single % ' + version + ' ' + software.Name + ' costs:<br>';
+			out.innerHTML += 'Sum: ' + (software.CPU * softVerMulp) + ' Gold<br>';
+			out.innerHTML += 'Mem: ' + (software.Mem * softVerMulp) + ' Mb<br>';
+			out.innerHTML += 'Band: ' + (software.Band * softVerMulp) + ' Kbps<br>';
+			out.innerHTML += 'Size: ' + (software.Size * softVerMulp) + ' Gb<br>';
+			out.innerHTML += 'Hardware Cost: ' + singleCost + ' HPD<br><br><hr><br>';
+		}
+	</script>
+	</head>
+<body class="content">
+	<nav id="navbar"></nav>
+	<div id="content">Which boost to upgrade:<br>
+	Premium Boost covers all boost types except Drop Boost, as their prices behave similarly.
+		<select id="subBoost">
+			<script type="text/javascript">
+				var selectList = document.getElementById("subBoost");
+				for (var i = 0; i < whichBoost.length; i++) {
+					var option = document.createElement("option");
+					option.value = i;
+					option.text = whichBoost[i].Name;
+					selectList.appendChild(option);
+				}
+			</script>
+		</select>
+		<br>
+		How much % to upgrade: <input type="text" id="txtMany" value="1">
+		<br>
+		Existing Personal Boost: <input type="text" id="pBoost" value="0">
+		<br>
+		Existing Guild Totem: <input type="text" id="pTotem" value="0">
+		<br>
+		Number of Donating Members: <input type="text" id="Members" value="5">
+		<br>
+		Gold cost of Credits: <input type="text" id="gCred" value="45000">
+		<br>
+		Gold cost of each resource: <input type="text" id="gMetal" value="2"> 
+		<input type="text" id="gWood" value="2"> 
+		<input type="text" id="gStone" value="2">
+		<br>
+		<input type="button" value="Calculate" onclick="javascript:calc();">
+		<br>
+		<br>
+		<hr>
+		<br>
+		<br>
+		<span id="out"></span>
+		</div>
+	<script type="text/javascript">
+		(function(){
+    	var request = new XMLHttpRequest();
+    	request.open("GET", "https://tn5421.github.io/iqrpg/nav.html");
+    	request.addEventListener("load", function() {
+        	document.querySelector("#navbar").innerHTML += request.responseText;
+    	})
+    	request.send();
+		})(); // doesn't check response code or ready state because I'm lazy
+	</script>
+	</body>
+</html>
+

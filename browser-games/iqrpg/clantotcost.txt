@@ -1,0 +1,24 @@
+every tier x7
+60k gold, 50 credits, 60k res
+138k gold, 61 credits, 135k res
+237k gold, 72 credits, 225k res
+363k gold, 84 credits, 333k res
+521k gold, 96 credits, 465k res
+718k gold, 109 credits, 624k res
+
+gold
+420k+966k+1659k+2541k+3647k+5026k = 
+14,259,000 gold
+
+credits
+350+427+504+588+672+763 = 
+3304 credits
+
+res
+420+945+1575+2331+3225+4368 = 
+12,864,000 res
+
+converted gold cost: 
+14.259m + (3304*61000) + (12.864m*((2+2+3)/3)) = 
+14,259,000 + 201,544,000 + 29,973,120 =
+245,776,120 gold

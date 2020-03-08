@@ -1,0 +1,14 @@
+Gold is 20% discount.  Appears to definitely apply first.
+1 cpu upgrade.  Cost 150.  Gold.  5% Hardware Connections
+Expected 112.5 Cost.  Got 114 Cost ((150*0.8)*0.95)=114
+2 cpu upgrade.  Cost 300.  Gold.  5% Hardware Connections
+Expected 225 Cost.  Got 228 Cost
+10 cpu upgrade.  Cost 1500.  Gold.  5% HC
+Expected 1125 Cost.  Got 1140 Cost
+20 cpu upgrade.  Cost 3000.  Gold.  5% HC
+Expected 2250 Cost.  Got 2280 Cost.
+40 cpu upgrade.  Cost 6000.  Gold.  5% HC
+Expected 4500 Cost.  Got 4560 Cost.
+
+			var abp_hc = extHc / 100; // Reduces input to a %
+			var gold_acc = 0.8; // Worth 20% discount.  In other words, 80% of the original cost

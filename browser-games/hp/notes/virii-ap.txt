@@ -1,0 +1,14 @@
+v0.3082 baron - 2,980AP
+v0.5165 baron - either 4,986 or 4,987AP
+v1.70769 baron - 16,457AP (MAY BE WRONG)
+v4.87761 baron - 21,633AP
+v12.0217 baron - 21,847AP (bell curve of ap cost?)
+
+v0.2 File Share - 82AP
+v20 File Share - projected 8,200AP
+v30.4007 File Share - 10,562AP
+
+
+v12.6084 IP Leech - 485AP
+
+v15.0876 Sniffer Daemon - 693AP

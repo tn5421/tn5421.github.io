@@ -1,0 +1,114 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Hardware Estimator</title>
+	<link rel="stylesheet" type="text/css" href="../../index.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8">
+	<meta name="author" href="../../humans.txt">
+	<!-- The Shiv, as defined/borrowed by/from w3schools -->
+	<!--[if lt IE 9]>
+  		<script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+		<script>
+		// a script to calculate hardware upgrade costs.  Based off of virii.html by sjums
+function calc() {
+
+	var extCpu = document.getElementById('txtCpu').value;
+	var extHdd = document.getElementById('txtHdd').value;
+	var extMem = document.getElementById('txtMem').value;
+	var extBand = document.getElementById('txtBand').value;
+
+	var extHc = document.getElementById('abp_hc').value;
+	var accGold = document.getElementById('selGold').value;
+
+	var abp_hc = extHc / 100; // Reduces input to a %
+
+	var CPU_COST = 150; //50MHz
+	var GOLD_CPU_COST = 120;
+	var CPU_QUAN = 50;
+
+	var HDD_COST = 300; //1 GB
+	var GOLD_HDD_COST = 240;
+	var HDD_QUAN = 1;
+
+	var MEM_COST = 150; //3 Mb
+	var GOLD_MEM_COST = 120;
+	var MEM_QUAN = 3;
+
+	var BAND_COST = 300; //1 kbps
+	var GOLD_BAND_COST = 240;
+	var BAND_QUAN = 1;
+
+	var cpuQuan = Math.ceil(extCpu * CPU_QUAN);
+	var memQuan = Math.ceil(extMem * MEM_QUAN);
+	var bandQuan = Math.ceil(extBand * BAND_QUAN);
+	var hddQuan = Math.ceil(extHdd * HDD_QUAN);
+
+	if (accGold == '1') {  // first part figures out how many upgrades are needed.  second part calculates cost
+		var cpuCost = Math.ceil(extCpu * (CPU_COST - (CPU_COST * abp_hc)));
+		var memCost = Math.ceil(extMem *(MEM_COST - (MEM_COST * abp_hc)));
+		var bandCost = Math.ceil(extBand * (BAND_COST - (BAND_COST * abp_hc)));
+		var hddCost = Math.ceil(extHdd * (HDD_COST - (HDD_COST * abp_hc)));
+		var singleCost = Math.ceil(cpuCost + memCost + bandCost + hddCost);
+	}
+
+	else { // same thing as above, except calculates gold discount first and then Hardware Connections discount.
+		var cpuCost = Math.ceil(extCpu * (GOLD_CPU_COST - (GOLD_CPU_COST * abp_hc)));
+		var memCost = Math.ceil(extMem * (GOLD_MEM_COST - (GOLD_MEM_COST * abp_hc)));
+		var bandCost = Math.ceil(extBand * (GOLD_BAND_COST - (GOLD_BAND_COST * abp_hc)));
+		var hddCost = Math.ceil(extHdd * (GOLD_HDD_COST - (GOLD_HDD_COST * abp_hc)));
+		var singleCost = Math.ceil(cpuCost + memCost + bandCost + hddCost);
+	}
+
+	var out = document.getElementById('out'); // Controls the display data
+	out.innerHTML = 'The complete cost of your server, minus Gateway purchase fees.<br><br>';
+	out.innerHTML += 'CPU Cost: ' + cpuCost + ' HPD and adds ' + cpuQuan + ' MHz<br>';
+	out.innerHTML += 'Mem Cost: ' + memCost + ' HPD and adds ' + memQuan + ' Mb<br>';
+	out.innerHTML += 'Band Cost: ' + bandCost + ' HPD and adds ' + bandQuan + ' kbps<br>';
+	out.innerHTML += 'Size Cost: ' + hddCost + ' HPD and adds ' + hddQuan + ' Gb<br>';
+	out.innerHTML += 'Total Hardware Cost: ' + singleCost + ' HPD<br><br><hr><br>';
+}
+		</script>
+	</head>
+	<body class="index">
+	<nav id="navbar">
+		<ul id="navlist">
+			<li><a href="../../index.html" class="index">tn5421's homepage</a></li><hr>
+			<li><a href="../../mafia/index.html" class="index">Mafia Index</a></li><hr>
+			<li><a href="../../browser-games/lyr/index.html" class="index">TN's Lyrania Tools</a></li><hr><br>
+			<li><a href="../../browser-games/hp/index.html" class="index">TN's HP Tools</a></li><hr>
+			<ul class="subnavlist">
+				<li><a href="../../browser-games/hp/software.html" class="index">Software Estimator</a></li>
+				<li><a href="../../browser-games/hp/virii.html" class="index">Virus Estimator</a></li>
+				<li><a href="../../browser-games/hp/research.html" class="index">Research Estimator</a></li>
+				<li><a href="../../browser-games/hp/hardware.html" class="index">This Page</a></li>
+				<li><a href="../../browser-games/hp/ability.html" class="index">Ability Upgrade Estimator</a></li>
+			</ul><hr>
+			<li><a href="../../browser-games/bvs/index.html" class="index">BvS Home</a></li><hr>
+			<li><a href="../../tnr/index.html" class="index">TheNinja-RPG Home</a></li><hr>
+		</ul>
+	</nav>
+	<div id="content">
+	Gold Account: &nbsp; <select id="selGold">
+			<option value="1" selected="selected">Non-Gold</option>
+			<option value="2">Gold</option>
+		</select>
+		<br><br>
+		Hardware Connections: &nbsp; <input type="text" id="abp_hc" value="0">
+		<br><br>
+		CPU Upgrades: <input type="text" id="txtCpu" value="0">
+		HDD Upgrades: <input type="text" id="txtHdd" value="0">
+		Memory Upgrades: <input type="text" id="txtMem" value="0">
+		BW Upgrades: <input type="text" id="txtBand" value="0">
+		<br>
+		<input type="button" value="Calculate" onclick="javascript:calc();">
+		<br>
+		<br>
+		<hr>
+		<br>
+		<span id="out"></span>
+		</div>
+		<noscript><p>Unfortunately, this page requires javascript to function.  You may audit the code <a href="https://github.com/tn5421/tn5421.github.io/tree/master/hp">here</a> before running if you so desire.</p></noscript>
+	</body>
+</html>
