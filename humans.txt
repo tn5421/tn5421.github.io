@@ -15,4 +15,4 @@ Github: Thanks for hosting my homepage all these years!
 /* SITE */
 Last update: https://github.com/tn5421/tn5421.github.io/commits/master
 Standards: HTML5, CSS3, Javascript
-Software: Mousepad
+Software: Mousepad, Xed
