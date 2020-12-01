@@ -1,18 +1,27 @@
 /* TEAM */
-Operator: tn5421
-Xmpp: tn5421@z.nom.pl
-Fediverse: @tn5421@fedi.absturztau.be
-Discord: tn5421#0271
-Twitter: tn5421
+Operator: Neopolitan
+XMPP: neopolitan@dismail.de
+Fediverse: @neo@pl.comfysnug.spacez
+Matrix: @neopolitan:kde.org
+Steam: https://www.steamcommunity.com/id/tn5421
+Twitter: @tn5421
 Location: Northwest Florida, USA
-
-/* THANKS */
-sjums: Allowed me to copy the original virii estimator tool, with the promise that I'd make something nice from it.
-OllieReynolds: Helped me reduce and refactor my javascript.
-Sweets aka SnuggleNet: Helped me drop our jquery dependency for loading a 'remote' navigation list.
-Github: Thanks for hosting my homepage all these years!
 
 /* SITE */
 Last update: https://github.com/tn5421/tn5421.github.io/commits/master
-Standards: HTML5, CSS3, Javascript
-Software: Mousepad, Xed
+Standards: Org-Mode, org-html-publish-to-html
+Software: Doom Emacs v21.12.0-alpha / Emacs 27.1
+
+/* THANKS */
+Software Provider: GNU Project
+Website: https://www.gnu.org
+Software: GNU Emacs 27.1
+
+Software Provider: Doom Emacs
+Website: https://github.com/hlissner/doom-emacs
+Software: Doom Emacs v21.12.0-alpha
+
+Software Provider: Org Mode
+Website: https://orgmode.org
+Software: Org Mode for Emacs
+

@@ -4,7 +4,7 @@ This is my homepage.  Welcome!
 
 ## Usage
 
-Open [My Homepage](https://tn5421.github.io/index.html) in your web browser.  Make sure javascript is enabled.
+Open [My Blog](https://tn5421.github.io/index.html) in your web browser.
 
 ## Contributing
 
@@ -17,5 +17,3 @@ Open [My Homepage](https://tn5421.github.io/index.html) in your web browser.  Ma
 ## Contributors
 
 - [tn5421](https://github.com/tn5421) - Creator, Maintainer
-- [OllieReynolds](https://github.com/OllieReynolds) - Helped with HPTools
-- Sjums - Contributor (virii.html, HPTools)
