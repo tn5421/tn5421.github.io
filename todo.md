@@ -5,7 +5,7 @@ am comfortable linking my site to people again.
 
 ### In Progress
 
-- [ ] Basic boilerplate completion.
+- [x] Basic boilerplate completion.
 - [ ] Appearance parity with tn5421.wordpress.com
   - [ ] Full appearance parity, or this page looks better
 
