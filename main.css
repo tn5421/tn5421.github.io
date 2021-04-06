@@ -1,0 +1,133 @@
+/* Older IE Compatibility with HTML5 */
+header, section, footer, aside, nav, main, article, figure, hgroup, summary, details, figcaption {
+  display: block;
+} 
+/* WIP. Cleanup and optimization is always in progress. Do not define things if there is no need. */
+html, body {
+  color: #444444;
+  background-color: #e3caec;
+  font-size: 20px;
+  line-height: 1.4;
+  font-family: "Gentium Basic", Georgia, 'Times New Roman', Times, serif;
+}
+
+#header {
+  margin: 20px 0 10px 0;
+  background-color: #93B392;
+  font-weight: 800;
+  text-align: center;
+}
+
+#header, #header a {
+  color: #283d4b;
+}
+
+#title {
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-size: 30px;
+  margin: 0;
+}
+
+#summary {
+  margin: 0 20px 30px;
+  font-size: 18px;
+  font-weight: 400;
+  font-style: italic;
+}
+
+#nav {
+  position: relative;
+  font-weight: 400;
+  font-size: 14px;
+  font-family: "Open Sans",Helvetica,Arial,sans-serif;
+  z-index: 100;
+  background-color: #8aad89;
+  width: 100%;
+}
+
+#menu {
+  margin: 0 auto;
+  display: block;
+  padding: 0;
+  width: 100%;
+  display: inline-block;
+}
+
+nav ul li {
+  color: black;
+  display: inline-block;
+  text-align: left;
+  border: 0;
+  float: none;
+  padding: 9px 15px;
+  text-decoration: none;
+  list-style: none;
+  list-style-image: none;
+}
+
+nav ul li a:hover {
+  background-color: #f5f6f7;
+  /* WIP: Needs to change background of padded area around link as well. */
+}
+
+#content {
+  background-color: #e3caec;
+  max-width: 2000px;
+}
+
+#content a {
+  color: #429f14;
+}
+
+#content a:hover {
+  color: #3a8233;
+}
+
+#main {
+  padding: 15px 0 15px 15px;
+  margin: 0 100px 0 700px;
+  max-width: 1500px;
+}
+
+#blog {
+  float: left;
+  text-align: right;
+}
+
+.article {
+  background: #f5f6f7;
+  max-width: 800px;
+  text-align: left;
+  padding: 15px;
+  margin: 0 0 20px 0;
+}
+
+.article h1 {
+  font-size: 2em;
+  margin: 0.25em 0;
+}
+
+span {
+  margin: 0 10px 30px 5px;
+  font-size: 15px;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+}
+
+p {
+  margin: 15px 0 30px;
+}
+
+#sidenav {
+  float: right;
+  position: relative;
+  width: 20%;
+  padding: 15px;
+  font-size: 18px;
+  background-color: rgba( 234, 236, 238, 0.3 );
+  top: -15px; /* WIP: Needs more stable fix */
+}
+
+.side {
+  overflow: hidden;
+  margin: auto;
+}

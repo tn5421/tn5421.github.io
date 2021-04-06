@@ -1,8 +1,20 @@
-# Urgent Priorities
+# Todo list
 
-1. Streamline and remove redundant categories (to be archived).
+This is the list of things I want to have finished before I
+am comfortable linking my site to people again.
 
-# Would like to have
+### In Progress
 
-1. No more content-less pages or placeholders...or at least, better placeholders.
-2. Make as many links as possible relative for easier local testing.
+- [ ] Basic boilerplate completion.
+- [ ] Appearance parity with tn5421.wordpress.com
+  - [ ] Full appearance parity, or this page looks better
+
+### Todo
+
+- [ ] Port wordpress content
+- [ ] Add new content
+- [ ] Optimize page CSS
+
+### Done ✓
+
+- [x] Began homepage rewrite
