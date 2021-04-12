@@ -103,7 +103,16 @@
         </main>
       </div>
       <div id="sidenav">
-        <aside class="side">This area will later contain<br> a wordpress-like right side bar<br> with similar navigation.</aside>
+        <script type="text/javascript">
+          (function(){
+            var request = new XMLHttpRequest();
+            request.open("GET", "https://tn5421.github.io/sidenav.html");
+            request.addEventListener("load", function() {
+                document.querySelector("#sidenav").innerHTML += request.responseText;
+            })
+            request.send();
+          })(); // doesn't check response code or ready state because I'm lazy
+        </script>
       </div>
     </main>
     <!--[if lt IE 7]>

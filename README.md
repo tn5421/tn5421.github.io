@@ -17,3 +17,4 @@ Open [My Homepage](https://tn5421.github.io/index.html) in your web browser.  Ma
 ## Contributors
 
 - [tn5421](https://github.com/tn5421) - Creator, Maintainer
+- [sweets](https://github.com/Sweets) - javascript
