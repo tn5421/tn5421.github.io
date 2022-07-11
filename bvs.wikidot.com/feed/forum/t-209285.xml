@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:wikidot="http://www.wikidot.com/rss-namespace">
+
+	<channel>
+		<title>Comments for page &quot;Hikari&quot;</title>
+		<link>http://bvs.wikidot.com/forum/t-209285/hikari</link>
+		<description>Posts in the discussion thread &quot;Hikari&quot;</description>
+				<copyright></copyright>
+		<lastBuildDate>Sun, 10 Jul 2022 03:57:14 +0000</lastBuildDate>
+		
+					<item>
+				<guid>http://bvs.wikidot.com/forum/t-209285#post-3648007</guid>
+				<title>(no title)</title>
+				<link>http://bvs.wikidot.com/forum/t-209285/hikari#post-3648007</link>
+				<description></description>
+				<pubDate>Fri, 08 Dec 2017 05:30:35 +0000</pubDate>
+				<wikidot:authorName>Wintermute</wikidot:authorName>								<content:encoded>
+					<![CDATA[
+						 <p>Edge is a percentage chance for any success you roll to generate another roll.</p> <p>So, on a Difficulty 11 check any die(Level) that results in 11 or higher has an Edge% chance to add another die(Level) to your total.</p> <p>If you have 10 edge and roll 20 successes on the check, on average you would roll an additional 2 levels against the challenge.</p> <p>I don't know if the extra levels given by Edge can, themselves, generate extra levels through Edge.</p> 
+				 	]]>
+				</content:encoded>							</item>
+					<item>
+				<guid>http://bvs.wikidot.com/forum/t-209285#post-3093580</guid>
+				<title>Edge Explanation</title>
+				<link>http://bvs.wikidot.com/forum/t-209285/hikari#post-3093580</link>
+				<description></description>
+				<pubDate>Wed, 05 Jul 2017 14:20:00 +0000</pubDate>
+				<wikidot:authorName>Palumatzu</wikidot:authorName>				<wikidot:authorUserId>388167</wikidot:authorUserId>				<content:encoded>
+					<![CDATA[
+						 <p>How does Edge work on Normal Missions? Is it related to strength, range, or levels?</p> 
+				 	]]>
+				</content:encoded>							</item>
+				</channel>
+</rss>

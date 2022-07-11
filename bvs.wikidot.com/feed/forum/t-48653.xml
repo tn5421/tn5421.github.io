@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:wikidot="http://www.wikidot.com/rss-namespace">
+
+	<channel>
+		<title>Comments for page &quot;TicTac&quot;</title>
+		<link>http://bvs.wikidot.com/forum/t-48653/tictac</link>
+		<description>Posts in the discussion thread &quot;TicTac&quot;</description>
+				<copyright></copyright>
+		<lastBuildDate>Sun, 10 Jul 2022 03:35:03 +0000</lastBuildDate>
+		
+					<item>
+				<guid>http://bvs.wikidot.com/forum/t-48653#post-473203</guid>
+				<title>(no title)</title>
+				<link>http://bvs.wikidot.com/forum/t-48653/tictac#post-473203</link>
+				<description></description>
+				<pubDate>Fri, 08 May 2009 13:24:44 +0000</pubDate>
+				<wikidot:authorName>Krafen</wikidot:authorName>				<wikidot:authorUserId>313547</wikidot:authorUserId>				<content:encoded>
+					<![CDATA[
+						 <p>I think the comments entry should be removed. It is no longer accurate.</p> 
+				 	]]>
+				</content:encoded>							</item>
+					<item>
+				<guid>http://bvs.wikidot.com/forum/t-48653#post-401422</guid>
+				<title>The Bonus...</title>
+				<link>http://bvs.wikidot.com/forum/t-48653/tictac#post-401422</link>
+				<description></description>
+				<pubDate>Mon, 02 Mar 2009 13:06:31 +0000</pubDate>
+				<wikidot:authorName>Sekai</wikidot:authorName>				<wikidot:authorUserId>242461</wikidot:authorUserId>				<content:encoded>
+					<![CDATA[
+						 <p>TicTac now gives +400% Friend Points, not +100%.</p> 
+				 	]]>
+				</content:encoded>							</item>
+				</channel>
+</rss>

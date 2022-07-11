@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:wikidot="http://www.wikidot.com/rss-namespace">
+
+	<channel>
+		<title>Quest Page Format</title>
+		<link>http://bvs.wikidot.com/forum/t-131384/quest-page-format</link>
+		<description>Posts in the discussion thread &quot;Quest Page Format&quot;</description>
+				<copyright></copyright>
+		<lastBuildDate>Sun, 10 Jul 2022 04:20:08 +0000</lastBuildDate>
+		
+					<item>
+				<guid>http://bvs.wikidot.com/forum/t-131384#post-388530</guid>
+				<title>Quest Page Format</title>
+				<link>http://bvs.wikidot.com/forum/t-131384/quest-page-format#post-388530</link>
+				<description></description>
+				<pubDate>Wed, 18 Feb 2009 09:48:28 +0000</pubDate>
+				<wikidot:authorName>North</wikidot:authorName>				<wikidot:authorUserId>132728</wikidot:authorUserId>				<content:encoded>
+					<![CDATA[
+						 <p>I thought I'll just make a thread on the matter as it is not effective via PM.</p> <p>Here is a preview (updated):<br /> <a href="http://bvs.wikidot.com/quest:jonin-ascension-season-2">Jonin Ascension Season 2</a></p> <p>As I see it, it can have a change and that is on the Headings.</p> <hr /> <p>Option 1:</p> <hr /> <p><strong>Continue Quest &gt;</strong></p> <h1><span>Part 1</span></h1> <blockquote> <p>Something something<br /> extra</p> </blockquote> <hr /> <p>Option 2:</p> <hr /> <p><strong>Continue Quest &gt;</strong></p> <h2><span><strong>Part 1</strong></span></h2> <blockquote> <p>Something something<br /> extra</p> </blockquote> <hr /> <p>The color code for the Quest Requirements box can be obtained from the BvS page Source Code. If you don't know how to do it I'll post the method.</p> <hr /> <p>The red isn't actually red. Here is the code to it:</p> <div class="code"> <pre> <code>##A10000|**Hand over 5 Apples &gt;**##</code> </pre></div> <br /> This is what you get:<br /> <span style="color: #A10000;"><strong>Hand over 5 Apples &gt;</strong></span>
+				 	]]>
+				</content:encoded>							</item>
+				</channel>
+</rss>

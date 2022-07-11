@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:wikidot="http://www.wikidot.com/rss-namespace">
+
+	<channel>
+		<title>Comments for page &quot;Monster&quot;</title>
+		<link>http://bvs.wikidot.com/forum/t-167151/monster</link>
+		<description>Posts in the discussion thread &quot;Monster&quot;</description>
+				<copyright></copyright>
+		<lastBuildDate>Sun, 10 Jul 2022 04:02:43 +0000</lastBuildDate>
+		
+					<item>
+				<guid>http://bvs.wikidot.com/forum/t-167151#post-526252</guid>
+				<title>(no title)</title>
+				<link>http://bvs.wikidot.com/forum/t-167151/monster#post-526252</link>
+				<description></description>
+				<pubDate>Sun, 05 Jul 2009 06:22:24 +0000</pubDate>
+				<wikidot:authorName>Lokumun</wikidot:authorName>				<wikidot:authorUserId>112075</wikidot:authorUserId>				<content:encoded>
+					<![CDATA[
+						 <p>Removed the s in upgrades, to facilitate new adding the upgrades to new monsters. However, now it doesn't link to the upgrades page. :|</p> <p>I suppose it really isn't a big deal, as the template page isn't really meant to be an informational page, but we could switch <a href="http://bvs.wikidot.com/upgrades">upgrades</a> to <a class="newpage" href="http://bvs.wikidot.com/upgrade">upgrade</a>.</p> 
+				 	]]>
+				</content:encoded>							</item>
+				</channel>
+</rss>

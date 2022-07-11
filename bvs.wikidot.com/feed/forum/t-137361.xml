@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:wikidot="http://www.wikidot.com/rss-namespace">
+
+	<channel>
+		<title>Comments for page &quot;Ninja Jackpot!&quot;</title>
+		<link>http://bvs.wikidot.com/forum/t-137361/ninja-jackpot</link>
+		<description>Posts in the discussion thread &quot;Ninja Jackpot!&quot;</description>
+				<copyright></copyright>
+		<lastBuildDate>Sun, 10 Jul 2022 03:08:42 +0000</lastBuildDate>
+		
+					<item>
+				<guid>http://bvs.wikidot.com/forum/t-137361#post-1255018</guid>
+				<title>(no title)</title>
+				<link>http://bvs.wikidot.com/forum/t-137361/ninja-jackpot#post-1255018</link>
+				<description></description>
+				<pubDate>Sat, 10 Sep 2011 03:37:35 +0000</pubDate>
+				<wikidot:authorName>Palumatzu</wikidot:authorName>				<wikidot:authorUserId>388167</wikidot:authorUserId>				<content:encoded>
+					<![CDATA[
+						 <p>statistically speaking, you'd ned to spend 5 mil ryo to actually get anything worthwhile. maybe. how i figure this is as follows.</p> <p>Assuming all of the above probabilities are for getting the individual results themselves, and not for getting a good result at all, your math would be like this:<br /> 250 (cost of a single row) * 5 (5 rows) * the big number in the probability.</p> <p>(250 * 5) * 4000, for example, means that the statistical ryo cost could go up to 5 million ryo.<br /> 1250 * 4000<br /> 5,000,000</p> <p>it gets worse for Stalkergirls and Terris.<br /> 1250 (cost of a normal 5-row game) * 8000 = 10,000,000.</p> <p>Expect the number of ryo to be poured into getting either themes or trophies to jump into the millions. Please feel free to calculate the true ryo cost, if my numbers seem off.</p> 
+				 	]]>
+				</content:encoded>							</item>
+					<item>
+				<guid>http://bvs.wikidot.com/forum/t-137361#post-618417</guid>
+				<title>Odds</title>
+				<link>http://bvs.wikidot.com/forum/t-137361/ninja-jackpot#post-618417</link>
+				<description></description>
+				<pubDate>Tue, 27 Oct 2009 13:51:43 +0000</pubDate>
+				<wikidot:authorName>Le Blue Dude</wikidot:authorName>				<wikidot:authorUserId>297842</wikidot:authorUserId>				<content:encoded>
+					<![CDATA[
+						 <p>The odds depend on if you're looking at JUST the row, or if you're looking at the format of the tape (In which case the tape can be effectively cut into strips of one probability which determines the position of the other visible slots, still it's rather more complicated)</p> <p>Still if you only want a single result, then there's only a single probability of it happening. Where the probabilities get weird is, say, the odds of getting 3 bars AND 3 cherries on one roll with all five rows (Ain't gonna happen)</p> <p>So, here's the by-line probabilities for everything. Remember each additional line adds to the overall probability of each result without saying anything about the probability of a mixed result</p> <p>Lucky 777: 1/4000 (2/20*1/20*1/20 if you want to check my math)<br /> 3 Pinkies: 1/4000 (1/20*1/20*2/20)<br /> 3 Stalkergirls: 1/8000 (1/20*1/20*1/20)<br /> 3 Bars: 1/4000 (1/20*2/20*1/20)<br /> 3 Racks: 1/2000 (2/20*2/20*1/20)<br /> 3 Emosukies: 1/4000 (1/20*2/20*1/20)<br /> 3 Terries: 1/8000 (1/20*1/20*1/20)<br /> 3 Timmies: 1/4000 (2/20*1/20*1/20)<br /> 3 tags: 1/4000 (1/20*1/20*2/20)<br /> 3 bombs: 3/4000 (1/20*2/20*3/20)<br /> 3 Shuriken: 1/4000 (1/20*1/20*2/20)<br /> 3 Kunai: 9/8000 (3/20*3/20*1/20)<br /> 3 cherries: 3/2000 (2/20*2/20*3/20)<br /> Cherry Cherry: 7/2000 (2/20*2/20) - 3 cherries odds<br /> Ninja on: 1/20<br /> Cherry: 99/1000 (2/20- cherry cherry odds - 3 cherries odds)<br /> Tag: 199/4000 (1/20-3 tags)<br /> Bomb 197/4000 (1/20-3bombs)<br /> Shuriken: 199/4000 (1/20 - 3 shuriken)<br /> Kunai: 1191/8000 (3/20- 3 kunai)</p> 
+				 	]]>
+				</content:encoded>							</item>
+					<item>
+				<guid>http://bvs.wikidot.com/forum/t-137361#post-552871</guid>
+				<title>(no title)</title>
+				<link>http://bvs.wikidot.com/forum/t-137361/ninja-jackpot#post-552871</link>
+				<description></description>
+				<pubDate>Tue, 04 Aug 2009 12:45:26 +0000</pubDate>
+				<wikidot:authorName>khoross</wikidot:authorName>								<content:encoded>
+					<![CDATA[
+						 <p>Statistically you'll spend less money playing on a single line than on 5? I think you're incorrect with this.<br /> Playing on 5 lines you spend 3000 ryo for 5 attempts, playing on 1 line you spend 600 ryo for 1 attempt, so the maximum possible difference in the expected expenditure is 2400 ryo (I _think_, with the way uniform probabilities work, you expect to spend an additional 1200 ryo). However, you have a dramatic increase in expected gain from playing on all 5 lines (as we're saying expected expenditure to get a lucky sevens, I think I can get away with assuming our gains includes one lucky sevens win), as you've got a 1/5 chance of getting an additional 900,000 ryo (increasing expected winnings by 190,000 ryo)<br /> So your total expenditure is expected to be marginally higher, but your expected balance after winning the trophy is expected to be substantially higher.</p> <p>You also expect to have to make 1/5 as many pulls, and as mentioned, winning anything on a row you didn't play is incredibly demoralising.</p> 
+				 	]]>
+				</content:encoded>							</item>
+					<item>
+				<guid>http://bvs.wikidot.com/forum/t-137361#post-527418</guid>
+				<title>RE: Odds of winning the Jackpot</title>
+				<link>http://bvs.wikidot.com/forum/t-137361/ninja-jackpot#post-527418</link>
+				<description></description>
+				<pubDate>Mon, 06 Jul 2009 22:38:05 +0000</pubDate>
+				<wikidot:authorName>Shiroi</wikidot:authorName>								<content:encoded>
+					<![CDATA[
+						 <p>The pinkyes, stalkergirls and emosukes icons appear among the others even if you don't have the corresponding item, this means the chances of getting the lucky 7 are not altered even if you own the corresponding items, the only difference will be that if you get 3 stalkergirls without the stalkergirl item you won't get the theme, so it is better to play the jackpot after obtaining all 3 items.</p> <p>I suggest people also to play on all five lines for 2 main reasons, first one is that you can really freak out if you get a lucky seven in a row you haven't played on, second one is that this way you have a chance to get the 1 MILLION RYO price.</p> <p>said this I found out that statistically playing on a single line you'll spend less money to get a lucky seven than if you play on all lines, but at the same time the difference can be so minimal that it's not worth doing it, for both the reason I've mentioned above.</p> <p>Regards,<br /> Shiroi</p> 
+				 	]]>
+				</content:encoded>							</item>
+					<item>
+				<guid>http://bvs.wikidot.com/forum/t-137361#post-410770</guid>
+				<title>Odds of winning the Jackpot (triple 7)</title>
+				<link>http://bvs.wikidot.com/forum/t-137361/ninja-jackpot#post-410770</link>
+				<description></description>
+				<pubDate>Tue, 10 Mar 2009 22:07:00 +0000</pubDate>
+				<wikidot:authorName>sebmagic</wikidot:authorName>								<content:encoded>
+					<![CDATA[
+						 <p>Does anyone know if the odds of getting the Triple 7 (Lucky 7) are lessen if you have the items to get the three themes on the wheel? Since there are more possibilities once they are on the wheel, does it reduces the odds of 777?</p> <p>Also, is the cash back more profitable WITH the three additional possibilities (pinky, stalkergirl and emosuke) when going for Lucky 7, or is it actually worst since the odds are against you?</p> <p>This is important when aiming at a future Lucky 7 attempt. Thanks.</p> 
+				 	]]>
+				</content:encoded>							</item>
+				</channel>
+</rss>

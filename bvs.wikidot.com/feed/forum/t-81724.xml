@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:wikidot="http://www.wikidot.com/rss-namespace">
+
+	<channel>
+		<title>Comments for page &quot;Catgirl Reservation&quot;</title>
+		<link>http://bvs.wikidot.com/forum/t-81724/catgirl-reservation</link>
+		<description>Posts in the discussion thread &quot;Catgirl Reservation&quot;</description>
+				<copyright></copyright>
+		<lastBuildDate>Sun, 10 Jul 2022 03:56:38 +0000</lastBuildDate>
+		
+					<item>
+				<guid>http://bvs.wikidot.com/forum/t-81724#post-240306</guid>
+				<title>Reservation(s)?</title>
+				<link>http://bvs.wikidot.com/forum/t-81724/catgirl-reservation#post-240306</link>
+				<description></description>
+				<pubDate>Fri, 15 Aug 2008 05:47:29 +0000</pubDate>
+				<wikidot:authorName>moodragonx</wikidot:authorName>				<wikidot:authorUserId>161593</wikidot:authorUserId>				<content:encoded>
+					<![CDATA[
+						 <p>the address of the page has an "s" in it while the title does not. While normally this would have little consequence, there are 2 pages already that link to "catgirl reservation" which end up not going anywhere since this page is under "catgirl reservations". It would be a simple matter to just go and change the links myself, but I'm not sure what the actual name of the village upgrade is in-game, so the actual address might need to be changed (if that's even possible). So I leave the task to someone who actually knows better. The two pages with broken links I spoted were:</p> <p><a href="http://bvs.wikidot.com/upgrades">upgrades</a><br /> and<br /> <a href="http://bvs.wikidot.com/monster:agentbrand">agentbrand</a></p> <p>For the sake of sparing confusion for the time being, I updated the links to this page to include the "s", but if this is wrong I'd appreciate it if someone could update everything to how it's supposed to be.</p> 
+				 	]]>
+				</content:encoded>							</item>
+				</channel>
+</rss>

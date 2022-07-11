@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:wikidot="http://www.wikidot.com/rss-namespace">
+
+	<channel>
+		<title>Comments for page &quot;Basic Dustcloak&quot;</title>
+		<link>http://bvs.wikidot.com/forum/t-71735/basic-dustcloak</link>
+		<description>Posts in the discussion thread &quot;Basic Dustcloak&quot;</description>
+				<copyright></copyright>
+		<lastBuildDate>Sun, 10 Jul 2022 03:48:43 +0000</lastBuildDate>
+		
+					<item>
+				<guid>http://bvs.wikidot.com/forum/t-71735#post-443271</guid>
+				<title>Loops</title>
+				<link>http://bvs.wikidot.com/forum/t-71735/basic-dustcloak#post-443271</link>
+				<description></description>
+				<pubDate>Wed, 08 Apr 2009 12:50:55 +0000</pubDate>
+				<wikidot:authorName>BBR</wikidot:authorName>								<content:encoded>
+					<![CDATA[
+						 <p>This item loops as of the recode.</p> 
+				 	]]>
+				</content:encoded>							</item>
+					<item>
+				<guid>http://bvs.wikidot.com/forum/t-71735#post-390293</guid>
+				<title>distilling a basic dustcloak</title>
+				<link>http://bvs.wikidot.com/forum/t-71735/basic-dustcloak#post-390293</link>
+				<description></description>
+				<pubDate>Thu, 19 Feb 2009 19:36:26 +0000</pubDate>
+				<wikidot:authorName>mnpc</wikidot:authorName>								<content:encoded>
+					<![CDATA[
+						 <p>hi, i just distilled a basic dustcloak and got a basic harness, just thought you wanted to know :-)</p> <p>You distilled the Basic Dustcloak into Basic Harness!<br /> (Total made: 1)</p> 
+				 	]]>
+				</content:encoded>							</item>
+					<item>
+				<guid>http://bvs.wikidot.com/forum/t-71735#post-212821</guid>
+				<title>(no title)</title>
+				<link>http://bvs.wikidot.com/forum/t-71735/basic-dustcloak#post-212821</link>
+				<description></description>
+				<pubDate>Wed, 02 Jul 2008 20:33:14 +0000</pubDate>
+				<wikidot:authorName>Nymphonomicon</wikidot:authorName>				<wikidot:authorUserId>91001</wikidot:authorUserId>				<content:encoded>
+					<![CDATA[
+						 <p>I've noticed if you create a Basic Dustcloak and a Wasteland Dustcloak, the effects do not stack. You only get the Wasteland Cloak's effect. This fact should probably be added to the actual items' pages.</p> 
+				 	]]>
+				</content:encoded>							</item>
+				</channel>
+</rss>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:wikidot="http://www.wikidot.com/rss-namespace">
+
+	<channel>
+		<title>Different IP problem</title>
+		<link>http://bvs.wikidot.com/forum/t-117965/different-ip-problem</link>
+		<description>Posts in the discussion thread &quot;Different IP problem&quot;</description>
+				<copyright></copyright>
+		<lastBuildDate>Sun, 10 Jul 2022 05:40:46 +0000</lastBuildDate>
+		
+					<item>
+				<guid>http://bvs.wikidot.com/forum/t-117965#post-359746</guid>
+				<title>Re: Different IP problem</title>
+				<link>http://bvs.wikidot.com/forum/t-117965/different-ip-problem#post-359746</link>
+				<description></description>
+				<pubDate>Sun, 18 Jan 2009 11:58:34 +0000</pubDate>
+				<wikidot:authorName>Anonymous Poster</wikidot:authorName>								<content:encoded>
+					<![CDATA[
+						 <p>you could always use proxies, if that's such a big problem.<br /> as for finding out your ip, try "<a href="http://whatismyip.com">http://whatismyip.com</a>"</p> 
+				 	]]>
+				</content:encoded>							</item>
+					<item>
+				<guid>http://bvs.wikidot.com/forum/t-117965#post-359724</guid>
+				<title>Re: Different IP problem</title>
+				<link>http://bvs.wikidot.com/forum/t-117965/different-ip-problem#post-359724</link>
+				<description></description>
+				<pubDate>Sun, 18 Jan 2009 10:50:29 +0000</pubDate>
+				<wikidot:authorName>Giffica</wikidot:authorName>				<wikidot:authorUserId>169382</wikidot:authorUserId>				<content:encoded>
+					<![CDATA[
+						 <p>OK i have a same kind of thing. I got to a military school so we have a same connection. Now last i heard BvS checks the last numbers not the whole thing. Now i dont know the details how a IP works, but where could i see my own number? Actually if the case is we have the same i will just stop playing from that IP since i dont want to get in trouble. I then cant play at school, but since im not a boarding student and he is i have no choice.<br /> Also since i cheaked something i see that my friend isnt on the same connection as me since im home, but i have another friend playing and he is…….they are in my village so thats how. Now im going to kick 1 since that would make 3 in one.</p> <p>Can anyone ask masters on Random the details?</p> 
+				 	]]>
+				</content:encoded>							</item>
+					<item>
+				<guid>http://bvs.wikidot.com/forum/t-117965#post-358418</guid>
+				<title>Re: Different IP problem</title>
+				<link>http://bvs.wikidot.com/forum/t-117965/different-ip-problem#post-358418</link>
+				<description></description>
+				<pubDate>Fri, 16 Jan 2009 15:22:52 +0000</pubDate>
+				<wikidot:authorName>Ren Po Ken</wikidot:authorName>				<wikidot:authorUserId>103468</wikidot:authorUserId>				<content:encoded>
+					<![CDATA[
+						 <p>Dialup modems get a different IP each time they connect to the internet (well, not every time, they randomly draw from a small pool of IPs), but static connections, like cable or DSL have the same IP more or less forever.</p> 
+				 	]]>
+				</content:encoded>							</item>
+					<item>
+				<guid>http://bvs.wikidot.com/forum/t-117965#post-358222</guid>
+				<title>Re: Different IP problem</title>
+				<link>http://bvs.wikidot.com/forum/t-117965/different-ip-problem#post-358222</link>
+				<description></description>
+				<pubDate>Fri, 16 Jan 2009 10:44:22 +0000</pubDate>
+				<wikidot:authorName>Moare</wikidot:authorName>								<content:encoded>
+					<![CDATA[
+						 <p>Not allways. Me and my brother used two different computers, but still got all the IP-pentalies, so diffrent computer doesn't always help</p> 
+				 	]]>
+				</content:encoded>							</item>
+					<item>
+				<guid>http://bvs.wikidot.com/forum/t-117965#post-358116</guid>
+				<title>Re: Different IP problem</title>
+				<link>http://bvs.wikidot.com/forum/t-117965/different-ip-problem#post-358116</link>
+				<description></description>
+				<pubDate>Fri, 16 Jan 2009 07:11:52 +0000</pubDate>
+				<wikidot:authorName>Anonymous Poster</wikidot:authorName>								<content:encoded>
+					<![CDATA[
+						 <p>actually Vayne, i've tested it out. two computers going through the same connection are still separate in the eyes of BvS: i've checked this when me and a friend both on the same wifi modem connection to the internet sparred with each other (and did not recieve the duplicate IP message)</p> 
+				 	]]>
+				</content:encoded>							</item>
+					<item>
+				<guid>http://bvs.wikidot.com/forum/t-117965#post-357941</guid>
+				<title>Re: Different IP problem</title>
+				<link>http://bvs.wikidot.com/forum/t-117965/different-ip-problem#post-357941</link>
+				<description></description>
+				<pubDate>Fri, 16 Jan 2009 01:35:53 +0000</pubDate>
+				<wikidot:authorName>Vayne</wikidot:authorName>				<wikidot:authorUserId>268713</wikidot:authorUserId>				<content:encoded>
+					<![CDATA[
+						 <p>While the Anonymous Poster is right that <strong>you don't have anything to worry about if your roomie doesn't play BvS</strong> they do have a couple of things wrong about how IPs work. The IP that BvS tracks is the one of your connection to the internet, not of your computer(s) specifically. That means if you and your roomie are connected to the internet through the same modem and both play BvS the game will see you both as a single person, whether you both play on the same computer or whether you have your own computers. That won't be a problem as long as you have 3 or less characters between you, but if you both have alts then you will be over the max of 3 characters per IP. As an example, I have two computers that both connect to the internet through the same connection. Even though the computers are seperate from each other, because they share that connection they both have the same IP, so I can only have 3 BvS characters without getting into trouble.</p> 
+				 	]]>
+				</content:encoded>							</item>
+					<item>
+				<guid>http://bvs.wikidot.com/forum/t-117965#post-349542</guid>
+				<title>Re: Different IP problem</title>
+				<link>http://bvs.wikidot.com/forum/t-117965/different-ip-problem#post-349542</link>
+				<description></description>
+				<pubDate>Tue, 06 Jan 2009 19:24:55 +0000</pubDate>
+				<wikidot:authorName>reborned</wikidot:authorName>								<content:encoded>
+					<![CDATA[
+						 <p>Ok, thank you!</p> 
+				 	]]>
+				</content:encoded>							</item>
+					<item>
+				<guid>http://bvs.wikidot.com/forum/t-117965#post-349538</guid>
+				<title>Re: Different IP problem</title>
+				<link>http://bvs.wikidot.com/forum/t-117965/different-ip-problem#post-349538</link>
+				<description></description>
+				<pubDate>Tue, 06 Jan 2009 19:22:03 +0000</pubDate>
+				<wikidot:authorName>Anonymous Poster</wikidot:authorName>								<content:encoded>
+					<![CDATA[
+						 <p>if you're both using the same computer, as far as BvS can tell, it's 1 person. if the other person isn't playing BvS, this is a non issue. If the other person IS playing BvS, you'll be seen as alts of each other, relative to who has been on what IP, when.<br /> so:<br /> 1. you play, roomie doesn't. no problem.<br /> 2. you play, roomie plays, different computers. no problem.<br /> 3. you play, roomie plays, same computer. maybe problem.<br /> You're seen as alts of each other. thus:<br /> no trading stuff between the two of you.<br /> if you both have an alt, you're over the limit of characters per IP (3, last i checked)<br /> bingos and invasions are by IP or something… i don't know the full details of this.<br /> you can't spar with each other (duplicate IP! yadda yadda yadda)</p> <p>there's probably more, but that's all i know, as i don't have an alt myself.</p> 
+				 	]]>
+				</content:encoded>							</item>
+					<item>
+				<guid>http://bvs.wikidot.com/forum/t-117965#post-349524</guid>
+				<title>Re: Different IP problem</title>
+				<link>http://bvs.wikidot.com/forum/t-117965/different-ip-problem#post-349524</link>
+				<description></description>
+				<pubDate>Tue, 06 Jan 2009 19:11:38 +0000</pubDate>
+				<wikidot:authorName>reborned</wikidot:authorName>								<content:encoded>
+					<![CDATA[
+						 <p>So, just to clear this, if I change the IP but the other person in my apartment doesn't play BvS, it'll be ok?</p> 
+				 	]]>
+				</content:encoded>							</item>
+					<item>
+				<guid>http://bvs.wikidot.com/forum/t-117965#post-349522</guid>
+				<title>Re: Different IP problem</title>
+				<link>http://bvs.wikidot.com/forum/t-117965/different-ip-problem#post-349522</link>
+				<description></description>
+				<pubDate>Tue, 06 Jan 2009 19:08:44 +0000</pubDate>
+				<wikidot:authorName>Anonymous Poster</wikidot:authorName>								<content:encoded>
+					<![CDATA[
+						 <p>only way it'll cause problems is if you are sharing a computer with another person on the same IP who also plays BvS.<br /> moving won't cause troubles at all.</p> 
+				 	]]>
+				</content:encoded>							</item>
+					<item>
+				<guid>http://bvs.wikidot.com/forum/t-117965#post-349507</guid>
+				<title>Different IP problem</title>
+				<link>http://bvs.wikidot.com/forum/t-117965/different-ip-problem#post-349507</link>
+				<description></description>
+				<pubDate>Tue, 06 Jan 2009 18:39:49 +0000</pubDate>
+				<wikidot:authorName>reborned</wikidot:authorName>								<content:encoded>
+					<![CDATA[
+						 <p>I have a problem, and I would like an answer from anyone who can seriously give it:</p> <p>A week from now I'll start again university, and that means I'll go to another city soon. Could the change of IP give me some problem, expecially with the moderators? Will my characters be deleted because of this?</p> <p>Thanks anyone</p> 
+				 	]]>
+				</content:encoded>							</item>
+				</channel>
+</rss>

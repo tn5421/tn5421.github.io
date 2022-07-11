@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:wikidot="http://www.wikidot.com/rss-namespace">
+
+	<channel>
+		<title>Comments for page &quot;Over 11,000&quot;</title>
+		<link>http://bvs.wikidot.com/forum/t-133852/over-11-000</link>
+		<description>Posts in the discussion thread &quot;Over 11,000&quot;</description>
+				<copyright></copyright>
+		<lastBuildDate>Sun, 10 Jul 2022 03:08:43 +0000</lastBuildDate>
+		
+					<item>
+				<guid>http://bvs.wikidot.com/forum/t-133852#post-2019232</guid>
+				<title>(no title)</title>
+				<link>http://bvs.wikidot.com/forum/t-133852/over-11-000#post-2019232</link>
+				<description></description>
+				<pubDate>Fri, 25 Apr 2014 09:52:34 +0000</pubDate>
+				<wikidot:authorName>Nytemaren</wikidot:authorName>								<content:encoded>
+					<![CDATA[
+						 <p>Random thought, a good way to go about the brute force method may be, if the EleventyNumber doesn't change at dayroll, to start a few moments before dayroll, so that the price resets part-way through.</p> 
+				 	]]>
+				</content:encoded>							</item>
+					<item>
+				<guid>http://bvs.wikidot.com/forum/t-133852#post-1359887</guid>
+				<title>(no title)</title>
+				<link>http://bvs.wikidot.com/forum/t-133852/over-11-000#post-1359887</link>
+				<description></description>
+				<pubDate>Fri, 27 Jan 2012 22:57:54 +0000</pubDate>
+				<wikidot:authorName>Sam510</wikidot:authorName>				<wikidot:authorUserId>358542</wikidot:authorUserId>				<content:encoded>
+					<![CDATA[
+						 <p>The message about the Black Market applies to the entire Party House, not just Over 11,000, and it's already noted on the <a href="http://bvs.wikidot.com/upgrade:black-market">Black Market</a> page.</p> 
+				 	]]>
+				</content:encoded>							</item>
+					<item>
+				<guid>http://bvs.wikidot.com/forum/t-133852#post-1359884</guid>
+				<title>(no title)</title>
+				<link>http://bvs.wikidot.com/forum/t-133852/over-11-000#post-1359884</link>
+				<description></description>
+				<pubDate>Fri, 27 Jan 2012 22:52:45 +0000</pubDate>
+				<wikidot:authorName>Wintermute</wikidot:authorName>								<content:encoded>
+					<![CDATA[
+						 <p>I was buying 11 entries at a time when I go this message:</p> <p>You've contributed over 250K to your Village Today!<br /> The Black Market won't help you out for fear of getting exposed!</p> <p>This should probably go in the wiki</p> 
+				 	]]>
+				</content:encoded>							</item>
+					<item>
+				<guid>http://bvs.wikidot.com/forum/t-133852#post-981422</guid>
+				<title>(no title)</title>
+				<link>http://bvs.wikidot.com/forum/t-133852/over-11-000#post-981422</link>
+				<description></description>
+				<pubDate>Sat, 22 Jan 2011 18:48:08 +0000</pubDate>
+				<wikidot:authorName>Sam510</wikidot:authorName>				<wikidot:authorUserId>358542</wikidot:authorUserId>				<content:encoded>
+					<![CDATA[
+						 <p>Fair enough. I'll change that phrase.</p> 
+				 	]]>
+				</content:encoded>							</item>
+					<item>
+				<guid>http://bvs.wikidot.com/forum/t-133852#post-981394</guid>
+				<title>(no title)</title>
+				<link>http://bvs.wikidot.com/forum/t-133852/over-11-000#post-981394</link>
+				<description></description>
+				<pubDate>Sat, 22 Jan 2011 17:59:23 +0000</pubDate>
+				<wikidot:authorName>taltamir</wikidot:authorName>				<wikidot:authorUserId>663175</wikidot:authorUserId>				<content:encoded>
+					<![CDATA[
+						 <p>its incorrect.<br /> it says winning number <strong>not</strong> current number. If the current number is between 1 and 10 then you could spend up to the maximum amount. If the winning number is between 1-10 then the current number must be 0 and a single buy in will cause you to win.</p> 
+				 	]]>
+				</content:encoded>							</item>
+					<item>
+				<guid>http://bvs.wikidot.com/forum/t-133852#post-968498</guid>
+				<title>(no title)</title>
+				<link>http://bvs.wikidot.com/forum/t-133852/over-11-000#post-968498</link>
+				<description></description>
+				<pubDate>Sun, 09 Jan 2011 18:29:24 +0000</pubDate>
+				<wikidot:authorName>Sam510</wikidot:authorName>				<wikidot:authorUserId>358542</wikidot:authorUserId>				<content:encoded>
+					<![CDATA[
+						 <p>No, that bit is correct. That assumption applies to the <strong>maximum required.</strong> If the number isn't between 1 and 10, it will take fewer attempts than the maximum.</p> 
+				 	]]>
+				</content:encoded>							</item>
+					<item>
+				<guid>http://bvs.wikidot.com/forum/t-133852#post-968483</guid>
+				<title>wrong assumption</title>
+				<link>http://bvs.wikidot.com/forum/t-133852/over-11-000#post-968483</link>
+				<description></description>
+				<pubDate>Sun, 09 Jan 2011 17:41:17 +0000</pubDate>
+				<wikidot:authorName>taltamir</wikidot:authorName>				<wikidot:authorUserId>663175</wikidot:authorUserId>				<content:encoded>
+					<![CDATA[
+						 <p>on the "maximum required to win", it says you need to buy 1000 attempts.<br /> however, the "assumptions" list includes this incorrect tidbit "The winning number that day is between 1-10, which has a probability of 1/1,000 (slightly less than 0.091%)."<br /> This is not an assumption of that strategy. I would edit it myself but i haven't been a member for 30 days yet.</p> 
+				 	]]>
+				</content:encoded>							</item>
+				</channel>
+</rss>

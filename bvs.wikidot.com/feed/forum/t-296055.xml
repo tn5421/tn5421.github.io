@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:wikidot="http://www.wikidot.com/rss-namespace">
+
+	<channel>
+		<title>Crank page needs update</title>
+		<link>http://bvs.wikidot.com/forum/t-296055/crank-page-needs-update</link>
+		<description>Posts in the discussion thread &quot;Crank page needs update&quot; - noticed an error on some of the requirements of crank for some of the keys.</description>
+				<copyright></copyright>
+		<lastBuildDate>Sun, 10 Jul 2022 03:32:30 +0000</lastBuildDate>
+		
+					<item>
+				<guid>http://bvs.wikidot.com/forum/t-296055#post-965860</guid>
+				<title>Re: Crank page needs update</title>
+				<link>http://bvs.wikidot.com/forum/t-296055/crank-page-needs-update#post-965860</link>
+				<description></description>
+				<pubDate>Thu, 06 Jan 2011 08:09:56 +0000</pubDate>
+				<wikidot:authorName>RikaCovena</wikidot:authorName>				<wikidot:authorUserId>368815</wikidot:authorUserId>				<content:encoded>
+					<![CDATA[
+						 <p>Updated the list. Didn't notice it myself, but I got everything running a crank of 2, so it's possible to get everything at, at the least, a crank of 2. I cannot confirm anything less than that personally. If we could have someone run some empirical tests, it'd be helpful.</p> 
+				 	]]>
+				</content:encoded>							</item>
+					<item>
+				<guid>http://bvs.wikidot.com/forum/t-296055#post-965850</guid>
+				<title>Crank page needs update</title>
+				<link>http://bvs.wikidot.com/forum/t-296055/crank-page-needs-update#post-965850</link>
+				<description></description>
+				<pubDate>Thu, 06 Jan 2011 07:49:50 +0000</pubDate>
+				<wikidot:authorName>Trevor</wikidot:authorName>								<content:encoded>
+					<![CDATA[
+						 <p>on the Crank page, <a href="http://bvs.wikidot.com/the-crank">http://bvs.wikidot.com/the-crank</a><br /> there are two errors in the Crank Requirement list,<br /> another wiki page, <a href="http://bvs.wikidot.com/guide:r00t">http://bvs.wikidot.com/guide:r00t</a> confirms these corrections.<br /> As for actual experience, I just acquired Filthy and Noodle Shop with only a crank of +2.<br /> Corrections are in brackets:</p> <p>Find Errant Bit on Syntax Error Item Crank 1+<br /> Find Dance Floor on Mind The Gap Key Crank 2+ (recommended, not required)<br /> Find Delicious on Eat The Tasty Key Crank 2+ (recommended, not required)<br /> Find Chosen on Flaw in the World (Nin) Key Crank 6+<br /> Find Filthy on Flaw in the World (Tai Nin) Key Crank 6+ (+2 recommended, not required)<br /> Find Hopeless on Flaw in the World (Gen) Key Crank 6+<br /> Find Noodle Shop on Flaw in the World (Gen Tai) Key Crank 4+ (+2 recommended, not required)</p> 
+				 	]]>
+				</content:encoded>							</item>
+				</channel>
+</rss>

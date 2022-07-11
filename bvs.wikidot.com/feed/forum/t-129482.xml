@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:wikidot="http://www.wikidot.com/rss-namespace">
+
+	<channel>
+		<title>Comments for page &quot;Yoma Blood&quot;</title>
+		<link>http://bvs.wikidot.com/forum/t-129482/yoma-blood</link>
+		<description>Posts in the discussion thread &quot;Yoma Blood&quot;</description>
+				<copyright></copyright>
+		<lastBuildDate>Sun, 10 Jul 2022 03:51:44 +0000</lastBuildDate>
+		
+					<item>
+				<guid>http://bvs.wikidot.com/forum/t-129482#post-537272</guid>
+				<title>(no title)</title>
+				<link>http://bvs.wikidot.com/forum/t-129482/yoma-blood#post-537272</link>
+				<description></description>
+				<pubDate>Fri, 17 Jul 2009 21:42:03 +0000</pubDate>
+				<wikidot:authorName>GPMC</wikidot:authorName>				<wikidot:authorUserId>285988</wikidot:authorUserId>				<content:encoded>
+					<![CDATA[
+						 <p>My 3 Yoma Bloods say +4 fights.</p> <p>But why is it listed twice at the "Potions/Crafting Items - Bonus"</p> 
+				 	]]>
+				</content:encoded>							</item>
+					<item>
+				<guid>http://bvs.wikidot.com/forum/t-129482#post-381593</guid>
+				<title>(no title)</title>
+				<link>http://bvs.wikidot.com/forum/t-129482/yoma-blood#post-381593</link>
+				<description></description>
+				<pubDate>Wed, 11 Feb 2009 01:08:04 +0000</pubDate>
+				<wikidot:authorName>Aequitas</wikidot:authorName>								<content:encoded>
+					<![CDATA[
+						 <p>As of the recode, it is now on the "items you will keep" list when you loop. It now also only gives +3 fights, not +4.</p> 
+				 	]]>
+				</content:encoded>							</item>
+				</channel>
+</rss>

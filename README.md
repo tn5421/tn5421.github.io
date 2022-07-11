@@ -1,10 +1,10 @@
 # tn5421.github.io
 
-This is my homepage.  Welcome!
+This is my homepage, which is currently host to the BvS Wiki! Welcome!
 
 ## Usage
 
-Open [My Blog](https://tn5421.github.io/index.html) in your web browser.
+Open [BvS Wiki](https://tn5421.github.io/index.html) in your web browser.
 
 ## Contributing
 

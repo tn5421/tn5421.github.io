@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:wikidot="http://www.wikidot.com/rss-namespace">
+
+	<channel>
+		<title>Allies pages revamp?</title>
+		<link>http://bvs.wikidot.com/forum/t-349734/allies-pages-revamp</link>
+		<description>Posts in the discussion thread &quot;Allies pages revamp?&quot;</description>
+				<copyright></copyright>
+		<lastBuildDate>Sun, 10 Jul 2022 03:32:27 +0000</lastBuildDate>
+		
+					<item>
+				<guid>http://bvs.wikidot.com/forum/t-349734#post-1131836</guid>
+				<title>Allies pages revamp?</title>
+				<link>http://bvs.wikidot.com/forum/t-349734/allies-pages-revamp#post-1131836</link>
+				<description></description>
+				<pubDate>Thu, 21 Apr 2011 03:05:04 +0000</pubDate>
+				<wikidot:authorName>RikaCovena</wikidot:authorName>				<wikidot:authorUserId>368815</wikidot:authorUserId>				<content:encoded>
+					<![CDATA[
+						 <p>The allies page has the icons of each ally load after the framework and any specific ally type links are done (for example, the &quot;wasteland&quot; section) and as such shunts the entire page down as they load. Can we either get the cells resized to proper hold the icons without resizing as they load, or the icons resized so that when they are loaded they don't force the cells to resize? Or if a third option that still deals with the issue can be found, whatever the case.</p> 
+				 	]]>
+				</content:encoded>							</item>
+				</channel>
+</rss>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:wikidot="http://www.wikidot.com/rss-namespace">
+
+	<channel>
+		<title>New Monster Rule</title>
+		<link>http://bvs.wikidot.com/forum/t-60484/new-monster-rule</link>
+		<description>Posts in the discussion thread &quot;New Monster Rule&quot; - Open for Discussion</description>
+				<copyright></copyright>
+		<lastBuildDate>Sun, 10 Jul 2022 05:03:46 +0000</lastBuildDate>
+		
+					<item>
+				<guid>http://bvs.wikidot.com/forum/t-60484#post-165981</guid>
+				<title>Re: New Monster Rule</title>
+				<link>http://bvs.wikidot.com/forum/t-60484/new-monster-rule#post-165981</link>
+				<description></description>
+				<pubDate>Mon, 19 May 2008 01:38:45 +0000</pubDate>
+				<wikidot:authorName>BvS-Uzuki</wikidot:authorName>				<wikidot:authorUserId>78144</wikidot:authorUserId>				<content:encoded>
+					<![CDATA[
+						 <p>Fair enough, revised the section to include a "avoiding looping" exemption.</p> 
+				 	]]>
+				</content:encoded>							</item>
+					<item>
+				<guid>http://bvs.wikidot.com/forum/t-60484#post-165966</guid>
+				<title>Re: New Monster Rule</title>
+				<link>http://bvs.wikidot.com/forum/t-60484/new-monster-rule#post-165966</link>
+				<description></description>
+				<pubDate>Mon, 19 May 2008 01:10:06 +0000</pubDate>
+				<wikidot:authorName>Lear</wikidot:authorName>				<wikidot:authorUserId>91991</wikidot:authorUserId>				<content:encoded>
+					<![CDATA[
+						 <p>Sounds good except for one thing. I think there should be another exception for those who are very close to starting their looping timer.</p> <p>For example, if I were to attack a monster 2 or 3 times, it would likely bump one of my stats to 20, which will start my looping timer, and I really don't want to do that for another few days. (I'm not even running missions anymore, just sparring and using the arena/party house because I'm so close to starting the timer.) I'm aware we don't have Hard Corps yet, so it's unlikely that it'll affect me, but I can see it affecting other people in the future.</p> <p>So I think that we should be able to not attack if it'd negatively affect us in that way as well, in addition to if we need the stamina.</p> 
+				 	]]>
+				</content:encoded>							</item>
+					<item>
+				<guid>http://bvs.wikidot.com/forum/t-60484#post-165895</guid>
+				<title>New Monster Rule</title>
+				<link>http://bvs.wikidot.com/forum/t-60484/new-monster-rule#post-165895</link>
+				<description></description>
+				<pubDate>Sun, 18 May 2008 21:30:02 +0000</pubDate>
+				<wikidot:authorName>BvS-Uzuki</wikidot:authorName>				<wikidot:authorUserId>78144</wikidot:authorUserId>				<content:encoded>
+					<![CDATA[
+						 <p>Once we have Hard Corps available, I would like to start summoning monsters much more regularly. They are a good source of free, no upkeep upgrades, in addition to getting you guys rare items. However, lots of monsters means less doing normal missions, which can result in your character not developing properly. So, here's what I was thinking…</p> <p>- If it's a small monster (anything with &lt; 20k health), attacking is completely optional. If you have no interest in the item drop, or you have other more important things to do, you don't have to attack these at all.</p> <p>- If it's a large monster (Storm Riders, Mad Scientists, or Super Robots), you must attack the monster at least twice a day. You <em>can</em> skip patrolling or collecting on these days, if you like. The stamina cost, should, then be effectively neutral.</p> <p>- If a large monster survives 7 days and destroys one of our upgrades, anyone who has not been attacking twice a day loses access to upgrades for a week.</p> <p>- You can get an exemption from attacking <em>if</em> you're doing something on a day where you absolutely need to maximize your stamina use (S2+ Jonin, going for Sannin, getting the Note, stuff of this nature) or you're at max stats and attempting to avoid your loop timer*. Just say in the in game chat something akin to "Can't attack today, need to use my stamina for X." Unless you've got a super good reason, this should only be for one day.</p> <p>The goal here is to make sure that you guys can spend your stamina the way you need to in order to advance your character properly, while at the same time making it possible to work our way through monsters quickly and efficiently. The more monsters we kill, the more items there are to go around, so continuous summoning seems to make the most sense.</p> <p>(Also, just a hint for those who really want to get a lot of monster drops: Legacy monochrome power allows your attacks to count for double for monster drops. Strawberry 2 (from monochrome), the Strawberry Sundae team, and the Lab Coats (from Mad Scientists) both reduce the stamina cost for attacking monsters. I'd recommend you pursue this route if you're looking to get as many drops as possible.</p> <ul> <li>= You can only use this excuse if the stat of the kaiju is already at the point where 1 more level would push it over the top.</li> </ul> 
+				 	]]>
+				</content:encoded>							</item>
+				</channel>
+</rss>

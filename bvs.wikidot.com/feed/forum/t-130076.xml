@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:wikidot="http://www.wikidot.com/rss-namespace">
+
+	<channel>
+		<title>Something to do with the character box in the players section.</title>
+		<link>http://bvs.wikidot.com/forum/t-130076/something-to-do-with-the-character-box-in-the-players-sectio</link>
+		<description>Posts in the discussion thread &quot;Something to do with the character box in the players section.&quot;</description>
+				<copyright></copyright>
+		<lastBuildDate>Sun, 10 Jul 2022 04:20:07 +0000</lastBuildDate>
+		
+					<item>
+				<guid>http://bvs.wikidot.com/forum/t-130076#post-391787</guid>
+				<title>Re: Something to do with the character box in the players section.</title>
+				<link>http://bvs.wikidot.com/forum/t-130076/something-to-do-with-the-character-box-in-the-players-sectio#post-391787</link>
+				<description></description>
+				<pubDate>Sat, 21 Feb 2009 04:09:13 +0000</pubDate>
+				<wikidot:authorName>computermix</wikidot:authorName>				<wikidot:authorUserId>254935</wikidot:authorUserId>				<content:encoded>
+					<![CDATA[
+						 <p>Ooh, thank you very much.</p> 
+				 	]]>
+				</content:encoded>							</item>
+					<item>
+				<guid>http://bvs.wikidot.com/forum/t-130076#post-387703</guid>
+				<title>Re: Something to do with the character box in the players section.</title>
+				<link>http://bvs.wikidot.com/forum/t-130076/something-to-do-with-the-character-box-in-the-players-sectio#post-387703</link>
+				<description></description>
+				<pubDate>Tue, 17 Feb 2009 16:45:11 +0000</pubDate>
+				<wikidot:authorName>Moare</wikidot:authorName>				<wikidot:authorUserId>79546</wikidot:authorUserId>				<content:encoded>
+					<![CDATA[
+						 <p>Requested changes done</p> 
+				 	]]>
+				</content:encoded>							</item>
+					<item>
+				<guid>http://bvs.wikidot.com/forum/t-130076#post-383844</guid>
+				<title>Something to do with the character box in the players section.</title>
+				<link>http://bvs.wikidot.com/forum/t-130076/something-to-do-with-the-character-box-in-the-players-sectio#post-383844</link>
+				<description></description>
+				<pubDate>Fri, 13 Feb 2009 05:13:52 +0000</pubDate>
+				<wikidot:authorName>computermix</wikidot:authorName>				<wikidot:authorUserId>254935</wikidot:authorUserId>				<content:encoded>
+					<![CDATA[
+						 <p>Well, I've been using the wiki page in the players section for a few weeks now, and the [[include include:CharBox]] looks a bit funky. A few things that I think would make this better would be to</p> <ul> <li>bold the level number and rank</li> <li>unbold the Village name</li> <li>unbold the stats (gen, tai, nin, dou)</li> <li>bold the success, range and strength numbers only.</li> </ul> <p>And that is pretty much it.</p> 
+				 	]]>
+				</content:encoded>							</item>
+				</channel>
+</rss>

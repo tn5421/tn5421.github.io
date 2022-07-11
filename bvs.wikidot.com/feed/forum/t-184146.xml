@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:wikidot="http://www.wikidot.com/rss-namespace">
+
+	<channel>
+		<title>Reaper Menu missing images</title>
+		<link>http://bvs.wikidot.com/forum/t-184146/reaper-menu-missing-images</link>
+		<description>Posts in the discussion thread &quot;Reaper Menu missing images&quot; - Just commenting on an error in the wiki-coding for that page, and listing the fix.</description>
+				<copyright></copyright>
+		<lastBuildDate>Sun, 10 Jul 2022 04:19:46 +0000</lastBuildDate>
+		
+					<item>
+				<guid>http://bvs.wikidot.com/forum/t-184146#post-591101</guid>
+				<title>Reaper Menu missing images</title>
+				<link>http://bvs.wikidot.com/forum/t-184146/reaper-menu-missing-images#post-591101</link>
+				<description></description>
+				<pubDate>Wed, 23 Sep 2009 05:48:26 +0000</pubDate>
+				<wikidot:authorName>Ariamaki</wikidot:authorName>				<wikidot:authorUserId>368220</wikidot:authorUserId>				<content:encoded>
+					<![CDATA[
+						 <p>The page of Reaper Menu is supposed to have all 4 Reaper Blood images, but only has one, Cobra Kai, because the other three link to non-existent files.<br /> If someone could please go in and remove the number 2 from directly before the .jpg in all three of the other file names, they would work properly.<br /> I would go in and do so myself, but my current character has not been active long enough for me to join and edit.<br /> Example:<br /> Reaper_Blood_-_Dormant2.jpg<br /> should just be<br /> Reaper_Blood_-_Dormant.jpg</p> <p>The Cobrai Kai image has a 2 in the name, but that file exists— I assume someone tried to change all 4, not realizing only one of them was named that way.<br /> Thanks much!<br /> —Ariamaki</p> 
+				 	]]>
+				</content:encoded>							</item>
+				</channel>
+</rss>

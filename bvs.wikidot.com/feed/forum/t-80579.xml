@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:wikidot="http://www.wikidot.com/rss-namespace">
+
+	<channel>
+		<title>Extra page</title>
+		<link>http://bvs.wikidot.com/forum/t-80579/extra-page</link>
+		<description>Posts in the discussion thread &quot;Extra page&quot; - Rebreather</description>
+				<copyright></copyright>
+		<lastBuildDate>Sun, 10 Jul 2022 05:54:12 +0000</lastBuildDate>
+		
+					<item>
+				<guid>http://bvs.wikidot.com/forum/t-80579#post-237431</guid>
+				<title>Re: Extra page</title>
+				<link>http://bvs.wikidot.com/forum/t-80579/extra-page#post-237431</link>
+				<description></description>
+				<pubDate>Sun, 10 Aug 2008 05:57:45 +0000</pubDate>
+				<wikidot:authorName>kelumhi</wikidot:authorName>				<wikidot:authorUserId>24443</wikidot:authorUserId>				<content:encoded>
+					<![CDATA[
+						 <p>changed all the pages info that came up in the search to meet the original page, but this character page:</p> <p><a href="http://bvswiki.com/player:bsktbll280">http://bvswiki.com/player:bsktbll280</a></p> <p>now just copied complete page to non complete page so everything works find will an admin takes action.</p> 
+				 	]]>
+				</content:encoded>							</item>
+					<item>
+				<guid>http://bvs.wikidot.com/forum/t-80579#post-237429</guid>
+				<title>Re: Extra page</title>
+				<link>http://bvs.wikidot.com/forum/t-80579/extra-page#post-237429</link>
+				<description></description>
+				<pubDate>Sun, 10 Aug 2008 05:49:56 +0000</pubDate>
+				<wikidot:authorName>kelumhi</wikidot:authorName>				<wikidot:authorUserId>24443</wikidot:authorUserId>				<content:encoded>
+					<![CDATA[
+						 <p>thanks for the info, ill remember that.</p> 
+				 	]]>
+				</content:encoded>							</item>
+					<item>
+				<guid>http://bvs.wikidot.com/forum/t-80579#post-237387</guid>
+				<title>Re: Extra page</title>
+				<link>http://bvs.wikidot.com/forum/t-80579/extra-page#post-237387</link>
+				<description></description>
+				<pubDate>Sun, 10 Aug 2008 02:36:51 +0000</pubDate>
+				<wikidot:authorName>Jadian</wikidot:authorName>				<wikidot:authorUserId>103367</wikidot:authorUserId>				<content:encoded>
+					<![CDATA[
+						 <p>Good thing to point out, but a little more than what you're thinking needs to happen for this one.</p> <p>The first page is the proper name for the item on BvS, and thus the proper action to take would most likely be deleting the first page, which has been largely neglected, and rename the second page to correctly reflect the item name. Then, the pages linking to the latter page need to have their links fixed.</p> <p>Normally, if it were a simple error, and the more empty page was created with a typo, you would add the 'delete' tag to the page to bring it to the attention of the people who can actually delete the page. In this case, making a thread on the subject was probably better, though the "Wiki / General" board would have been a more suitable place for the thread.</p> 
+				 	]]>
+				</content:encoded>							</item>
+					<item>
+				<guid>http://bvs.wikidot.com/forum/t-80579#post-237309</guid>
+				<title>Extra page</title>
+				<link>http://bvs.wikidot.com/forum/t-80579/extra-page#post-237309</link>
+				<description></description>
+				<pubDate>Sat, 09 Aug 2008 22:03:22 +0000</pubDate>
+				<wikidot:authorName>kelumhi</wikidot:authorName>				<wikidot:authorUserId>24443</wikidot:authorUserId>				<content:encoded>
+					<![CDATA[
+						 <p>i beleive that <a href="http://bvswiki.com/items:wasteland-rebreather">this</a>page is a coppy of <a href="http://bvswiki.com/items:wastelands-rebreather">this</a> page. the second has much more info, shouldnt we delete the first</p> <p>(ps, is there a tag i can insurt instead of making a thread on the subject)</p> 
+				 	]]>
+				</content:encoded>							</item>
+				</channel>
+</rss>

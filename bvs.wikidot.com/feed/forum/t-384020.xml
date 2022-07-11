@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:wikidot="http://www.wikidot.com/rss-namespace">
+
+	<channel>
+		<title>Welcome to the Jungle!</title>
+		<link>http://bvs.wikidot.com/forum/t-384020/welcome-to-the-jungle</link>
+		<description>Posts in the discussion thread &quot;Welcome to the Jungle!&quot;</description>
+				<copyright></copyright>
+		<lastBuildDate>Sun, 10 Jul 2022 03:32:21 +0000</lastBuildDate>
+		
+					<item>
+				<guid>http://bvs.wikidot.com/forum/t-384020#post-1234952</guid>
+				<title>Welcome to the Jungle!</title>
+				<link>http://bvs.wikidot.com/forum/t-384020/welcome-to-the-jungle#post-1234952</link>
+				<description></description>
+				<pubDate>Sat, 20 Aug 2011 19:47:53 +0000</pubDate>
+				<wikidot:authorName>Ignifer</wikidot:authorName>				<wikidot:authorUserId>390206</wikidot:authorUserId>				<content:encoded>
+					<![CDATA[
+						 <p>Jungle Missions are now added to the game (and the wiki), but they still need to be spaded out completely. Got the basics added in, but I don't know whether or not any of the missions are rare, or if any of those ones without hidden content actually do have something. It's possible, if unlikely, that they give content at a higher crank, or are RedEye only, or something else I'm not testing. And, of course, we need all the mission texts, difficulties, and results. Will put in what I have already.</p> <p>Also, we need to add in the Workshop, and add Jungle to the top bar.</p> 
+				 	]]>
+				</content:encoded>							</item>
+				</channel>
+</rss>

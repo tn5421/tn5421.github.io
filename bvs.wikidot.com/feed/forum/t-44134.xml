@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:wikidot="http://www.wikidot.com/rss-namespace">
+
+	<channel>
+		<title>New Category : Player</title>
+		<link>http://bvs.wikidot.com/forum/t-44134/new-category:player</link>
+		<description>Posts in the discussion thread &quot;New Category : Player&quot;</description>
+				<copyright></copyright>
+		<lastBuildDate>Sun, 10 Jul 2022 04:39:18 +0000</lastBuildDate>
+		
+					<item>
+				<guid>http://bvs.wikidot.com/forum/t-44134#post-116491</guid>
+				<title>Re: New Category : Player</title>
+				<link>http://bvs.wikidot.com/forum/t-44134/new-category:player#post-116491</link>
+				<description></description>
+				<pubDate>Sat, 01 Mar 2008 18:30:23 +0000</pubDate>
+				<wikidot:authorName>Chidon</wikidot:authorName>				<wikidot:authorUserId>86059</wikidot:authorUserId>				<content:encoded>
+					<![CDATA[
+						 <p>I did that and I'm re-working my page now.</p> 
+				 	]]>
+				</content:encoded>							</item>
+					<item>
+				<guid>http://bvs.wikidot.com/forum/t-44134#post-116476</guid>
+				<title>Re: New Category : Player</title>
+				<link>http://bvs.wikidot.com/forum/t-44134/new-category:player#post-116476</link>
+				<description></description>
+				<pubDate>Sat, 01 Mar 2008 17:57:42 +0000</pubDate>
+				<wikidot:authorName>BvS-Uzuki</wikidot:authorName>				<wikidot:authorUserId>78144</wikidot:authorUserId>				<content:encoded>
+					<![CDATA[
+						 <p>You can always reset the template by hitting the drop down menu at the to of the page and selecting "player." It'll clear out all your data, but if you're worried about the structure, that's the place to go.</p> 
+				 	]]>
+				</content:encoded>							</item>
+					<item>
+				<guid>http://bvs.wikidot.com/forum/t-44134#post-116464</guid>
+				<title>Re: New Category : Player</title>
+				<link>http://bvs.wikidot.com/forum/t-44134/new-category:player#post-116464</link>
+				<description></description>
+				<pubDate>Sat, 01 Mar 2008 17:36:18 +0000</pubDate>
+				<wikidot:authorName>Chidon</wikidot:authorName>				<wikidot:authorUserId>86059</wikidot:authorUserId>				<content:encoded>
+					<![CDATA[
+						 <p>I've created one but it's still a work in progress. I kind of messed up the template though XD</p> 
+				 	]]>
+				</content:encoded>							</item>
+					<item>
+				<guid>http://bvs.wikidot.com/forum/t-44134#post-116075</guid>
+				<title>New Category : Player</title>
+				<link>http://bvs.wikidot.com/forum/t-44134/new-category:player#post-116075</link>
+				<description></description>
+				<pubDate>Fri, 29 Feb 2008 22:01:10 +0000</pubDate>
+				<wikidot:authorName>BvS-Uzuki</wikidot:authorName>				<wikidot:authorUserId>78144</wikidot:authorUserId>				<content:encoded>
+					<![CDATA[
+						 <p>I've added a new category, "player", so that people can setup a Wiki page for their character. There's a template in place to make it easier to setup your stat card and portrait. I've also set the category so that only the person who created the page can edit the page after that (to stop vandalism from happening on people's pages).</p> <p>I'll create a "Players" link on the left side, with a list of all players who have pages (possibly sorted by Village), and with instructions on how to create your player page.</p> <p>Also, I'm going to open this one up to anyone with a Wikidot account, so they don't have to wait on an administrator for approval to make the page.</p> <p>If you want an example of what I'm talking about, here's a version of my page: <a href="http://bvs.wikidot.com/player:uzuki">Uzuki</a>.</p> 
+				 	]]>
+				</content:encoded>							</item>
+				</channel>
+</rss>

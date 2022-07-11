@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:wikidot="http://www.wikidot.com/rss-namespace">
+
+	<channel>
+		<title>Loop timer</title>
+		<link>http://bvs.wikidot.com/forum/t-59614/loop-timer</link>
+		<description>Posts in the discussion thread &quot;Loop timer&quot;</description>
+				<copyright></copyright>
+		<lastBuildDate>Sun, 10 Jul 2022 05:32:55 +0000</lastBuildDate>
+		
+					<item>
+				<guid>http://bvs.wikidot.com/forum/t-59614#post-163456</guid>
+				<title>Re: Loop timer</title>
+				<link>http://bvs.wikidot.com/forum/t-59614/loop-timer#post-163456</link>
+				<description></description>
+				<pubDate>Wed, 14 May 2008 15:29:35 +0000</pubDate>
+				<wikidot:authorName>BrightMorn</wikidot:authorName>				<wikidot:authorUserId>89749</wikidot:authorUserId>				<content:encoded>
+					<![CDATA[
+						 <p>False alarm… everything is fixed now.</p> <p>Seems permissions were not set correctly, which was slightly odd since it said I had permission to use village bonuses.. hmm</p> 
+				 	]]>
+				</content:encoded>							</item>
+					<item>
+				<guid>http://bvs.wikidot.com/forum/t-59614#post-163437</guid>
+				<title>Re: Loop timer</title>
+				<link>http://bvs.wikidot.com/forum/t-59614/loop-timer#post-163437</link>
+				<description></description>
+				<pubDate>Wed, 14 May 2008 14:52:50 +0000</pubDate>
+				<wikidot:authorName>BrightMorn</wikidot:authorName>				<wikidot:authorUserId>89749</wikidot:authorUserId>				<content:encoded>
+					<![CDATA[
+						 <p>I know, I see it on my alt, Darkshard, but not on my main Taliesan /sigh</p> <p>I have submitted a bug report, we shall see what happens.</p> 
+				 	]]>
+				</content:encoded>							</item>
+					<item>
+				<guid>http://bvs.wikidot.com/forum/t-59614#post-163436</guid>
+				<title>Re: Loop timer</title>
+				<link>http://bvs.wikidot.com/forum/t-59614/loop-timer#post-163436</link>
+				<description></description>
+				<pubDate>Wed, 14 May 2008 14:52:24 +0000</pubDate>
+				<wikidot:authorName>BvS-Uzuki</wikidot:authorName>				<wikidot:authorUserId>78144</wikidot:authorUserId>				<content:encoded>
+					<![CDATA[
+						 <p>The Party House button got moved yesterday, it should now be at the top of the options in the Village. However, if it's still not there, I'd suggest submitting a bug report with as much relevant information as you can.</p> 
+				 	]]>
+				</content:encoded>							</item>
+					<item>
+				<guid>http://bvs.wikidot.com/forum/t-59614#post-163420</guid>
+				<title>Loop timer</title>
+				<link>http://bvs.wikidot.com/forum/t-59614/loop-timer#post-163420</link>
+				<description></description>
+				<pubDate>Wed, 14 May 2008 14:31:23 +0000</pubDate>
+				<wikidot:authorName>BrightMorn</wikidot:authorName>				<wikidot:authorUserId>89749</wikidot:authorUserId>				<content:encoded>
+					<![CDATA[
+						 <p>I am on my 7th day of the count down for my loop timer, and have 7 days left.</p> <p>The party house is missing from my screen in the village. Are these two things related or is it a bug? I thought all the cut backs happened on day 14 with STA loss and being unable to do things for the village.</p> <p>It seems I cannot use the potion palace either… looking more and more like it is due to the loop timer. Which is odd since the only thing I read in the message was a 14day lock, nothing about 7days :(</p> 
+				 	]]>
+				</content:encoded>							</item>
+				</channel>
+</rss>

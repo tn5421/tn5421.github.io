@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:wikidot="http://www.wikidot.com/rss-namespace">
+
+	<channel>
+		<title>Comments for page &quot;Lil Sara&quot;</title>
+		<link>http://bvs.wikidot.com/forum/t-161093/lil-sara</link>
+		<description>Posts in the discussion thread &quot;Lil Sara&quot;</description>
+				<copyright></copyright>
+		<lastBuildDate>Sun, 10 Jul 2022 04:18:56 +0000</lastBuildDate>
+		
+					<item>
+				<guid>http://bvs.wikidot.com/forum/t-161093#post-503009</guid>
+				<title>Linking</title>
+				<link>http://bvs.wikidot.com/forum/t-161093/lil-sara#post-503009</link>
+				<description></description>
+				<pubDate>Mon, 08 Jun 2009 09:58:58 +0000</pubDate>
+				<wikidot:authorName>Moare</wikidot:authorName>				<wikidot:authorUserId>79546</wikidot:authorUserId>				<content:encoded>
+					<![CDATA[
+						 <p>The basic of creating a text link to a page</p> <div class="code"> <pre> <code>[[[category:Page Name]]</code> </pre></div> <p>example</p> <div class="code"> <pre> <code>[[[items:Letter of Marque]]]</code> </pre></div> <p><a href="http://bvs.wikidot.com/items:letter-of-marque">Letter of Marque</a></p> <p>(Capitalation isn't important)</p> <p>Some categories:</p> <ul> <li>allies</li> <li>items</li> <li>trophy</li> <li>awesome</li> <li>jutsu</li> <li>theme</li> <li>summons</li> </ul> <p>If a page has no category only use the Page Name</p> <p>Advanced text linking:</p> <div class="code"> <pre> <code>[[[category:Page Name|Link Name]]]</code> </pre></div> <p>Example:</p> <div class="code"> <pre> <code>[[[items:Sword of the Reaper|My Sword of the Reaper]]]</code> </pre></div> <p><a href="http://bvs.wikidot.com/items:sword-of-the-reaper">My Sword of the Reaper</a></p> <h1><span>Images</span></h1> <p>The basic of adding an image from other pages in the wiki</p> <div class="code"> <pre> <code>[[image category:page-link/Image_Name.imagetype]]</code> </pre></div> <p>Note: Spaces in page-links have to be "-" and "_" in Image_Name</p> <p>Example:</p> <div class="code"> <pre> <code>[[image allies:billy-lvl-2/Billy_Lvl._2.gif]]</code> </pre></div> <img src="http://bvs.wikidot.com/local--files/allies:billy-lvl-2/Billy_Lvl._2.gif" alt="Billy_Lvl._2.gif" class="image" /> <p>To link an Image to a page</p> <div class="code"> <pre> <code>[[image category:page-link/Image_Name.imagetype link="category:page-link"]]</code> </pre></div> <p>Example:</p> <div class="code"> <pre> <code>[[image allies:billy-lvl-2/Billy_Lvl._2.gif link="allies:billy-lvl-2"]]</code> </pre></div> <a href="http://bvs.wikidot.com/allies:billy-lvl-2"><img src="http://bvs.wikidot.com/local--files/allies:billy-lvl-2/Billy_Lvl._2.gif" alt="Billy_Lvl._2.gif" class="image" /></a>
+				 	]]>
+				</content:encoded>							</item>
+					<item>
+				<guid>http://bvs.wikidot.com/forum/t-161093#post-502646</guid>
+				<title>(no title)</title>
+				<link>http://bvs.wikidot.com/forum/t-161093/lil-sara#post-502646</link>
+				<description></description>
+				<pubDate>Mon, 08 Jun 2009 00:19:56 +0000</pubDate>
+				<wikidot:authorName>Little Sara</wikidot:authorName>				<wikidot:authorUserId>335438</wikidot:authorUserId>				<content:encoded>
+					<![CDATA[
+						 <p>Okay, I added season 2 without the charbox for now, to note when I started it. I added bullets to stuff and I linked my bloodline.</p> <p>What will be left:<br /> -Link allies (with table)<br /> -Link jutsus<br /> -Link themes<br /> -Link trophies (with table)<br /> -Link perma items (with table)<br /> -Maybe do as he did and link arena stats</p> <p>I'm taking a break for now though.</p> 
+				 	]]>
+				</content:encoded>							</item>
+					<item>
+				<guid>http://bvs.wikidot.com/forum/t-161093#post-502640</guid>
+				<title>(no title)</title>
+				<link>http://bvs.wikidot.com/forum/t-161093/lil-sara#post-502640</link>
+				<description></description>
+				<pubDate>Mon, 08 Jun 2009 00:00:22 +0000</pubDate>
+				<wikidot:authorName>Little Sara</wikidot:authorName>				<wikidot:authorUserId>335438</wikidot:authorUserId>				<content:encoded>
+					<![CDATA[
+						 <p>Okay, checking the source code for Fyfe's page, I found out where he put the div style within the tab:</p> <p>beginning of current tab -&gt; put div style float left<br /> end of CharBox content -&gt; put /div<br /> then add the 40 spaces</p> <p>no problem with this format, repeat if there are more seasons (I currently only finished one)</p> 
+				 	]]>
+				</content:encoded>							</item>
+					<item>
+				<guid>http://bvs.wikidot.com/forum/t-161093#post-502634</guid>
+				<title>(no title)</title>
+				<link>http://bvs.wikidot.com/forum/t-161093/lil-sara#post-502634</link>
+				<description></description>
+				<pubDate>Sun, 07 Jun 2009 23:47:53 +0000</pubDate>
+				<wikidot:authorName>Little Sara</wikidot:authorName>				<wikidot:authorUserId>335438</wikidot:authorUserId>				<content:encoded>
+					<![CDATA[
+						 <p>within the History tab, that is</p> 
+				 	]]>
+				</content:encoded>							</item>
+					<item>
+				<guid>http://bvs.wikidot.com/forum/t-161093#post-502633</guid>
+				<title>(no title)</title>
+				<link>http://bvs.wikidot.com/forum/t-161093/lil-sara#post-502633</link>
+				<description></description>
+				<pubDate>Sun, 07 Jun 2009 23:47:09 +0000</pubDate>
+				<wikidot:authorName>Little Sara</wikidot:authorName>				<wikidot:authorUserId>335438</wikidot:authorUserId>				<content:encoded>
+					<![CDATA[
+						 <p>Whatever div style I try to apply within a tab screws up other categories lower. Float apparently doesn't work right for what I want to do:</p> <p>It erases my 40 spaces within my tab 'section' (for History's Season 1).<br /> It makes other tabs slightly more to the right whenever I open Season 1.</p> <p>This is the only way I found to make the CharBox left-aligned within the history tab anyways.</p> 
+				 	]]>
+				</content:encoded>							</item>
+					<item>
+				<guid>http://bvs.wikidot.com/forum/t-161093#post-502602</guid>
+				<title>(no title)</title>
+				<link>http://bvs.wikidot.com/forum/t-161093/lil-sara#post-502602</link>
+				<description></description>
+				<pubDate>Sun, 07 Jun 2009 23:20:11 +0000</pubDate>
+				<wikidot:authorName>Little Sara</wikidot:authorName>				<wikidot:authorUserId>335438</wikidot:authorUserId>				<content:encoded>
+					<![CDATA[
+						 <p>Okay did it too, just add "float right" before the charbox, so it includes both the charbox and the mission box, then they'll be one after the other.</p> 
+				 	]]>
+				</content:encoded>							</item>
+					<item>
+				<guid>http://bvs.wikidot.com/forum/t-161093#post-502601</guid>
+				<title>(no title)</title>
+				<link>http://bvs.wikidot.com/forum/t-161093/lil-sara#post-502601</link>
+				<description></description>
+				<pubDate>Sun, 07 Jun 2009 23:15:38 +0000</pubDate>
+				<wikidot:authorName>Little Sara</wikidot:authorName>				<wikidot:authorUserId>335438</wikidot:authorUserId>				<content:encoded>
+					<![CDATA[
+						 <p>Found the code to get tabs at 80% length.</p> <p>That's one thing solved.</p> <div class="code"> <pre> <code>[[div style="width:80%"]] [[/div]]</code> </pre></div> <p>start the code after the charbox and mission box (or it forces them into the 80% too)<br /> end it right before signature so its still truly centered</p> <p>Now I still need to right-align the mission box. I did with [[code]][[div style="float:right"]][[/code]] but it stays on the same level as the charbox, I'd want it below.</p> 
+				 	]]>
+				</content:encoded>							</item>
+					<item>
+				<guid>http://bvs.wikidot.com/forum/t-161093#post-502573</guid>
+				<title>(no title)</title>
+				<link>http://bvs.wikidot.com/forum/t-161093/lil-sara#post-502573</link>
+				<description></description>
+				<pubDate>Sun, 07 Jun 2009 22:29:35 +0000</pubDate>
+				<wikidot:authorName>Little Sara</wikidot:authorName>				<wikidot:authorUserId>335438</wikidot:authorUserId>				<content:encoded>
+					<![CDATA[
+						 <p>Oh and I'd want my mission box aligning to the right, below my profile CharBox.</p> 
+				 	]]>
+				</content:encoded>							</item>
+					<item>
+				<guid>http://bvs.wikidot.com/forum/t-161093#post-502570</guid>
+				<title>(no title)</title>
+				<link>http://bvs.wikidot.com/forum/t-161093/lil-sara#post-502570</link>
+				<description></description>
+				<pubDate>Sun, 07 Jun 2009 22:28:17 +0000</pubDate>
+				<wikidot:authorName>Little Sara</wikidot:authorName>				<wikidot:authorUserId>335438</wikidot:authorUserId>				<content:encoded>
+					<![CDATA[
+						 <p>I was able to space it in History, with the " _" code (added 40 empty lines after the CharBox code).</p> <p>I'd like to make the CharBox align to the left instead of the right (which it does by default).</p> <p>I checked in the source code also: Fyfe uses tabs of 80% of the original length.<br /> The html source code says: style="width:80%"</p> <p>How do I code this for that page? I would include it in all my tabs.</p> 
+				 	]]>
+				</content:encoded>							</item>
+					<item>
+				<guid>http://bvs.wikidot.com/forum/t-161093#post-502525</guid>
+				<title>(no title)</title>
+				<link>http://bvs.wikidot.com/forum/t-161093/lil-sara#post-502525</link>
+				<description></description>
+				<pubDate>Sun, 07 Jun 2009 21:27:08 +0000</pubDate>
+				<wikidot:authorName>Moare</wikidot:authorName>				<wikidot:authorUserId>79546</wikidot:authorUserId>				<content:encoded>
+					<![CDATA[
+						 <h1><span>Emtpy Tab</span></h1> <p>An empty tab is created by using a tab without any text:</p> <div class="code"> <pre> <code>[[tabview]] [[tab Empty Tab]] [[/tab]] [[tab Not Empty Tab]] Not Empty [[/tab]] [[/tabview]]</code> </pre></div> <div id="wiki-tabview-0" class="yui-navset"> <ul class="yui-nav"> <li class="selected"><a href="javascript:;"><em>Empty Tab</em></a></li> <li><a href="javascript:;"><em>Not Empty Tab</em></a></li> </ul> <div class="yui-content"> <div id="wiki-tab-0-0"> <p><br /></p> </div> <div id="wiki-tab-0-1" style="display:none"> <p>Not Empty</p> </div> </div> </div> <h1><span>Overlap</span></h1> <p>The easiest way to prevent the ally tab from overlapping the avatar is to fill in text between the top and the ally tab or use " _" to make empty rows (if used on the start of a row)</p> <div class="code"> <pre> <code>_</code> </pre></div> <p>I do not know any other ways to do it.</p> <h1><span>Mission Box</span></h1> <p>I think the missionbox is something some players have created manually so it isn't created automaticly by the wiki software like the other boxes, but here it is anyway, I can create a easier thing later, but I don't have time now. Insert numbers where the text is CAPPED</p> <div class="code"> <pre> <code>[[table style="width:220px;font-size:small;cell-padding:-8;cell-spacing:-8;border:2px solid black;background-color:#DCF8DB;float:center"]] [[row]][[cell style="background-color:#04470A;text-align:center;color:#FFFFFF;border:2px solid black"]]Missions Completed[[/cell]][[/row]] [[row]][[cell style="background-color:#C0EFC5;text-align:center;color:black;border:0px solid black"]]D Missions: DMISSION[[/cell]][[/row]] [[row]][[cell style="background-color:#DCF8DB;text-align:center;color:black;border:0px solid black"]]C Missions: CMISSION[[/cell]][[/row]] [[row]][[cell style="background-color:#C0EFC5;text-align:center;color:black;border:0px solid black"]]B Missions: BMISSION[[/cell]][[/row]] [[row]][[cell style="background-color:#DCF8DB;text-align:center;color:black;border:0px solid black"]]A Missions: AMISSION[[/cell]][[/row]] [[row]][[cell style="background-color:#C0EFC5;text-align:center;color:black;border:0px solid black"]]AA Missions: AAMISSION[[/cell]][[/row]] [[row]][[cell style="background-color:#DCF8DB;text-align:center;color:black;border:0px solid black"]]S Missions: SMISSION[[/cell]][[/row]] [[row]][[cell style="background-color:#C0EFC5;text-align:center;color:black;border:0px solid black"]]Reaper Missions: REAPERMISSION[[/cell]][[/row]] [[row]][[cell style="background-color:#DCF8DB;text-align:center;color:black;border:0px solid black"]]Monochrome Missions: MONOCHROMEMISSION[[/cell]][[/row]] [[row]][[cell style="background-color:#C0EFC5;text-align:center;color:black;border:0px solid black"]]Outskirts Missions: OUTSKIRTMISSION[[/cell]][[/row]] [[row]][[cell style="background-color:#DCF8DB;text-align:center;color:black;border:0px solid black"]]Wasteland Missions: WASTELANDMISSION[[/cell]][[/row]] [[row]][[cell style="background-color:#C0EFC5;text-align:center;color:black;border:0px solid black"]]Burger Missions: BURGERMISSION[[/cell]][[/row]] [[row]][[cell style="background-color:#DCF8DB;text-align:center;color:black;border:0px solid black"]]R00t Missions: R00TMISSION[[/cell]][[/row]][[/table]]</code> </pre></div> <table style="width:220px;font-size:small;cell-padding:-8;cell-spacing:-8;border:2px solid black;background-color:#DCF8DB;float:center"> <tr> <td style="background-color:#04470A;text-align:center;color:#FFFFFF;border:2px solid black">Missions Completed</td> </tr> <tr> <td style="background-color:#C0EFC5;text-align:center;color:black;border:0px solid black">D Missions: DMISSION</td> </tr> <tr> <td style="background-color:#DCF8DB;text-align:center;color:black;border:0px solid black">C Missions: CMISSION</td> </tr> <tr> <td style="background-color:#C0EFC5;text-align:center;color:black;border:0px solid black">B Missions: BMISSION</td> </tr> <tr> <td style="background-color:#DCF8DB;text-align:center;color:black;border:0px solid black">A Missions: AMISSION</td> </tr> <tr> <td style="background-color:#C0EFC5;text-align:center;color:black;border:0px solid black">AA Missions: AAMISSION</td> </tr> <tr> <td style="background-color:#DCF8DB;text-align:center;color:black;border:0px solid black">S Missions: SMISSION</td> </tr> <tr> <td style="background-color:#C0EFC5;text-align:center;color:black;border:0px solid black">Reaper Missions: REAPERMISSION</td> </tr> <tr> <td style="background-color:#DCF8DB;text-align:center;color:black;border:0px solid black">Monochrome Missions: MONOCHROMEMISSION</td> </tr> <tr> <td style="background-color:#C0EFC5;text-align:center;color:black;border:0px solid black">Outskirts Missions: OUTSKIRTMISSION</td> </tr> <tr> <td style="background-color:#DCF8DB;text-align:center;color:black;border:0px solid black">Wasteland Missions: WASTELANDMISSION</td> </tr> <tr> <td style="background-color:#C0EFC5;text-align:center;color:black;border:0px solid black">Burger Missions: BURGERMISSION</td> </tr> <tr> <td style="background-color:#DCF8DB;text-align:center;color:black;border:0px solid black">R00t Missions: R00TMISSION</td> </tr> </table> 
+				 	]]>
+				</content:encoded>							</item>
+					<item>
+				<guid>http://bvs.wikidot.com/forum/t-161093#post-502516</guid>
+				<title>(no title)</title>
+				<link>http://bvs.wikidot.com/forum/t-161093/lil-sara#post-502516</link>
+				<description></description>
+				<pubDate>Sun, 07 Jun 2009 21:21:12 +0000</pubDate>
+				<wikidot:authorName>Little Sara</wikidot:authorName>				<wikidot:authorUserId>335438</wikidot:authorUserId>				<content:encoded>
+					<![CDATA[
+						 <p>I mean the history box ajusts to fit-in the charbox inside, while mine stays blank, doesn't lengthen (pushing down other stuff below), aligns it to the right by default. It also forces me to have Doujutsu levels/info (if I delete them, they still appear) even though I didn't have access to Burger Ninja missions in S1.</p> <p>What I'd like basically:</p> <p>-Have the tab background for my charbox within the history tabs so it lengtens downwards pushing down the Allies tabs when open.<br /> -Have the tab box go less to the right than right into my avatar/charbox of the page (for all tab boxes).<br /> -Have the avatar/charbox within the history tabs aligned to the left.<br /> -Know how to link to images from the wiki as far as allies, jutsus, trophies, themes, and permanent items. Basically I want to 'copy' the layout of those pages with having the items info (loops or not, stats it gives etc) for allies, having the pictures, for themes, linking back to the source showing that one.</p> 
+				 	]]>
+				</content:encoded>							</item>
+					<item>
+				<guid>http://bvs.wikidot.com/forum/t-161093#post-502509</guid>
+				<title>(no title)</title>
+				<link>http://bvs.wikidot.com/forum/t-161093/lil-sara#post-502509</link>
+				<description></description>
+				<pubDate>Sun, 07 Jun 2009 21:14:32 +0000</pubDate>
+				<wikidot:authorName>Little Sara</wikidot:authorName>				<wikidot:authorUserId>335438</wikidot:authorUserId>				<content:encoded>
+					<![CDATA[
+						 <p>I based myself off Fyfe's page somewhat. He was able to limit the tab length so it wouldn't overlap his avatar/charbox and mission info on the right side, and was able to make the box longer. Sadly, since I can't edit that page, I also can't see its code, as far as tab-length, and "see source code" gives it to me in html, which doesn't help one bit when using javascript.</p> 
+				 	]]>
+				</content:encoded>							</item>
+					<item>
+				<guid>http://bvs.wikidot.com/forum/t-161093#post-502499</guid>
+				<title>(no title)</title>
+				<link>http://bvs.wikidot.com/forum/t-161093/lil-sara#post-502499</link>
+				<description></description>
+				<pubDate>Sun, 07 Jun 2009 21:10:18 +0000</pubDate>
+				<wikidot:authorName>Little Sara</wikidot:authorName>				<wikidot:authorUserId>335438</wikidot:authorUserId>				<content:encoded>
+					<![CDATA[
+						 <p>I added an history, but somehow, just like the regular charbox, it gets behind and overlaps with the tabs, instead of making the next area go lower. Thankfully I looped not long ago, so I remember what level I was and what items I had.</p> 
+				 	]]>
+				</content:encoded>							</item>
+					<item>
+				<guid>http://bvs.wikidot.com/forum/t-161093#post-502484</guid>
+				<title>(no title)</title>
+				<link>http://bvs.wikidot.com/forum/t-161093/lil-sara#post-502484</link>
+				<description></description>
+				<pubDate>Sun, 07 Jun 2009 21:01:28 +0000</pubDate>
+				<wikidot:authorName>Little Sara</wikidot:authorName>				<wikidot:authorUserId>335438</wikidot:authorUserId>				<content:encoded>
+					<![CDATA[
+						 <p>Thanks. Well I managed to create tabs.</p> <p>But now there's something. I want to have an "empty" tab, so it doesn't take as much space. I'd also like not to overlap my character avatar with the allies tab. I don't know how to add the mission box either.</p> <p>Could you help me with those please?</p> 
+				 	]]>
+				</content:encoded>							</item>
+					<item>
+				<guid>http://bvs.wikidot.com/forum/t-161093#post-502455</guid>
+				<title>Tab problem</title>
+				<link>http://bvs.wikidot.com/forum/t-161093/lil-sara#post-502455</link>
+				<description></description>
+				<pubDate>Sun, 07 Jun 2009 20:08:29 +0000</pubDate>
+				<wikidot:authorName>Moare</wikidot:authorName>				<wikidot:authorUserId>79546</wikidot:authorUserId>				<content:encoded>
+					<![CDATA[
+						 <p>The blocks [[code]] and [[/code]] aren't suposed to be before and after the tab</p> 
+				 	]]>
+				</content:encoded>							</item>
+					<item>
+				<guid>http://bvs.wikidot.com/forum/t-161093#post-502434</guid>
+				<title>Thanks</title>
+				<link>http://bvs.wikidot.com/forum/t-161093/lil-sara#post-502434</link>
+				<description></description>
+				<pubDate>Sun, 07 Jun 2009 19:38:04 +0000</pubDate>
+				<wikidot:authorName>Little Sara</wikidot:authorName>				<wikidot:authorUserId>335438</wikidot:authorUserId>				<content:encoded>
+					<![CDATA[
+						 <p>Thank you. I did it for signature.</p> <p>The village of the signature won't match my current village (yesterday and early morning = Chiaki, now = none, tonight and until later = Invisible). I went to Chiaki only to Survive the Impossible. I'll be going back to Invisible as soon as my application is accepted (and it will be, given my 6 weeks of active membership). This is why I put my info on top as Invisible.</p> 
+				 	]]>
+				</content:encoded>							</item>
+					<item>
+				<guid>http://bvs.wikidot.com/forum/t-161093#post-501826</guid>
+				<title>Code problems</title>
+				<link>http://bvs.wikidot.com/forum/t-161093/lil-sara#post-501826</link>
+				<description></description>
+				<pubDate>Sat, 06 Jun 2009 22:09:16 +0000</pubDate>
+				<wikidot:authorName>Moare</wikidot:authorName>				<wikidot:authorUserId>79546</wikidot:authorUserId>				<content:encoded>
+					<![CDATA[
+						 <p>How the signature works:</p> <p>You use a include in which you only insert your "Character ID" (it is the last 5 digits of the Billy/image link. example:"00000") where it says "your ID here".</p> <p>how you did it:</p> <div class="code"> <pre> <code>[[=]] [[include include:Signature image http://www.animecubed.com/billy/?73962 link="http://www.animecubed.com/billy/?73962"]] |id=YourIdHere [[/=]]</code> </pre></div> <p>how it should be done:</p> <div class="code"> <pre> <code>[[=]] [[include include:Signature |id=73962 ]] [[/=]]</code> </pre></div> <p>this discussion page wont allow me to show the result, but it should work as I tested it on another page.</p> <p>I also noticed that you didn't know the tab code so here it is:</p> <div class="code"> <pre> <code>[[tabview]] [[tab TABNAME 1]] Something [[/tab]] [[tab TABNAME 2]] Somthing else [[/tab]] [[/tabview]]</code> </pre></div> <p>result:<br /> </p> <div id="wiki-tabview-0" class="yui-navset"> <ul class="yui-nav"> <li class="selected"><a href="javascript:;"><em>TABNAME 1</em></a></li> <li><a href="javascript:;"><em>TABNAME 2</em></a></li> </ul> <div class="yui-content"> <div id="wiki-tab-0-0"> <p>Something</p> </div> <div id="wiki-tab-0-1" style="display:none"> <p>Something else</p> </div> </div> </div> 
+				 	]]>
+				</content:encoded>							</item>
+				</channel>
+</rss>

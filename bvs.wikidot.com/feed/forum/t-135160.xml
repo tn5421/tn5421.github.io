@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:wikidot="http://www.wikidot.com/rss-namespace">
+
+	<channel>
+		<title>DNS issues?</title>
+		<link>http://bvs.wikidot.com/forum/t-135160/dns-issues</link>
+		<description>Posts in the discussion thread &quot;DNS issues?&quot; - bvswiki.com no longer resolves</description>
+				<copyright></copyright>
+		<lastBuildDate>Sun, 10 Jul 2022 04:38:41 +0000</lastBuildDate>
+		
+					<item>
+				<guid>http://bvs.wikidot.com/forum/t-135160#post-402732</guid>
+				<title>Re: DNS issues?</title>
+				<link>http://bvs.wikidot.com/forum/t-135160/dns-issues#post-402732</link>
+				<description></description>
+				<pubDate>Tue, 03 Mar 2009 16:23:12 +0000</pubDate>
+				<wikidot:authorName>Swan21</wikidot:authorName>				<wikidot:authorUserId>93166</wikidot:authorUserId>				<content:encoded>
+					<![CDATA[
+						 <p>Same thing happens to me.</p> 
+				 	]]>
+				</content:encoded>							</item>
+					<item>
+				<guid>http://bvs.wikidot.com/forum/t-135160#post-402166</guid>
+				<title>DNS issues?</title>
+				<link>http://bvs.wikidot.com/forum/t-135160/dns-issues#post-402166</link>
+				<description></description>
+				<pubDate>Tue, 03 Mar 2009 01:34:23 +0000</pubDate>
+				<wikidot:authorName>Millennium</wikidot:authorName>				<wikidot:authorUserId>102999</wikidot:authorUserId>				<content:encoded>
+					<![CDATA[
+						 <p>I can't get to the wiki through bvswiki.com anymore, though bvs.wikidot.com still resolves as normal. Did the DNS name expire or something?</p> 
+				 	]]>
+				</content:encoded>							</item>
+				</channel>
+</rss>

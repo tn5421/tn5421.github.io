@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:wikidot="http://www.wikidot.com/rss-namespace">
+
+	<channel>
+		<title>Mission Box feedback</title>
+		<link>http://bvs.wikidot.com/forum/t-84110/mission-box-feedback</link>
+		<description>Posts in the discussion thread &quot;Mission Box feedback&quot;</description>
+				<copyright></copyright>
+		<lastBuildDate>Sun, 10 Jul 2022 04:20:26 +0000</lastBuildDate>
+		
+					<item>
+				<guid>http://bvs.wikidot.com/forum/t-84110#post-247273</guid>
+				<title>Re: Mission Box feedback</title>
+				<link>http://bvs.wikidot.com/forum/t-84110/mission-box-feedback#post-247273</link>
+				<description></description>
+				<pubDate>Wed, 27 Aug 2008 20:04:15 +0000</pubDate>
+				<wikidot:authorName>North</wikidot:authorName>				<wikidot:authorUserId>132728</wikidot:authorUserId>				<content:encoded>
+					<![CDATA[
+						 <p>Now this pages are gone: ninboxspecial, genboxspecial, taiboxspecial. They became redundant with my last change.<br /> In special missions use this:</p> <div class="code"> <pre> <code>|rank=@@</code> </pre></div> <br /> This has the effect of hiding the rank on the missionbox.<br /> This is to be used with the regular mission boxes.
+				 	]]>
+				</content:encoded>							</item>
+					<item>
+				<guid>http://bvs.wikidot.com/forum/t-84110#post-246572</guid>
+				<title>Mission Box feedback</title>
+				<link>http://bvs.wikidot.com/forum/t-84110/mission-box-feedback#post-246572</link>
+				<description></description>
+				<pubDate>Tue, 26 Aug 2008 21:23:35 +0000</pubDate>
+				<wikidot:authorName>North</wikidot:authorName>				<wikidot:authorUserId>132728</wikidot:authorUserId>				<content:encoded>
+					<![CDATA[
+						 <p>When I edited them I was using Opera. It seems there is a difference in the width when using operas on the dual ability boxes. And I think the border width might be to large. Tell me what you think about them and what I should change.</p> <p>L.E.: I have fixed the Firefox dislplay on dual ability boxes.</p> 
+				 	]]>
+				</content:encoded>							</item>
+				</channel>
+</rss>

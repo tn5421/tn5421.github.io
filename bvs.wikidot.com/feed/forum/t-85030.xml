@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:wikidot="http://www.wikidot.com/rss-namespace">
+
+	<channel>
+		<title>Can someone check my math on this one?</title>
+		<link>http://bvs.wikidot.com/forum/t-85030/can-someone-check-my-math-on-this-one</link>
+		<description>Posts in the discussion thread &quot;Can someone check my math on this one?&quot; - Please check my math on the Ninja Jackpot odds.</description>
+				<copyright></copyright>
+		<lastBuildDate>Sun, 10 Jul 2022 05:57:50 +0000</lastBuildDate>
+		
+					<item>
+				<guid>http://bvs.wikidot.com/forum/t-85030#post-251488</guid>
+				<title>Re: Can someone check my math on this one?</title>
+				<link>http://bvs.wikidot.com/forum/t-85030/can-someone-check-my-math-on-this-one#post-251488</link>
+				<description></description>
+				<pubDate>Tue, 02 Sep 2008 15:02:09 +0000</pubDate>
+				<wikidot:authorName>Ren Po Ken</wikidot:authorName>				<wikidot:authorUserId>103468</wikidot:authorUserId>				<content:encoded>
+					<![CDATA[
+						 <p>Playing on 5 lines is quicker as well.</p> 
+				 	]]>
+				</content:encoded>							</item>
+					<item>
+				<guid>http://bvs.wikidot.com/forum/t-85030#post-251238</guid>
+				<title>Re: Can someone check my math on this one?</title>
+				<link>http://bvs.wikidot.com/forum/t-85030/can-someone-check-my-math-on-this-one#post-251238</link>
+				<description></description>
+				<pubDate>Tue, 02 Sep 2008 05:25:03 +0000</pubDate>
+				<wikidot:authorName>Lear</wikidot:authorName>				<wikidot:authorUserId>91991</wikidot:authorUserId>				<content:encoded>
+					<![CDATA[
+						 <p>I don't think it makes a difference. You're exactly 1/5 as likely to get a Sevens Trophy playnig 1 line as you are playing 5 lines.</p> <p>The only difference is that by playing 1 line, you're giving up the chance at 1,000,000 ryo.</p> <p>But the ryo spent to get there, it shouldn't effect.</p> 
+				 	]]>
+				</content:encoded>							</item>
+					<item>
+				<guid>http://bvs.wikidot.com/forum/t-85030#post-250740</guid>
+				<title>Re: Can someone check my math on this one?</title>
+				<link>http://bvs.wikidot.com/forum/t-85030/can-someone-check-my-math-on-this-one#post-250740</link>
+				<description></description>
+				<pubDate>Mon, 01 Sep 2008 18:32:49 +0000</pubDate>
+				<wikidot:authorName>kelumhi</wikidot:authorName>				<wikidot:authorUserId>24443</wikidot:authorUserId>				<content:encoded>
+					<![CDATA[
+						 <p>does this include the fact that you play on 5 lines? or just 1</p> 
+				 	]]>
+				</content:encoded>							</item>
+					<item>
+				<guid>http://bvs.wikidot.com/forum/t-85030#post-250475</guid>
+				<title>Re: Can someone check my math on this one?</title>
+				<link>http://bvs.wikidot.com/forum/t-85030/can-someone-check-my-math-on-this-one#post-250475</link>
+				<description></description>
+				<pubDate>Mon, 01 Sep 2008 15:16:01 +0000</pubDate>
+				<wikidot:authorName>Ren Po Ken</wikidot:authorName>				<wikidot:authorUserId>103468</wikidot:authorUserId>				<content:encoded>
+					<![CDATA[
+						 <p>The exact figure he stated was 1.8 million, however this figure is after other winnings are tallied in.</p> 
+				 	]]>
+				</content:encoded>							</item>
+					<item>
+				<guid>http://bvs.wikidot.com/forum/t-85030#post-250470</guid>
+				<title>Re: Can someone check my math on this one?</title>
+				<link>http://bvs.wikidot.com/forum/t-85030/can-someone-check-my-math-on-this-one#post-250470</link>
+				<description></description>
+				<pubDate>Mon, 01 Sep 2008 15:09:16 +0000</pubDate>
+				<wikidot:authorName>moodragonx</wikidot:authorName>				<wikidot:authorUserId>161593</wikidot:authorUserId>				<content:encoded>
+					<![CDATA[
+						 <p>Didn't McM say at one point that statistically you'd need to spen over 2million ryo for the sevens trophy?</p> 
+				 	]]>
+				</content:encoded>							</item>
+					<item>
+				<guid>http://bvs.wikidot.com/forum/t-85030#post-249373</guid>
+				<title>Re: Can someone check my math on this one?</title>
+				<link>http://bvs.wikidot.com/forum/t-85030/can-someone-check-my-math-on-this-one#post-249373</link>
+				<description></description>
+				<pubDate>Sun, 31 Aug 2008 00:41:51 +0000</pubDate>
+				<wikidot:authorName>Lear</wikidot:authorName>				<wikidot:authorUserId>91991</wikidot:authorUserId>				<content:encoded>
+					<![CDATA[
+						 <p>Aside from what Jadian pointed out, you made a mistake here.</p> <blockquote> <p>There are three slots each, so odds of three in a row are 0.000455166 (0.076923077*0.076923077*0.076923077)</p> </blockquote> <p>It's actually: 1/13 * 1/13 = 1/169 (I prefer fractions to such long decimals.) Not 1/13 * 1/13 * 1/13</p> <p>You're assuming any 1 possibility, not all 13 that win. The chances of getting, say, 3 cherries would be 1/13 * 1/13 * 1/13, but there are 13 things that you can win, meaning that the win percentage would be 13 * (1/13 * 1/13 * 1/13) = 1/13 * 1/13 = 1/169</p> <p>Of course, if the odds of any one result are greater, than this is all bunk. It'd probably increase your chances of winning though, but it'd tend to be more low level prizes. Nonetheless, we don't know, so it's really a moot point to try to calculate it. I made that mistake myself a while back.</p> 
+				 	]]>
+				</content:encoded>							</item>
+					<item>
+				<guid>http://bvs.wikidot.com/forum/t-85030#post-249263</guid>
+				<title>Re: Can someone check my math on this one?</title>
+				<link>http://bvs.wikidot.com/forum/t-85030/can-someone-check-my-math-on-this-one#post-249263</link>
+				<description></description>
+				<pubDate>Sat, 30 Aug 2008 20:41:05 +0000</pubDate>
+				<wikidot:authorName>Jadian</wikidot:authorName>				<wikidot:authorUserId>103367</wikidot:authorUserId>				<content:encoded>
+					<![CDATA[
+						 <p>Remember when you're thinking about statistics that, if you can't see the mechanism behind them, that there are probably quite a few that you're not thinking of.</p> <p>"What if" each slots column is actually done like real slots, with a certain number of places in a predecided order, and thus you've got more than just 13 possiblities to worry about for each column? "What if" each possibility has a higher or lower chance when compared to other possiblities? "What if" the chance of a possibility coiming up is different based on the previous columns?</p> <p>Too many variables here are unknowns to the players, and I assume they'd be fairly hard to estimate starting with less than, say, a few million ryo to begin with. And since it probably is common to get 3 in a row at least once every few hundred thousand ryo, I don't really think those'd be the odds, no.</p> <p>Although, that cost is off, since you don't take into account the possibility of 20% of Party House prices from a Kaiju upgrade.</p> 
+				 	]]>
+				</content:encoded>							</item>
+					<item>
+				<guid>http://bvs.wikidot.com/forum/t-85030#post-249256</guid>
+				<title>Can someone check my math on this one?</title>
+				<link>http://bvs.wikidot.com/forum/t-85030/can-someone-check-my-math-on-this-one#post-249256</link>
+				<description></description>
+				<pubDate>Sat, 30 Aug 2008 20:20:40 +0000</pubDate>
+				<wikidot:authorName>Anonymous</wikidot:authorName>								<content:encoded>
+					<![CDATA[
+						 <p>Here's the deal, I've been playing the slotmachines in the party house for a while and wanted to check why I never win. Here's the math.<br /> Number of possible items (cherries, kuni, seven…etc) 13.<br /> Odds of any one item appearing 1 in 13 or 0.076923077<br /> There are three slots each, so odds of three in a row are 0.000455166 (0.076923077*0.076923077*0.076923077)<br /> There is the option of playing more than one line and the max is five so the odds of getting three in a row with five lines is:<br /> 0.002275831 or (0.000455166*5)<br /> Cost for playing all five lines is 2500 ryo.<br /> If the slot machine obeys statistics then you would need to play all five lines 450 times to arrive at at:<br /> 1.024123805 (0.002275831*450)<br /> Cost of playing all five lines 450 times is:<br /> 1,125,000 ryo.<br /> Note these are the odds for getting three in a row, ANY three in a row. Getting say three sevens is even harder.<br /> Can someone check this for me? Is this the actual odds and cost of winning the jackpot while playing the slotmachine?</p> 
+				 	]]>
+				</content:encoded>							</item>
+				</channel>
+</rss>

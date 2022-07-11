@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:wikidot="http://www.wikidot.com/rss-namespace">
+
+	<channel>
+		<title>TabView</title>
+		<link>http://bvs.wikidot.com/forum/t-60233/tabview</link>
+		<description>Posts in the discussion thread &quot;TabView&quot; - HELP!</description>
+				<copyright></copyright>
+		<lastBuildDate>Sun, 10 Jul 2022 04:58:04 +0000</lastBuildDate>
+		
+					<item>
+				<guid>http://bvs.wikidot.com/forum/t-60233#post-166391</guid>
+				<title>Re: TabView</title>
+				<link>http://bvs.wikidot.com/forum/t-60233/tabview#post-166391</link>
+				<description></description>
+				<pubDate>Mon, 19 May 2008 18:16:06 +0000</pubDate>
+				<wikidot:authorName>BrightMorn</wikidot:authorName>				<wikidot:authorUserId>89749</wikidot:authorUserId>				<content:encoded>
+					<![CDATA[
+						 <p>Well I found my answer…</p> <p>"Tabs will accept any content, but at the moment it is not possible to nest tabviews."</p> 
+				 	]]>
+				</content:encoded>							</item>
+					<item>
+				<guid>http://bvs.wikidot.com/forum/t-60233#post-165382</guid>
+				<title>Re: TabView</title>
+				<link>http://bvs.wikidot.com/forum/t-60233/tabview#post-165382</link>
+				<description></description>
+				<pubDate>Sat, 17 May 2008 19:26:16 +0000</pubDate>
+				<wikidot:authorName>BrightMorn</wikidot:authorName>				<wikidot:authorUserId>89749</wikidot:authorUserId>				<content:encoded>
+					<![CDATA[
+						 <div id="wiki-tabview-0" class="yui-navset"> <ul class="yui-nav"> <li class="selected"><a href="javascript:;"><em>Title of Tab No. 1</em></a></li> <li><a href="javascript:;"><em>Title of Tab No. 1.2</em></a></li> <li><a href="javascript:;"><em>Title of Tab No. 1.3</em></a></li> </ul> <div class="yui-content"> <div id="wiki-tab-0-0"> <p>Content of Tab No. 1.<br /> </p> <div id="wiki-tabview-3" class="yui-navset"> <ul class="yui-nav"> <li class="selected"><a href="javascript:;"><em>Title of Tab No. 1.1</em></a></li> <li><a href="javascript:;"><em>Title of Tab No. 2</em></a></li> <li><a href="javascript:;"><em>Title of Tab No. 3</em></a></li> </ul> <div class="yui-content"> <div id="wiki-tab-3-0"> <p>Content of Tab No. 1.1.</p> </div> <div id="wiki-tab-0-1" style="display:none"> <p>Content of Tab No. 1.2.</p> </div> <div id="wiki-tab-0-2" style="display:none"> <p>Content of Tab No. 1.3.</p> </div> </div> </div> </div> <div id="wiki-tab-3-1" style="display:none"> <p>Content of Tab No. 2.<br /> </p> <div id="wiki-tabview-1" class="yui-navset"> <ul class="yui-nav"> <li class="selected"><a href="javascript:;"><em>Title of Tab No. 2.1</em></a></li> <li><a href="javascript:;"><em>Title of Tab No. 2.2</em></a></li> <li><a href="javascript:;"><em>Title of Tab No. 2.3</em></a></li> </ul> <div class="yui-content"> <div id="wiki-tab-1-0"> <p>Content of Tab No. 2.1.</p> </div> <div id="wiki-tab-1-1" style="display:none"> <p>Content of Tab No. 2.2.</p> </div> <div id="wiki-tab-1-2" style="display:none"> <p>Content of Tab No. 2.3.</p> </div> </div> </div> </div> <div id="wiki-tab-3-2" style="display:none"> <p>Content of Tab No. 3.<br /> </p> <div id="wiki-tabview-2" class="yui-navset"> <ul class="yui-nav"> <li class="selected"><a href="javascript:;"><em>Title of Tab No. 3.1</em></a></li> <li><a href="javascript:;"><em>Title of Tab No. 3.2</em></a></li> <li><a href="javascript:;"><em>Title of Tab No. 3.3</em></a></li> </ul> <div class="yui-content"> <div id="wiki-tab-2-0"> <p>Content of Tab No. 3.1.</p> </div> <div id="wiki-tab-2-1" style="display:none"> <p>Content of Tab No. 3.2.</p> </div> <div id="wiki-tab-2-2" style="display:none"> <p>Content of Tab No. 3.3.</p> </div> </div> </div> </div> </div> </div> <p>Okay… what the heck did I do differently here??<br /> It is not quite working, since the main tabs do not have anything in them like they should…<br /> Yeah, this is definitely not working correctly :(</p> 
+				 	]]>
+				</content:encoded>							</item>
+					<item>
+				<guid>http://bvs.wikidot.com/forum/t-60233#post-165080</guid>
+				<title>TabView</title>
+				<link>http://bvs.wikidot.com/forum/t-60233/tabview#post-165080</link>
+				<description></description>
+				<pubDate>Sat, 17 May 2008 04:29:21 +0000</pubDate>
+				<wikidot:authorName>BrightMorn</wikidot:authorName>				<wikidot:authorUserId>89749</wikidot:authorUserId>				<content:encoded>
+					<![CDATA[
+						 <p>Basically I am looking for help with a layout.</p> <div class="code"> <pre> <code>[[tabview]] [[tab Title of Tab No. 1]] Content of Tab No. 1. [[/tab]] [[tab Title of Tab No. 2]] Content of Tab No. 2. [[/tab]] [[tab Title of Tab No. 3]] Content of Tab No. 3. [[/tab]] [[/tabview]]</code> </pre></div> <p>This works wonderfully for breaking up seasons, see my character page for an example: <a href="http://bvs.wikidot.com/player:taliesan">Taliesan</a>. However, what I am trying to do now is have another set of tabs nested inside my large over arching season tabs. Basically I want to break up my item list into 3 categories and this would be the best way to view them all. The problem is when I put them inside it is not interpreted properly. Any of you Wiki-ites have any ideas?</p> <p>I have read the discussion here: <a href="http://snippets.wikidot.com/code:tabs">http://snippets.wikidot.com/code:tabs</a><br /> However, it was not any help to my question, except one person mentioned that they got it to work…</p> 
+				 	]]>
+				</content:encoded>							</item>
+				</channel>
+</rss>

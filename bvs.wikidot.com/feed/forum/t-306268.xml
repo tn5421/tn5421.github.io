@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:wikidot="http://www.wikidot.com/rss-namespace">
+
+	<channel>
+		<title>Item display suggestion</title>
+		<link>http://bvs.wikidot.com/forum/t-306268/item-display-suggestion</link>
+		<description>Posts in the discussion thread &quot;Item display suggestion&quot;</description>
+				<copyright></copyright>
+		<lastBuildDate>Sun, 10 Jul 2022 04:14:13 +0000</lastBuildDate>
+		
+					<item>
+				<guid>http://bvs.wikidot.com/forum/t-306268#post-998626</guid>
+				<title>Re: Item display suggestion</title>
+				<link>http://bvs.wikidot.com/forum/t-306268/item-display-suggestion#post-998626</link>
+				<description></description>
+				<pubDate>Thu, 10 Feb 2011 05:35:02 +0000</pubDate>
+				<wikidot:authorName>taltamir</wikidot:authorName>				<wikidot:authorUserId>663175</wikidot:authorUserId>				<content:encoded>
+					<![CDATA[
+						 <p>hi, thanks for everything.<br /> The float:right function is a great addition, makes it much better. There are two more thing you can help with (sorry for wall of text, its at the bottom)</p> <p>For most items the tooltip are indeed redundant as you say. But some items need it.<br /> Take for example the 5 essences.<br /> The left click box in BvS says:<br /> Item Description N/A<br /> Description coming soon!</p> <p>In the left click box. The only info the left click box gives you is if it is tradable, sellable, loopable, and permanent. If it was the only thing we had, it would not clarify what the item does.<br /> The mouseover is what actually gives you the properties of using the item; this is all too common for consumables. Perms typically have their fluff description AND mouseover description in the same box (with specific formatting of bold, italics, and parenthesis). However there are exceptions, tacos are a consumable but are formatted like a perm; there might be perms formatted like consumables with missing info only available from floatbox.</p> <p>We could simply enter a description in there based on what the item is rather then what info it presents in the BvS, although that brings other issues. Or we could only include the float boxes on pages where they are needed.</p> <p>Issue 1:<br /> Speaking of the 5 essences, there is an issue with them essence-of-earth<br /> The "consumption box" is clipping over the floated to the right leftclick box.<br /> Issue 2:<br /> What do you think about floating the mouseover tooltip to the right as well? I looked into it and floating the mouseover box to the right places it to the left of the current float, rather then below it.</p> 
+				 	]]>
+				</content:encoded>							</item>
+					<item>
+				<guid>http://bvs.wikidot.com/forum/t-306268#post-998047</guid>
+				<title>Re: Item display suggestion</title>
+				<link>http://bvs.wikidot.com/forum/t-306268/item-display-suggestion#post-998047</link>
+				<description></description>
+				<pubDate>Wed, 09 Feb 2011 17:41:24 +0000</pubDate>
+				<wikidot:authorName>North</wikidot:authorName>				<wikidot:authorUserId>132728</wikidot:authorUserId>				<content:encoded>
+					<![CDATA[
+						 <ul> <li>Floated to the right</li> <li>fixed the tooltip boxes (I for one think they are redundant)</li> <li>A boolean can't be used.</li> </ul> <p>If anything else needs to be fixed PM me.</p> 
+				 	]]>
+				</content:encoded>							</item>
+					<item>
+				<guid>http://bvs.wikidot.com/forum/t-306268#post-996819</guid>
+				<title>Re: Item display suggestion</title>
+				<link>http://bvs.wikidot.com/forum/t-306268/item-display-suggestion#post-996819</link>
+				<description></description>
+				<pubDate>Tue, 08 Feb 2011 09:57:21 +0000</pubDate>
+				<wikidot:authorName>taltamir</wikidot:authorName>				<wikidot:authorUserId>663175</wikidot:authorUserId>				<content:encoded>
+					<![CDATA[
+						 <p>I was going over my consumables and i noticed an exception. TACOs are blue yet they match the display format of perm items instead of that of consumables on their left click box:<br /> <strong>TACO</strong><br /> <em>TACO IS TACO MMMM</em><br /> (+100 Stam, +10 for each other TACO eaten today)</p> <p>Also the 5 essences are not quite right either. Instead of item name they say "Item Description N/A" in their left click info. they only say their name in the mouseover tooltip.</p> <p>Perm items have the item name in bold, the fluff description in italics, and then the mouseover description in parenthesis. While consumables normally omit the mouseover description.</p> <p>North pointed out that its better to have just one include for the items, and I think it he is right. I was trying to be too fancy. It would be better to just make a single item include for the left click, then make the mouseover tooltip as a separate optional include when needed. I will get to work on it.</p> <p>I went ahead and applied a slightly more general table to the include:item page. Now include:item-blue and include:item-red are now optional tooltip displays for when needed that have to be added seperately, there is just one single description line for the include:item for whatever data it should receive.</p> <p>can you please delete the page: include:item-black</p> <p>Pages that have been modified to have all the relevant info for the new includes:<br /> <a href="http://bvs.wikidot.com/items:hot-picture-of-emosuke">hot-picture-of-emosuke</a><br /> <a href="http://bvs.wikidot.com/items:billy-bucket">billy-bucket</a><br /> <a href="http://bvs.wikidot.com/items:regalia">regalia</a><br /> <a href="http://bvs.wikidot.com/items:super-potion">super-potion</a><br /> <a href="http://bvs.wikidot.com/items:emo-rock-cds">emo-rock-cds</a><br /> <a href="http://bvs.wikidot.com/items:smoke-bombs">smoke-bombs</a><br /> <a href="http://bvs.wikidot.com/items:taco">taco</a><br /> <a href="http://bvs.wikidot.com/items:essence-of-earth">essence-of-earth</a><br /> <a href="http://bvs.wikidot.com/items:essence-of-fire">essence-of-fire</a><br /> <a href="http://bvs.wikidot.com/items:essence-of-water">essence-of-water</a><br /> <a href="http://bvs.wikidot.com/items:essence-of-wind">essence-of-wind</a><br /> <a href="http://bvs.wikidot.com/items:essence-of-lightning">essence-of-lightning</a><br /> <a href="http://bvs.wikidot.com/items:potion-base">potion-base</a><br /> <a href="http://bvs.wikidot.com/items:razor-blades">razor-blades</a><br /> <a href="http://bvs.wikidot.com/items:note-page">note-page</a><br /> <a href="http://bvs.wikidot.com/items:basic-ninja-gear">basic-ninja-gear</a><br /> <a href="http://bvs.wikidot.com/items:blue-flower-hairpin">blue-flower-hairpin</a><br /> <a href="http://bvs.wikidot.com/items:hollow-leg">hollow-leg</a></p> 
+				 	]]>
+				</content:encoded>							</item>
+					<item>
+				<guid>http://bvs.wikidot.com/forum/t-306268#post-996699</guid>
+				<title>Item display overhaul</title>
+				<link>http://bvs.wikidot.com/forum/t-306268/item-display-suggestion#post-996699</link>
+				<description></description>
+				<pubDate>Tue, 08 Feb 2011 05:41:20 +0000</pubDate>
+				<wikidot:authorName>taltamir</wikidot:authorName>				<wikidot:authorUserId>663175</wikidot:authorUserId>				<content:encoded>
+					<![CDATA[
+						 <p>Originally this was a suggestion (really more of a request for someone to do the work). But I spent the last 5 and a half hours learning and then doing it (instead of my homework T.T) So here is my work for all to see.<br /> I went ahead and created overhauled include pages (I did not modify the current include:item, but instead created include:item-black, include:item-red, include:item-blue)<br /> Those show the exact details and near exact appearance of hovering over an item, and of left clicking an item.</p> <p>I have applied each new template to one (matching) item as a "demo":<br /> For a black item (non perm, non consumable):<br /> <a href="http://bvs.wikidot.com/items:billy-bucket">billy-bucket</a><br /> For perm item:<br /> <a href="http://bvs.wikidot.com/items:regalia">regalia</a><br /> For consumable item:<br /> <a href="http://bvs.wikidot.com/items:super-potion">super-potion</a></p> <p>I think it looks AMAZING and definitely worth it to switch all pages to be this way. The neatest thing is that its only done via simple code and no images so it should be super light.<br /> If someone knows how to make the table appear on the top right (Where the image used to be), please modify the include pages to do so.</p> <p>Note that these are exactly as they are in the game, the red items show their mouseover data in their leftclick, the blue do not, the black do not even have mouseoever.<br /> The quickest way to update all the pages with the needed info would be to change the <a href="http://bvs.wikidot.com/include:item">item</a> page to say:<br /> This page is using an obsolete item include, please replace with the current include from <a href="http://bvs.wikidot.com/template:items">Item Template</a></p> <p>However, I think I think for such a far reaching change (it will retroactively affect all item pages) a moderator's permission should be sought.</p> <p>Here is (most of) the info I collected to do it:</p> <p>Perm's mouseover:<br /> Pink background: F8D5E7<br /> White background: FEFCFA<br /> Outline: E9A6CC<br /> Text on white: 6C244D<br /> Text on Pink: 9C527B<br /> Width (is always): 306 pixels</p> <p>Non-perm mouseover:<br /> same as perm, except colors are different, I inputted the data directly into the include:item-blue page</p> <p>Item left-click description:<br /> Blue Background: 0E0C5F<br /> Brown background: E0C69A<br /> Text on brown: 000000<br /> Tradeable background: 660000<br /> Loopable background: 006600<br /> Permanent background: 666600<br /> Sellable background: 000066<br /> White text: FFFFFF<br /> Dotted border: A75928<br /> Image Wideth= 100px +3 on each side<br /> width of rest= 192px<br /> pixels after the 106 of picture to reach tradeable/sellable box: 17px<br /> pixels between tradeable and loopable: 2px<br /> Tradeable text: Tradable / Untradable<br /> Sellabele text: Is Sellable / Not Sellable<br /> Loopable text: Is Loopable / Not Loopable<br /> Permanent text: Permanent / Non-Permanent<br /> Image border: black aka 000000</p> <p>The current models are available at:<br /> <a href="http://bvs.wikidot.com/include:item">item</a><br /> <a href="http://bvs.wikidot.com/include:item-red">item-red</a><br /> <a href="http://bvs.wikidot.com/include:item-blue">item-blue</a></p> <p>problems:<br /> Issue 1: putting 306 pixels in the table style gives me a 300px wide cells. Putting 306px in the cell style gives me 314px wide cells. Rendered moot by issue 2.<br /> Issue 2: The text on the wiki is different (larger, wider spaced) then the one used for the mouseover &amp; leftclick boxes. So if someone wants to tweak them to match go right ahead. As it is, the boxes are similar but not exact to what is found in BvS.</p> <p>I realized, the pink popup is only for items colored red in your bucket. Blue colored ones have a light blue popup, and black colored ones have no popup. I created seperate colored ones.<br /> AFAIK the reds are pemanent items, and blue are consumables, while black items are neither.</p> 
+				 	]]>
+				</content:encoded>							</item>
+				</channel>
+</rss>

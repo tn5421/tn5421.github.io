@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:wikidot="http://www.wikidot.com/rss-namespace">
+
+	<channel>
+		<title>Parent Pages</title>
+		<link>http://bvs.wikidot.com/forum/t-247819/parent-pages</link>
+		<description>Posts in the discussion thread &quot;Parent Pages&quot; - want to link Parent Pages</description>
+				<copyright></copyright>
+		<lastBuildDate>Sun, 10 Jul 2022 03:32:31 +0000</lastBuildDate>
+		
+					<item>
+				<guid>http://bvs.wikidot.com/forum/t-247819#post-808214</guid>
+				<title>Parent Pages</title>
+				<link>http://bvs.wikidot.com/forum/t-247819/parent-pages#post-808214</link>
+				<description></description>
+				<pubDate>Mon, 14 Jun 2010 11:07:01 +0000</pubDate>
+				<wikidot:authorName>Nait</wikidot:authorName>				<wikidot:authorUserId>329508</wikidot:authorUserId>				<content:encoded>
+					<![CDATA[
+						 <p>Hi guys, I just wondered if it's allowed to set the Parent Page for each site. I guess that would improve the navigation through the wiki.</p> 
+				 	]]>
+				</content:encoded>							</item>
+				</channel>
+</rss>

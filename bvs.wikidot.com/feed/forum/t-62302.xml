@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:wikidot="http://www.wikidot.com/rss-namespace">
+
+	<channel>
+		<title>Item pages needing replacement pictures</title>
+		<link>http://bvs.wikidot.com/forum/t-62302/item-pages-needing-replacement-pictures</link>
+		<description>Posts in the discussion thread &quot;Item pages needing replacement pictures&quot; - about pictures that link to animecubed.com</description>
+				<copyright></copyright>
+		<lastBuildDate>Sun, 10 Jul 2022 04:21:52 +0000</lastBuildDate>
+		
+					<item>
+				<guid>http://bvs.wikidot.com/forum/t-62302#post-175980</guid>
+				<title>Re: Item pages needing replacement pictures</title>
+				<link>http://bvs.wikidot.com/forum/t-62302/item-pages-needing-replacement-pictures#post-175980</link>
+				<description></description>
+				<pubDate>Sat, 31 May 2008 05:46:10 +0000</pubDate>
+				<wikidot:authorName>BvS-Uzuki</wikidot:authorName>				<wikidot:authorUserId>78144</wikidot:authorUserId>				<content:encoded>
+					<![CDATA[
+						 <p>The code for the site is maintained by Wikidot. There's no one on bvs who actively maintains the code. Only TikiTDO has expressed any interest in getting involved with the Wikidot code.</p> 
+				 	]]>
+				</content:encoded>							</item>
+					<item>
+				<guid>http://bvs.wikidot.com/forum/t-62302#post-175931</guid>
+				<title>Re: Item pages needing replacement pictures</title>
+				<link>http://bvs.wikidot.com/forum/t-62302/item-pages-needing-replacement-pictures#post-175931</link>
+				<description></description>
+				<pubDate>Sat, 31 May 2008 04:00:14 +0000</pubDate>
+				<wikidot:authorName>Lokumun</wikidot:authorName>				<wikidot:authorUserId>112075</wikidot:authorUserId>				<content:encoded>
+					<![CDATA[
+						 <p>Dang. I got the idea from the orphaned and wanted lists under site tools, but I guess it can't be doable. So there is no way to code a site tool?</p> <p>And I will sometime probably start a list of pictures to be replaced. Summer vacation's coming up soon…</p> 
+				 	]]>
+				</content:encoded>							</item>
+					<item>
+				<guid>http://bvs.wikidot.com/forum/t-62302#post-172132</guid>
+				<title>Re: Item pages needing replacement pictures</title>
+				<link>http://bvs.wikidot.com/forum/t-62302/item-pages-needing-replacement-pictures#post-172132</link>
+				<description></description>
+				<pubDate>Tue, 27 May 2008 04:54:56 +0000</pubDate>
+				<wikidot:authorName>BvS-Uzuki</wikidot:authorName>				<wikidot:authorUserId>78144</wikidot:authorUserId>				<content:encoded>
+					<![CDATA[
+						 <p>As much as that'd be a great tool, there's no easy way to do that. If you could post links to where there are incorrectly linked images, I can fix them.</p> 
+				 	]]>
+				</content:encoded>							</item>
+					<item>
+				<guid>http://bvs.wikidot.com/forum/t-62302#post-171808</guid>
+				<title>Item pages needing replacement pictures</title>
+				<link>http://bvs.wikidot.com/forum/t-62302/item-pages-needing-replacement-pictures#post-171808</link>
+				<description></description>
+				<pubDate>Mon, 26 May 2008 22:33:58 +0000</pubDate>
+				<wikidot:authorName>Lokumun</wikidot:authorName>				<wikidot:authorUserId>112075</wikidot:authorUserId>				<content:encoded>
+					<![CDATA[
+						 <p>Just until we get all the pictures replaced, how about we have a site tool (like orphaned and wanted pages) that gives us a list of any page using an image that links to animecubed.com/billy/layout/items/, or maybe even animecubed? It would be quite useful for tracking down the ones we need replacements of pictures.</p> <p>For example, our <a href="http://bvs.wikidot.com/items:cure-right-wounds">Cure Right Wounds</a> page is using a pic hotlinked from the site.</p> 
+				 	]]>
+				</content:encoded>							</item>
+				</channel>
+</rss>

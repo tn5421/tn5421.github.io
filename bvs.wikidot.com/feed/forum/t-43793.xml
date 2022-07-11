@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:wikidot="http://www.wikidot.com/rss-namespace">
+
+	<channel>
+		<title>Domain Name</title>
+		<link>http://bvs.wikidot.com/forum/t-43793/domain-name</link>
+		<description>Posts in the discussion thread &quot;Domain Name&quot; - Discussion about the possibility of registering a domain for the Wiki.</description>
+				<copyright></copyright>
+		<lastBuildDate>Sun, 10 Jul 2022 04:39:19 +0000</lastBuildDate>
+		
+					<item>
+				<guid>http://bvs.wikidot.com/forum/t-43793#post-116144</guid>
+				<title>Re: Domain Name</title>
+				<link>http://bvs.wikidot.com/forum/t-43793/domain-name#post-116144</link>
+				<description></description>
+				<pubDate>Sat, 01 Mar 2008 01:24:53 +0000</pubDate>
+				<wikidot:authorName>BvS-Uzuki</wikidot:authorName>				<wikidot:authorUserId>78144</wikidot:authorUserId>				<content:encoded>
+					<![CDATA[
+						 <p>This website is now available at "<a href="http://bvswiki.com/">http://bvswiki.com/</a>"</p> 
+				 	]]>
+				</content:encoded>							</item>
+					<item>
+				<guid>http://bvs.wikidot.com/forum/t-43793#post-115030</guid>
+				<title>Domain Name</title>
+				<link>http://bvs.wikidot.com/forum/t-43793/domain-name#post-115030</link>
+				<description></description>
+				<pubDate>Thu, 28 Feb 2008 02:32:16 +0000</pubDate>
+				<wikidot:authorName>BvS-Uzuki</wikidot:authorName>				<wikidot:authorUserId>78144</wikidot:authorUserId>				<content:encoded>
+					<![CDATA[
+						 <p>In a couple days, I'll have enough cash to purchase an actual domain name for the Wiki, so it won't be a sub-domain of Wikidot anymore. Can anyone think of anything better than "<a href="http://www.bvswiki.com/">http://www.bvswiki.com/</a>"?</p> 
+				 	]]>
+				</content:encoded>							</item>
+				</channel>
+</rss>

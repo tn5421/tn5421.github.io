@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:wikidot="http://www.wikidot.com/rss-namespace">
+
+	<channel>
+		<title>Comments for page &quot;Novaix&quot;</title>
+		<link>http://bvs.wikidot.com/forum/t-167526/novaix</link>
+		<description>Posts in the discussion thread &quot;Novaix&quot;</description>
+				<copyright></copyright>
+		<lastBuildDate>Sun, 10 Jul 2022 04:18:23 +0000</lastBuildDate>
+		
+					<item>
+				<guid>http://bvs.wikidot.com/forum/t-167526#post-528253</guid>
+				<title>(no title)</title>
+				<link>http://bvs.wikidot.com/forum/t-167526/novaix#post-528253</link>
+				<description></description>
+				<pubDate>Wed, 08 Jul 2009 00:45:05 +0000</pubDate>
+				<wikidot:authorName>Novaix</wikidot:authorName>				<wikidot:authorUserId>333449</wikidot:authorUserId>				<content:encoded>
+					<![CDATA[
+						 <p>Ah, thanks. I'll still keep the tab on so you don't have to scroll so far down if you just want generic infromation or whatever, but that still helps a lot ^^</p> 
+				 	]]>
+				</content:encoded>							</item>
+					<item>
+				<guid>http://bvs.wikidot.com/forum/t-167526#post-527781</guid>
+				<title>tab bar</title>
+				<link>http://bvs.wikidot.com/forum/t-167526/novaix#post-527781</link>
+				<description></description>
+				<pubDate>Tue, 07 Jul 2009 12:03:15 +0000</pubDate>
+				<wikidot:authorName>Fyfe</wikidot:authorName>				<wikidot:authorUserId>291447</wikidot:authorUserId>				<content:encoded>
+					<![CDATA[
+						 <p>if you alter your tab coding to the following you can stop the bar from going all the way across the page</p> <div class="code"> <pre> <code>[[div style="width:80%"]] [[tabview]] [[tab Physical Description]] Novaix is a highly etc [[/tab]] [[/tabview]] [[/div]]</code> </pre></div> 
+				 	]]>
+				</content:encoded>							</item>
+				</channel>
+</rss>
