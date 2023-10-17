@@ -1,5 +1,0 @@
-# HTTrack Website Copier Cookie File
-# This file format is compatible with Netscape cookies
-bvs.wikidot.com	TRUE	/	FALSE	1999999999	wikidot_token7	766ef0b988b7683204861fc27c54b930
-.wikidot.com	TRUE	/	FALSE	1999999999	WIKIDOT_SESSION_ID	d1daa2bbade67a855d5553162815abc2cad1fb655c9a01866f1f55e
-
